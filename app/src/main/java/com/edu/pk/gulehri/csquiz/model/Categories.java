@@ -15,7 +15,7 @@ public class Categories {
     public static final String Keywords = "Keywords";
     public static final String Function = "Function";
     public static final String Interfaces = "Interfaces";
-    public static final String Exception_Handling = " Exception Handling";
+    public static final String Exception_Handling = "EXCEPTION Handling";
 
     public static final String Multi_Threading = " Multi Threading";
     public static final String Inner_Class = "Inner Class";
@@ -40,7 +40,7 @@ public class Categories {
                     new Categories("OOP", Languages.JAVA),
                     new Categories("Keywords", Languages.JAVA),
                     new Categories("Interfaces", Languages.JAVA),
-                    new Categories("Exception Handling", Languages.JAVA),
+                    new Categories("EXCEPTION Handling", Languages.JAVA),
                     new Categories("Multi Threading", Languages.JAVA),
                     new Categories("Inner Class", Languages.JAVA),
                     new Categories("Enums", Languages.JAVA),

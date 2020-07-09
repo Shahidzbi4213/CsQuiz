@@ -1,5 +1,6 @@
 package com.edu.pk.gulehri.csquiz.adaptor;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -59,6 +60,7 @@ public class LanguageAdaptor extends RecyclerView.Adapter<LanguageAdaptor.MyView
                 intent.putExtra(LANGUAGE_POSITION, LANGUAGE_NAME);
                 QuizActivity.check = false;
                 context.startActivity(intent);
+                ((Activity)context).finish();
 
             }
         });

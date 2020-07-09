@@ -384,7 +384,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories13);
         Categories categories5 = new Categories("Interfaces", Languages.JAVA);
         insertCategory(categories5);
-        Categories categories6 = new Categories("Exception Handling", Languages.JAVA);
+        Categories categories6 = new Categories("EXCEPTION Handling", Languages.JAVA);
         insertCategory(categories6);
         Categories categories7 = new Categories("Multi Threading", Languages.JAVA);
         insertCategory(categories7);
