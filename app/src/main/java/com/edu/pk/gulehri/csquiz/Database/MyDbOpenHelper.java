@@ -60,7 +60,6 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         javaOOPQuestions();
         javaFunctionQuestions();
         javaExceptionHandling();
-        androidQuestions();
     }
 
     private void addCategory() {
@@ -370,68 +369,6 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
-    //Adding android Questions
-    private void androidQuestions() {
-        Question android1 = new Question("How many sizes are supported by Android?", " Android supported all sizes", "Android does not support all sizes", "Android supports small,normal, large and extra-large sizes", "Size is undefined in android", 3, Languages.ANDROID, Categories.Android);
-        insertQuestion(android1);
-
-        Question android2 = new Question("What is fragment in android?", "JSON", "Peace of Activity", "Layout", " None of the above", 2, Languages.ANDROID, Categories.Android);
-        insertQuestion(android2);
-
-        Question android3 = new Question("What Activity method you use to retrieve a reference to an android view by using the id attribute of a resource XML?", "findViewByReference(int id);", "findViewById(int id)", "retrieveResourceById(int id)", " findViewById(String id)", 2, Languages.ANDROID, Categories.Android);
-        insertQuestion(android3);
-
-        Question android4 = new Question("During an Activity life-cycle, what is the first callback method invoked by the system?", "onStop()", "onStart()", "onCreate()", "onRestore()", 3, Languages.ANDROID, Categories.Android);
-        insertQuestion(android4);
-
-        Question android5 = new Question("Which configuration file holds the permission to use the internet?", "Layout file", "Property file", "Java source file", "Manifest file", 4, Languages.ANDROID, Categories.Android);
-        insertQuestion(android5);
-
-        Question android6 = new Question("You can shut down an activity by calling its _______ method", "onDestory()", "finishActivity()", "finish()", "none of the above", 3, Languages.ANDROID, Categories.Android);
-        insertQuestion(android6);
-
-        Question android7 = new Question("The XML file that contains all the text that your application uses", "stack.xml", "text.xml", "strings.xml", " string.java", 3, Languages.ANDROID, Categories.Android);
-        insertQuestion(android7);
-
-        Question android8 = new Question("Which of the following is not a valid Android resource filename?", "mylayout.xml", " myLayout.xml", "my_layout.xml", "mylayout1.xml", 2, Languages.ANDROID, Categories.Android);
-        insertQuestion(android8);
-
-        Question android9 = new Question("Which company bought android?", " Apple", "Nokia", "Google", "Microsoft", 3, Languages.ANDROID, Categories.Android);
-        insertQuestion(android9);
-
-        Question android10 = new Question("In Which Directory XML Layout Files Are Stored", "/assets", " /src", "/res/layout", "/res/values", 3, Languages.ANDROID, Categories.Android);
-        insertQuestion(android10);
-
-        Question android11 = new Question("How many android life cycle methods are here ?", "4", "6", "7", "9", 3, Languages.ANDROID, Categories.Android);
-        insertQuestion(android11);
-
-        Question android12 = new Question("What is an interface in android?", "Interface is a class", "Interface acts as a bridge between class and the outside world", " Interface is a layout file", " All of the above", 2, Languages.ANDROID, Categories.Android);
-        insertQuestion(android12);
-
-        Question android13 = new Question(" If you want to increase the whitespace between widgets, you will need to use the ____________ property", "android:padding", "android:digits", "android:capitalize", "android:margin", 1, Languages.ANDROID, Categories.Android);
-        insertQuestion(android13);
-
-        Question android14 = new Question("Which piece of code used in Android is not open source?", "Keypad driver", "WIFI driver", "Audio driver", "Power management", 2, Languages.ANDROID, Categories.Android);
-        insertQuestion(android14);
-
-        Question android15 = new Question(" Intents", "are messages that are sent among major building blocks", "trigger activities to being, services to start or stop, or broadcast", "are asynchronous", "all of these", 4, Languages.ANDROID, Categories.Android);
-        insertQuestion(android15);
-
-        Question android16 = new Question("What built-in database is Android shipped with?", "Apache", "SQLite", "MySQL", "Oracle", 2, Languages.ANDROID, Categories.Android);
-        insertQuestion(android16);
-
-        Question android17 = new Question("Which of the following contains all the code that provides the main features of an Android OS?", "Linux kernel", "Libraries", "Android runtime", "Application", 2, Languages.ANDROID, Categories.Android);
-        insertQuestion(android17);
-
-        Question android18 = new Question("What does the following line of code achieve?\n Intent intent = new Intent(A.this,B.class);", "Creates an hidden Intent", " Creates an implicit Intent", "Create an explicit Intent", "Starts an activity", 4, Languages.ANDROID, Categories.Android);
-        insertQuestion(android18);
-
-        Question android19 = new Question("Which of the following methods updates a ListView when an element is added to the data set?", "notify()", "notifyAll()", "notifyDataSetChanged()", "notifyDataSetInvalidate()", 3, Languages.ANDROID, Categories.Android);
-        insertQuestion(android19);
-
-        Question android20 = new Question("Which of the following is a Java call-back method invoked when a view is clicked?", "Detector", " OnTapListener", "OnClickDetector", "OnClickListener", 4, Languages.ANDROID, Categories.Android);
-        insertQuestion(android20);
-    }
 
     //Java Category
     private void javaCategory() {
