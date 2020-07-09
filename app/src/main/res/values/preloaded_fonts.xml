@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abeezee_italic</item>
+        <item>@font/asap_medium_italic</item>
+        <item>@font/baloo</item>
+        <item>@font/mukta_vaani_bold</item>
+        <item>@font/supermercado_one</item>
+    </array>
+</resources>

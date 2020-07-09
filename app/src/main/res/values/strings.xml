@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Cs Quiz</string>
+    <string name="playAgain">Play Again</string>
+    <string name="mainMenu">Main Menu</string>
+    <string name="highScore">High Score</string>
+    <string name="yourScore">Your Score</string>
+    <string name="wrong">Wrong</string>
+    <string name="correct">Correct</string>
+    <string name="questions">Questions</string>
+    <string name="quizOver">Quiz Over !!</string>
+    <string name="txtClose">X</string>
+    <string name="startQuiz">Start Quiz</string>
+    <string name="points">Points</string>
+    <string name="demoQuestion">Whats is Java Used For ?</string>
+    <string name="changeToConfirm">Confirm</string>
+    <string name="zeroPoints">0</string>
+    <string name="developerName"> By: Shahid Iqbal</string>
+    <string name="changeToNext">Next</string>
+    <string name="changeToFinish">Finish</string>
+    <string name="welcomeText">We Welcome You</string>
+    <string name="select_category">Select Any Category</string>
+    <string name="category">Category</string>
+    <string name="welcom_text">We Welcome You</string>
+    <string name="radiobutton">RadioButton</string>
+    <string name="categories">Categories</string>
+    <string name="languages">Languages</string>
+    <string name="creator">Shahid  Iqbal</string>
+    <string name="quote">Dreaming a world \n where\n we give and receive respect.\n Live and let live.</string>
+    <string name="contact_us">Contact us:</string>
+</resources>

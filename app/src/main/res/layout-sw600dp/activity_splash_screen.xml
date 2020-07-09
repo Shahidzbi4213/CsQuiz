@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1f1f1d"
+    android:orientation="vertical"
+    tools:context=".ui.SplashScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/first_line"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/white_line" />
+
+        <View
+            android:id="@+id/second_line"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/first_line"
+            android:background="@drawable/red_line" />
+
+        <View
+            android:id="@+id/third_line"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/second_line"
+            android:background="@drawable/white_line" />
+
+        <View
+            android:id="@+id/fourth_line"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_145sdp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/third_line"
+            android:background="@drawable/red_line" />
+
+        <View
+            android:id="@+id/fifth_line"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_170sdp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/fourth_line"
+            android:background="@drawable/green_line" />
+
+        <View
+            android:id="@+id/sixth_line"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/fifth_line"
+            android:background="@drawable/white_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/baloo"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_60sdp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/tagLine"
+                android:layout_width="@dimen/_127sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="@string/developerName"
+                android:textColor="#8A8585"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold|italic" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
