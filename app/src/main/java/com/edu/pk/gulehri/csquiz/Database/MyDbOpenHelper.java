@@ -60,6 +60,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         javaOOPQuestions();
         javaFunctionQuestions();
         javaExceptionHandling();
+        javaMultiThreading();
     }
 
     private void addCategory() {
@@ -366,6 +367,51 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         Question question19 = new Question("Which of these statements is incorrect?", "try block need not to be followed by catch block", "try block can be followed by finally block instead of catch block", " try can be followed by both catch and finally block", "try need not to be followed by anything", 4, Languages.JAVA, Categories.Exception_Handling);
         insertQuestion(question19);
         Question question20 = new Question("Which of these methods return description of an exception?", "getException()", "getMessage()", "obtainDescription()", "obtainException()", 2, Languages.JAVA, Categories.Exception_Handling);
+        insertQuestion(question20);
+    }
+
+    //Adding Multi Treading Questions
+    private void javaMultiThreading() {
+        Question question1 = new Question("What is multithreaded programming?", "It’s a process in which two different processes run simultaneously.", "It’s a process in which two or more parts of same process run simultaneously.", " Its a process in which many different process are able to access same information.", "Its a process in which a single process can access information from many sources.", 2, Languages.JAVA, Categories.Multi_Threading);
+        insertQuestion(question1);
+        Question question2 = new Question("What is maximum thread priority in Java", "5", "10", "12", "15", 2, Languages.JAVA, Categories.Multi_Threading);
+        insertQuestion(question2);
+        Question question3 = new Question("Which method must be implemented by a Java thread?", "run()", "start()", "execute()", "onStart()", 1, Languages.JAVA, Categories.Multi_Threading);
+        insertQuestion(question3);
+        Question question4 = new Question("Which of these are types of multitasking?", "Process based", " Thread based", "Process and Thread based", "None of the mentioned", 3, Languages.JAVA, Categories.Multi_Threading);
+        insertQuestion(question4);
+        Question question5 = new Question("Thread priority in Java is?", "Integer", "float", "double", "long", 1, Languages.JAVA, Categories.Multi_Threading);
+        insertQuestion(question5);
+        Question question6 = new Question(" Thread t = Thread.currentThread();\n" +
+                "            System.out.println(t);   ", "Thread[5,main]", "Thread[main,5]", "Thread[main,0]", "Thread[main,5,main]", 4, Languages.JAVA, Categories.Multi_Threading);
+        insertQuestion(question6);
+        Question question7 = new Question("What requires less resources?", "Thread", "Process", "Thread and Process", "None of the Above", 1, Languages.JAVA, Categories.Multi_Threading);
+        insertQuestion(question7);
+        Question question8 = new Question("Which of the following is a correct constructor for thread?", "Thread(Runnable a, String str)", "Thread(int priority)", "Thread(Runnable a, int priority)", "Thread(Runnable a, ThreadGroup t)", 1, Languages.JAVA, Categories.Multi_Threading);
+        insertQuestion(question8);
+        Question question9 = new Question("Which of the following will ensure the thread will be in running state?", "notify()", "wait()", "Thread.killThread()", "yield()", 2, Languages.JAVA, Categories.Multi_Threading);
+        insertQuestion(question9);
+        Question question10 = new Question("What should not be done to avoid deadlock?", "Avoid using multiple threads", " Avoid hold several locks at once", "Execute foreign code while holding a lock", "Use interruptible locks", 3, Languages.JAVA, Categories.Multi_Threading);
+        insertQuestion(question10);
+        Question question11 = new Question("What is the name of the method that is used to start the execution of a thread?", " init();", "start();", "run();", "resume();", 2, Languages.JAVA, Categories.Multi_Threading);
+        insertQuestion(question11);
+        Question question12 = new Question("Which function of pre defined class Thread is used to check weather current thread being checked is still running?", "isAlive()", "Join()", "isRunning()", "Alive()", 1, Languages.JAVA, Categories.Multi_Threading);
+        insertQuestion(question12);
+        Question question13 = new Question("Which of these method of Thread class is used to find out the priority given to a thread?", "get()", "ThreadPriority()", "getPriority()", "getThreadPriority()", 3, Languages.JAVA, Categories.Multi_Threading);
+        insertQuestion(question13);
+        Question question14 = new Question("How many threads can a process contain?", "1", "2", "multiple", "none", 3, Languages.JAVA, Categories.Multi_Threading);
+        insertQuestion(question14);
+        Question question15 = new Question("What state does Thread enter in when it has been created and started?", "New", "Runnable", "Running", "Waiting", 2, Languages.JAVA, Categories.Multi_Threading);
+        insertQuestion(question15);
+        Question question16 = new Question("What is valid about threads", "Threads have their own heap allocated area.", "Threads have their own stack.", "Threads doesn't have own stack.", "None", 2, Languages.JAVA, Categories.Multi_Threading);
+        insertQuestion(question16);
+        Question question17 = new Question(" What is the default value of priority variable MIN_PRIORITY AND MAX_PRIORITY?", " 0 & 256", "0 & 1", "1 & 10", "1 & 256", 3, Languages.JAVA, Categories.Multi_Threading);
+        insertQuestion(question17);
+        Question question18 = new Question("Which of these keywords are used to implement synchronization?", "synchronize", "synchronised", "sync", "synchronized", 4, Languages.JAVA, Categories.Multi_Threading);
+        insertQuestion(question18);
+        Question question19 = new Question("Which of these method of Thread class is used to Suspend a thread for a period of time?", "sleep()", "terminate()", "suspend()", "stop()", 1, Languages.JAVA, Categories.Multi_Threading);
+        insertQuestion(question19);
+        Question question20 = new Question("A Daemon thread is a ---?", "Low priority thread ", "Assistant thread", "Controller thread", "Dangerous thread ", 2, Languages.JAVA, Categories.Multi_Threading);
         insertQuestion(question20);
     }
 
