@@ -465,47 +465,91 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
+    //Adding Inner Classes Questions
+    private void javaInnerClasses() {
+        Question question1 = new Question("Which among the following best describes a nested class?", "Class inside a class", "Class inside a function", "Class inside a package", "Class inside a structure", 1, Languages.JAVA, Categories.Inner_Class);
+        insertQuestion(question1);
+        Question question2 = new Question("How many categories are nested classes divided into?", "2", "3", "4", "5", 1, Languages.JAVA, Categories.Inner_Class);
+        insertQuestion(question2);
+        Question question3 = new Question("Which feature of OOP reduces the use of nested classes?", "Encapsulation", "Inheritance", "Binding", "Binding", 2, Languages.JAVA, Categories.Inner_Class);
+        insertQuestion(question3);
+        Question question4 = new Question("Use of nested class ____________ encapsulation.", "Increases", "Decreases", "Doesn't affect", "Slightly decreases", 1, Languages.JAVA, Categories.Inner_Class);
+        insertQuestion(question4);
+        Question question5 = new Question("The nested class can be declared ____________", "Public", "Private", "Protected", "Public, Protected, Private or Package private", 4, Languages.JAVA, Categories.Inner_Class);
+        insertQuestion(question5);
+        Question question6 = new Question("Which is true about a method-local inner class?", "It must be marked final.", "It can be marked abstract.", "It can be marked public.", "It can be marked static.", 2, Languages.JAVA, Categories.Inner_Class);
+        insertQuestion(question6);
+        Question question7 = new Question("Which constructs an anonymous inner class instance?", "Runnable r = new Runnable() { };", "Runnable r = new Runnable(public void run() { });", "Runnable r = new Runnable {public void run(){}};", "System.out.println(new Runnable(){ public void run(){}});", 4, Languages.JAVA, Categories.Inner_Class);
+        insertQuestion(question7);
+        Question question8 = new Question("Non-static nested classes have access to _____________ from enclosing class.", "Private members", "Protected members", "Public members", "All the members", 4, Languages.JAVA, Categories.Inner_Class);
+        insertQuestion(question8);
+        Question question9 = new Question("Static nested classes doesn't have access to ______________ from enclosing class.", "Private members", "Protected members", "Public members", "Any other members", 4, Languages.JAVA, Categories.Inner_Class);
+        insertQuestion(question9);
+        Question question10 = new Question("Which among the following is the correct advantage/disadvantage of nested classes?", "Makes the code more complex", "Makes the code unreadable", "Makes the code efficient and readable", "Makes the code multithreaded", 3, Languages.JAVA, Categories.Inner_Class);
+        insertQuestion(question10);
+        Question question11 = new Question("How to access static nested classes?", "OuterClass.StaticNestedClass", "OuterClass->StaticNestedClass", "OuterClass(StaticNestedClass)", "OuterClass[StaticNestedClass]", 1, Languages.JAVA, Categories.Inner_Class);
+        insertQuestion(question11);
+        Question question12 = new Question("Instance of inner class can exist only _________ enclosing class.", "Outside", "Private to", "Public to", "Within", 4, Languages.JAVA, Categories.Inner_Class);
+        insertQuestion(question12);
+        Question question13 = new Question("A static nested class is _____________ class in behavior that is nested in another _________ class.", "Top level, top level", "Top level, low level", "Low level, top level", "Low level, low level", 1, Languages.JAVA, Categories.Inner_Class);
+        insertQuestion(question13);
+        Question question14 = new Question("What are local classes?", "Classes declared inside a package", "Classes declared inside a class", "Classes declared inside a function", "Classes declared inside a structure", 3, Languages.JAVA, Categories.Inner_Class);
+        insertQuestion(question14);
+        Question question15 = new Question("Which type of data can a local class access from the function in which it is defined?", "Static and extern", "Abstract and static", "Void and extern", "Const and static", 1, Languages.JAVA, Categories.Inner_Class);
+        insertQuestion(question15);
+        Question question16 = new Question("How many local classes can be defined inside a single function?", "only 1", "2", "5", "As many as required", 4, Languages.JAVA, Categories.Inner_Class);
+        insertQuestion(question16);
+        Question question17 = new Question("How to create object of the inner class?", "OuterClass.InnerClass innerObject = outerObject.new InnerClass();", "OuterClass.InnerClass innerObject = new InnerClass();", "InnerClass innerObject = outerObject.new InnerClass();", "OuterClass.InnerClass = outerObject.new InnerClass();", 1, Languages.JAVA, Categories.Inner_Class);
+        insertQuestion(question17);
+        Question question18 = new Question("All the data members of local class must be ___________", "Defined with declaration", "Defined in constructor", "Declared and defined in constructor", "Declared using a member function", 2, Languages.JAVA, Categories.Inner_Class);
+        insertQuestion(question18);
+        Question question19 = new Question("Can a function, other than the enclosing function of local class, access the class members?", "Yes, using object", " Yes, using direct call", "Yes, using pointer", "No, can’t access", 4, Languages.JAVA, Categories.Inner_Class);
+        insertQuestion(question19);
+        Question question20 = new Question("What is the scope of local class?", "Within the class only", "Within the function ", "Within the program", "One time creation and live till end of program", 2, Languages.JAVA, Categories.Inner_Class);
+        insertQuestion(question20);
+    }
+
     //Adding Collections Questions
     private void javaCollectionFrameWork() {
-        Question question1 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Collection_FrameWork);
+        Question question1 = new Question("Which of these packages contain all the collection classes?", "java.lang", "java.util", "java.net", " java.awt", 2, Languages.JAVA, Categories.Collection_FrameWork);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Collection_FrameWork);
+        Question question2 = new Question("Which of these methods deletes all the elements from invoking collection?", "clear()", "reset()", "delete()", "refresh()", 1, Languages.JAVA, Categories.Collection_FrameWork);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Collection_FrameWork);
+        Question question3 = new Question("Which of these classes is not part of Java’s collection framework?", "Maps", "Array", "Stack", "Queue", 1, Languages.JAVA, Categories.Collection_FrameWork);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Collection_FrameWork);
+        Question question4 = new Question("What is Collection in Java?", "A group of objects", "A group of classes", "A group of interfaces", "None of the mentioned", 1, Languages.JAVA, Categories.Collection_FrameWork);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Collection_FrameWork);
+        Question question5 = new Question("The collection", "extends Collections class", "extends Iterable interface", "implements Serializable interface", "implements Traversable interface", 2, Languages.JAVA, Categories.Collection_FrameWork);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Collection_FrameWork);
+        Question question6 = new Question("List, Set and Queue __________ Collection.", "extends", "implements", "both of the above", "None of the above", 1, Languages.JAVA, Categories.Collection_FrameWork);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Collection_FrameWork);
+        Question question7 = new Question("Which among the following stores element in ascending order?", "ArrayList", "HashSet", "TreeSet", "Both A & C", 3, Languages.JAVA, Categories.Collection_FrameWork);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Collection_FrameWork);
+        Question question8 = new Question("Iterator and ListIterator can traverse over", "lists", "sets", "maps", "All of the above", 4, Languages.JAVA, Categories.Collection_FrameWork);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Collection_FrameWork);
+        Question question9 = new Question("Elements of which of the collection can be traversed using Enumeration?", "ArrayList", "Vector", "HashSet", "TreeMap", 2, Languages.JAVA, Categories.Collection_FrameWork);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Collection_FrameWork);
+        Question question10 = new Question("Arraylist, Linkedlist and vector are all ___________", "interface", "class", "enums", "Depends on implementation", 2, Languages.JAVA, Categories.Collection_FrameWork);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Collection_FrameWork);
+        Question question11 = new Question("Which of these methods can be used to move to next element in a collection?", "next()", "hasNext()", "move()", "shuffle()", 1, Languages.JAVA, Categories.Collection_FrameWork);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Collection_FrameWork);
+        Question question12 = new Question("Which of these methods sets every element of a List to a specified object?", "set()", "fill()", "add()", "complete()", 2, Languages.JAVA, Categories.Collection_FrameWork);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Collection_FrameWork);
+        Question question13 = new Question("Which of these return type of hasNext() method of an iterator?", "Integer", "Collections Object", "Double", "Boolean", 4, Languages.JAVA, Categories.Collection_FrameWork);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Collection_FrameWork);
+        Question question14 = new Question("The Comparable interface contains which called?", "toCompare", "compare", "compareTo", "compareWith", 4, Languages.JAVA, Categories.Collection_FrameWork);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Collection_FrameWork);
+        Question question15 = new Question("The default capacity of a ArrayList is:", "12", "16", "32", "10", 1, Languages.JAVA, Categories.Collection_FrameWork);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Collection_FrameWork);
+        Question question16 = new Question("Deque and Queue are derived from:", "AbstractList", "Collection", "AbstractCollection", "List", 1, Languages.JAVA, Categories.Collection_FrameWork);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Collection_FrameWork);
+        Question question17 = new Question("Which interface restricts duplicate elements?", "Set", "List", "Map", "All of these", 1, Languages.JAVA, Categories.Collection_FrameWork);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Collection_FrameWork);
+        Question question18 = new Question("LinkedList implements?", "Deque", "List", "Set", "None", 2, Languages.JAVA, Categories.Collection_FrameWork);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Collection_FrameWork);
+        Question question19 = new Question("Which does not allow to store a null value?", "TreeSet", "LinkedHashSet", "HashSet", "None", 1, Languages.JAVA, Categories.Collection_FrameWork);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Collection_FrameWork);
+        Question question20 = new Question("An ordered array has a search time complexity of?", "O(n)", "O(1)", "O(log n)", "O(n-1)", 1, Languages.JAVA, Categories.Collection_FrameWork);
         insertQuestion(question20);
     }
 
@@ -594,50 +638,6 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         Question question19 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
         insertQuestion(question19);
         Question question20 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
-        insertQuestion(question20);
-    }
-
-    //Adding Inner Classes Questions
-    private void javaInnerClasses() {
-        Question question1 = new Question("Which among the following best describes a nested class?", "Class inside a class", "Class inside a function", "Class inside a package", "Class inside a structure", 1, Languages.JAVA, Categories.Inner_Class);
-        insertQuestion(question1);
-        Question question2 = new Question("How many categories are nested classes divided into?", "2", "3", "4", "5", 1, Languages.JAVA, Categories.Inner_Class);
-        insertQuestion(question2);
-        Question question3 = new Question("Which feature of OOP reduces the use of nested classes?", "Encapsulation", "Inheritance", "Binding", "Binding", 2, Languages.JAVA, Categories.Inner_Class);
-        insertQuestion(question3);
-        Question question4 = new Question("Use of nested class ____________ encapsulation.", "Increases", "Decreases", "Doesn't affect", "Slightly decreases", 1, Languages.JAVA, Categories.Inner_Class);
-        insertQuestion(question4);
-        Question question5 = new Question("The nested class can be declared ____________", "Public", "Private", "Protected", "Public, Protected, Private or Package private", 4, Languages.JAVA, Categories.Inner_Class);
-        insertQuestion(question5);
-        Question question6 = new Question("Which is true about a method-local inner class?", "It must be marked final.", "It can be marked abstract.", "It can be marked public.", "It can be marked static.", 2, Languages.JAVA, Categories.Inner_Class);
-        insertQuestion(question6);
-        Question question7 = new Question("Which constructs an anonymous inner class instance?", "Runnable r = new Runnable() { };", "Runnable r = new Runnable(public void run() { });", "Runnable r = new Runnable {public void run(){}};", "System.out.println(new Runnable(){ public void run(){}});", 4, Languages.JAVA, Categories.Inner_Class);
-        insertQuestion(question7);
-        Question question8 = new Question("Non-static nested classes have access to _____________ from enclosing class.", "Private members", "Protected members", "Public members", "All the members", 4, Languages.JAVA, Categories.Inner_Class);
-        insertQuestion(question8);
-        Question question9 = new Question("Static nested classes doesn't have access to ______________ from enclosing class.", "Private members", "Protected members", "Public members", "Any other members", 4, Languages.JAVA, Categories.Inner_Class);
-        insertQuestion(question9);
-        Question question10 = new Question("Which among the following is the correct advantage/disadvantage of nested classes?", "Makes the code more complex", "Makes the code unreadable", "Makes the code efficient and readable", "Makes the code multithreaded", 3, Languages.JAVA, Categories.Inner_Class);
-        insertQuestion(question10);
-        Question question11 = new Question("How to access static nested classes?", "OuterClass.StaticNestedClass", "OuterClass->StaticNestedClass", "OuterClass(StaticNestedClass)", "OuterClass[StaticNestedClass]", 1, Languages.JAVA, Categories.Inner_Class);
-        insertQuestion(question11);
-        Question question12 = new Question("Instance of inner class can exist only _________ enclosing class.", "Outside", "Private to", "Public to", "Within", 4, Languages.JAVA, Categories.Inner_Class);
-        insertQuestion(question12);
-        Question question13 = new Question("A static nested class is _____________ class in behavior that is nested in another _________ class.", "Top level, top level", "Top level, low level", "Low level, top level", "Low level, low level", 1, Languages.JAVA, Categories.Inner_Class);
-        insertQuestion(question13);
-        Question question14 = new Question("What are local classes?", "Classes declared inside a package", "Classes declared inside a class", "Classes declared inside a function", "Classes declared inside a structure", 3, Languages.JAVA, Categories.Inner_Class);
-        insertQuestion(question14);
-        Question question15 = new Question("Which type of data can a local class access from the function in which it is defined?", "Static and extern", "Abstract and static", "Void and extern", "Const and static", 1, Languages.JAVA, Categories.Inner_Class);
-        insertQuestion(question15);
-        Question question16 = new Question("How many local classes can be defined inside a single function?", "only 1", "2", "5", "As many as required", 4, Languages.JAVA, Categories.Inner_Class);
-        insertQuestion(question16);
-        Question question17 = new Question("How to create object of the inner class?", "OuterClass.InnerClass innerObject = outerObject.new InnerClass();", "OuterClass.InnerClass innerObject = new InnerClass();", "InnerClass innerObject = outerObject.new InnerClass();", "OuterClass.InnerClass = outerObject.new InnerClass();", 1, Languages.JAVA, Categories.Inner_Class);
-        insertQuestion(question17);
-        Question question18 = new Question("All the data members of local class must be ___________", "Defined with declaration", "Defined in constructor", "Declared and defined in constructor", "Declared using a member function", 2, Languages.JAVA, Categories.Inner_Class);
-        insertQuestion(question18);
-        Question question19 = new Question("Can a function, other than the enclosing function of local class, access the class members?", "Yes, using object", " Yes, using direct call", "Yes, using pointer", "No, can’t access", 4, Languages.JAVA, Categories.Inner_Class);
-        insertQuestion(question19);
-        Question question20 = new Question("What is the scope of local class?", "Within the class only", "Within the function ", "Within the program", "One time creation and live till end of program", 2, Languages.JAVA, Categories.Inner_Class);
         insertQuestion(question20);
     }
 
