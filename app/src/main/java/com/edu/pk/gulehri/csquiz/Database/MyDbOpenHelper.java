@@ -423,45 +423,45 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
 
     //Adding Data Structure Questions
     private void javaDataStructure() {
-        Question question1 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Data_Structure);
+        Question question1 = new Question("Which of these best describes an array?", "A data structure that shows a hierarchical behaviour", "Container of objects of similar types", "Arrays are immutable once initialised", "Array is not a data structure", 2, Languages.JAVA, Categories.Data_Structure);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Data_Structure);
+        Question question2 = new Question("How do you instantiate an array in Java?", "int arr[] = new int(3);", "int arr[];", "int arr[] = new int[3];", " int arr() = new int(3);", 3, Languages.JAVA, Categories.Data_Structure);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Data_Structure);
+        Question question3 = new Question("When does the ArrayIndexOutOfBoundsException occur?", "Compile-time", "Run-time", "Not an error", "Not an exception at all", 2, Languages.JAVA, Categories.Data_Structure);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Data_Structure);
+        Question question4 = new Question("What are the advantages of arrays?", "Objects of mixed data types can be stored", "Elements in an array cannot be sorted", "Index of first element of an array is 1", "Easier to store elements of same data type", 4, Languages.JAVA, Categories.Data_Structure);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Data_Structure);
+        Question question5 = new Question("Elements in an array are accessed ________", "randomly", "sequentially", "exponentially", "logarithmically", 1, Languages.JAVA, Categories.Data_Structure);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Data_Structure);
+        Question question6 = new Question("Assuming int is of 4bytes, what is the size of int arr[15];?", "15", "30", "19", "60", 4, Languages.JAVA, Categories.Data_Structure);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Data_Structure);
+        Question question7 = new Question("What are the disadvantages of arrays?", "Data structure like queue or stack cannot be implemented", "chances of wastage of memory space", "Index value of an array can be negative", "Elements are sequentially accessed", 2, Languages.JAVA, Categories.Data_Structure);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Data_Structure);
+        Question question8 = new Question("A linear collection of data elements where the linear node is given by means of pointer is called?", "Linked list", "Node list", "Primitive list", "Unordered list", 1, Languages.JAVA, Categories.Data_Structure);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Data_Structure);
+        Question question9 = new Question("...... is not the operation that can be performed on queue.", "Traversal", "Insertion", " Deletion", "Retrieval", 1, Languages.JAVA, Categories.Data_Structure);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Data_Structure);
+        Question question10 = new Question("What does ‘stack overflow’ refer to?", "accessing item from an undefined stack", "adding items to a full stack", "removing items from an empty stack", "index out of bounds exception", 2, Languages.JAVA, Categories.Data_Structure);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Data_Structure);
+        Question question11 = new Question("A queue follows __________", "FIFO (First In First Out) principle", "LIFO (Last In First Out) principle", "Ordered array", "Linear tree", 1, Languages.JAVA, Categories.Data_Structure);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Data_Structure);
+        Question question12 = new Question("A stack follows __________", "FIFO (First In First Out) principle", "LIFO (Last In First Out) principle", "Ordered array", "Linear tree", 2, Languages.JAVA, Categories.Data_Structure);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Data_Structure);
+        Question question13 = new Question("If the elements “A”, “B”, “C” and “D” are placed in a queue and are deleted one at a time, in what order will they be removed?", "ABCD", "DCBA", "DCAB", "ABDC", 1, Languages.JAVA, Categories.Data_Structure);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Data_Structure);
+        Question question14 = new Question("In linked list implementation of a queue, where does a new element be inserted?", "At the head of link list", "At the centre position in the link list", "At the tail of the link list", "At any position in the linked list", 3, Languages.JAVA, Categories.Data_Structure);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Data_Structure);
+        Question question15 = new Question("Which of the following is false about a doubly linked list?", "We can navigate in both the directions", "It requires more space than a singly linked list", "The insertion and deletion of a node take a bit longer", "Implementing a doubly linked list is easier than singly linked list", 4, Languages.JAVA, Categories.Data_Structure);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Data_Structure);
+        Question question16 = new Question("With what data structure can a priority queue be implemented?", "Array", "List", "Heap", "Tree", 4, Languages.JAVA, Categories.Data_Structure);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Data_Structure);
+        Question question17 = new Question("The number of edges from the root to the node is called __________ of the tree.", "Height", "Depth", "Length", "Width", 2, Languages.JAVA, Categories.Data_Structure);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Data_Structure);
+        Question question18 = new Question("Which of the following is not an advantage of trees?", "Hierarchical structure", "Faster search", "Router algorithms", "Undo/Redo operations in a notepad", 4, Languages.JAVA, Categories.Data_Structure);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Data_Structure);
+        Question question19 = new Question("What data structure is used when converting an infix notation to prefix notation?", "Stack", "Queue", "B-Trees", "Linked-list", 1, Languages.JAVA, Categories.Data_Structure);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Data_Structure);
+        Question question20 = new Question("Which of the following is an infix expression?", "(a+b)*(c+d)", "ab+c*", " +ab", "abc+*", 1, Languages.JAVA, Categories.Data_Structure);
         insertQuestion(question20);
     }
 
