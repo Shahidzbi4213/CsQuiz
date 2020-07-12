@@ -599,45 +599,45 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
 
     //Adding JDBC Questions
     private void javaJDBC() {
-        Question question1 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
+        Question question1 = new Question("Which of the following is advantage of using JDBC connection pool?", " Slow performance", "Using more memory", "Using less memory", "Better performance", 4, Languages.JAVA, Categories.JDBC);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
+        Question question2 = new Question("Which of the following is not a component/class of JDBC API?", "Statement", "ResultSet", "SQLException", " ConnectionPool", 4, Languages.JAVA, Categories.JDBC);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
+        Question question3 = new Question("Which of the following type of JDBC driver, is also called Type 3 JDBC driver?", "JDBC-ODBC Bridge plus ODBC driver", "Native-API, partly Java driver", "JDBC-Net, pure Java driver", "Native-protocol, pure Java driver", 3, Languages.JAVA, Categories.JDBC);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
+        Question question4 = new Question("Where is metadata stored in MySQL?", "In the MySQL database metadata", "In the MySQL database metasql", "In the MySQL database mysql", "None of the above is correct", 3, Languages.JAVA, Categories.JDBC);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
+        Question question5 = new Question("Which JDBC driver Type(s) can be used in either applet or servlet code?", "Both Type 1 and Type 2", "Both Type 1 and Type 3", "Both Type 3 and Type 4", "Type 4 only", 3, Languages.JAVA, Categories.JDBC);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
+        Question question6 = new Question("A JAVA program that uses JDBC, should determine that information is directly from the database system at runtime, to have", "Efficient system", "Robust system", "Active system", "Accurate system", 2, Languages.JAVA, Categories.JDBC);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
+        Question question7 = new Question("Which of the following is used to rollback a JDBC transaction?", "rollback()", "rollover()", "deleteTransaction()", "RemoveTransaction()", 1, Languages.JAVA, Categories.JDBC);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
+        Question question8 = new Question("Which interfaces provide methods for batch processing in JDBC?", "java.sql.Statement", " java.sql.PreparedStatement", "All the above", "None of the above", 3, Languages.JAVA, Categories.JDBC);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
+        Question question9 = new Question("JDBC technology-based drivers generally fit into how many categories?", "4", "3", "5", "2", 1, Languages.JAVA, Categories.JDBC);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
+        Question question10 = new Question("JDBC stands for?", " Java database concept", "Java database connectivity", "Java database communications", "None of the above", 2, Languages.JAVA, Categories.JDBC);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
+        Question question11 = new Question("Which JDBC drivers will run your program?", "The JDBC-ODBC bridge", "The JDBC driver manager", "The JDBC driver test suite", "None of the above", 3, Languages.JAVA, Categories.JDBC);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
+        Question question12 = new Question("The interface ResultSet has a method, getMetaData(), that returns a/an", "Tuple", "Value", "Object", "Result", 3, Languages.JAVA, Categories.JDBC);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
+        Question question13 = new Question("Abbreviate the term UDA?", " Unified Data Access", "Universal Data Access", "Universal Digital Access", "Uniform Data Access", 2, Languages.JAVA, Categories.JDBC);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
+        Question question14 = new Question("Which of the following contains both date and time?", "java.io.date", "java.sql.date", "java.util.date", "java.util.dateTime", 4, Languages.JAVA, Categories.JDBC);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
+        Question question15 = new Question("Which of the following is method of JDBC batch process?", "setBatch()", "deleteBatch()", "removeBatch()", "addBatch()", 4, Languages.JAVA, Categories.JDBC);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
+        Question question16 = new Question("Which of the following is not a JDBC connection isolation levels?", "TRANSACTION_NONE", "TRANSACTION_READ_COMMITTED", "TRANSACTION_REPEATABLE_READ", "TRANSACTION_NONREPEATABLE_READ", 4, Languages.JAVA, Categories.JDBC);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
+        Question question17 = new Question("Which of the following is used to call stored procedure?", "Statement", "PreparedStatement", "CallableStatement", "CalledStatement", 3, Languages.JAVA, Categories.JDBC);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
+        Question question18 = new Question("Which of the following is used to limit the number of rows returned?", "setMaxRows(int i)", "setMinRows(int i)", "getMaxRows(int i)", "getMinRows(int i)", 1, Languages.JAVA, Categories.JDBC);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
+        Question question19 = new Question("Which packages contain the JDBC classes?", "java.jdbc and javax.jdbc", "java.jdbc and java.jdbc.sql", "java.sql and javax.sql", "java.rdb and javax.rdb", 3, Languages.JAVA, Categories.JDBC);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.JAVA, Categories.JDBC);
+        Question question20 = new Question("Which one of the following contains date information?", "java.sql.TimeStamp", " java.sql.Time", "java.io.Time", "java.io.TimeStamp", 1, Languages.JAVA, Categories.JDBC);
         insertQuestion(question20);
     }
 
