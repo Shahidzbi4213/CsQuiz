@@ -643,45 +643,45 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
 
     //Adding Interfaces Questions
     private void javaInterfaces() {
-        Question question1 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Interfaces);
+        Question question1 = new Question("Which of these can be used to fully abstract a class from its implementation?", "Objects", "Packages", "Interfaces", "None of the Mentioned", 3, Languages.JAVA, Categories.Interfaces);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Interfaces);
+        Question question2 = new Question("What type of variable can be defined in an interface?", "public static", "private final", "public final", "static final", 4, Languages.JAVA, Categories.Interfaces);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Interfaces);
+        Question question3 = new Question("Which of these keywords is used by a class to use an interface defined previously?", "import", "Import", "implements", "Implements", 3, Languages.JAVA, Categories.Interfaces);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Interfaces);
+        Question question4 = new Question("Which of the following is the correct way of implementing an interface salary by class manager?", "class manager extends salary {}", "class manager implements salary {}", "class manager imports salary {}", "none of the mentioned", 2, Languages.JAVA, Categories.Interfaces);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Interfaces);
+        Question question5 = new Question("What does an interface contain?", "Method definition", " Method declaration", "Method declaration and definition", "Method Name", 2, Languages.JAVA, Categories.Interfaces);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Interfaces);
+        Question question6 = new Question("What happens when a constructor is defined for an interface?", "Compilation failure", "Runtime Exception", "The interface compiles successfully", "The implementing class will throw exception", 1, Languages.JAVA, Categories.Interfaces);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Interfaces);
+        Question question7 = new Question("What type of methods an interface contain by default?", "abstract", "static", "final", "private", 1, Languages.JAVA, Categories.Interfaces);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Interfaces);
+        Question question8 = new Question("Which of the following access specifiers can be used for an interface?", "Protected", "Private", "Public", "Public, protected, private", 1, Languages.JAVA, Categories.Interfaces);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Interfaces);
+        Question question9 = new Question("What happens when we access the same variable defined in two interfaces implemented by the same class?", " Compilation failure", "Runtime Exception", "The JVM is not able to identify the correct variable", "The interfaceName.variableName needs to be defined", 4, Languages.JAVA, Categories.Interfaces);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Interfaces);
+        Question question10 = new Question("Which of these keywords is used to define interfaces in Java?", "interface", "Interface", "intf", "Intf", 1, Languages.JAVA, Categories.Interfaces);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Interfaces);
+        Question question11 = new Question("Which is correct option about java interface?", "Interface is used to achieve multiple inheritance in java", "Object of an interface cannot be created", "An interface can extend another interface", "All of the above", 4, Languages.JAVA, Categories.Interfaces);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Interfaces);
+        Question question12 = new Question("Which is true statements about an interface in java?", "An interface can extend another interface", "We can create object of an interface in java", "An interface can have constructor", "None", 1, Languages.JAVA, Categories.Interfaces);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Interfaces);
+        Question question13 = new Question("Which of the following is a use of interface?", " Code Reusability", " Runtime Polymorphism ", "Data Encapsulation", "Less Memory", 2, Languages.JAVA, Categories.Interfaces);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Interfaces);
+        Question question14 = new Question("What type of inheritance is facilitated by interfaces?", "Feature Based", "Role Based", "Method Based", "None of the above", 2, Languages.JAVA, Categories.Interfaces);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Interfaces);
+        Question question15 = new Question("When a class A implements an interface B, what relation is created b/w them?", "A is B", "A has B", "B is A", "B has A", 1, Languages.JAVA, Categories.Interfaces);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Interfaces);
+        Question question16 = new Question("Which of the following can't be a member of an interface?", "Constructors", "Static Methods", "on Static Data Members", "All of these", 4, Languages.JAVA, Categories.Interfaces);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Interfaces);
+        Question question17 = new Question("What will happen if we provide concrete implementation of method in interface?", "Runtime exception is thrown", "Compilation failure", "Method not found exception is thrown", "Concrete class don't this implementation", 2, Languages.JAVA, Categories.Interfaces);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Interfaces);
+        Question question18 = new Question("Can an interface ever contain method bodies?", "Yes", "No", "Always", "Sometimes", 2, Languages.JAVA, Categories.Interfaces);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Interfaces);
+        Question question19 = new Question("Can an interface be given the private access modifier? ", "No- then the interface could never be used", "No- since only private classes could use the interface", "Yes- this would make all of its methods and constants private", "Yes- depend on situation", 1, Languages.JAVA, Categories.Interfaces);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Interfaces);
+        Question question20 = new Question("What is an interface?", "collection of constants and method declarations.", "class that a child class can extend.", "collection of GUI components", "collection of public methods of a class", 1, Languages.JAVA, Categories.Interfaces);
         insertQuestion(question20);
     }
 
