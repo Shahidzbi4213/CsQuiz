@@ -65,7 +65,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         javaCollectionFrameWork();
         javaInnerClasses();
         javaInterfaces();
-        javaEnums();
+        javaGUI();
         javaJDBC();
     }
 
@@ -554,46 +554,46 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
     }
 
     //Adding Enums Questions
-    private void javaEnums() {
-        Question question1 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Enums);
+    private void javaGUI() {
+        Question question1 = new Question("Which of these package is used for graphical user interface?", "java.applet", "java.awt", "java.io", "java.awt.image", 2, Languages.JAVA, Categories.GUI);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Enums);
+        Question question2 = new Question("Which of these class is super class of all the events?", "EventObject", "EventClass", "ActionEvent", "ItemEvent", 1, Languages.JAVA, Categories.GUI);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Enums);
+        Question question3 = new Question("Which object can be constructed to show any number of choices in the visible window?", "Labels", "List", "Checkbox", "Choice", 2, Languages.JAVA, Categories.GUI);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Enums);
+        Question question4 = new Question("Which method is used to set the graphics current color to the specified color in the graphics class?", "setFont(Font font)", "setColor(Color c)", "drawString(String str, int x, int y)", "None of the above", 2, Languages.JAVA, Categories.GUI);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Enums);
+        Question question5 = new Question("AWT Stands for ?", "Applet Windowing Toolkit", "Absolute Windowing Toolkit", "Abstract Windowing Toolkit", "None of the above", 3, Languages.JAVA, Categories.GUI);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Enums);
+        Question question6 = new Question("Which class is used for this Processing Method processActionEvent()?", "Button,List,MenuItem", "Button,Checkbox,Choice", "Scrollbar,Component,Button", "None of the above", 1, Languages.JAVA, Categories.GUI);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Enums);
+        Question question7 = new Question("Which method can set or change the text in a Label?", "getText()", "writeText()", "setText()", "All", 3, Languages.JAVA, Categories.GUI);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Enums);
+        Question question8 = new Question("Which is a component in AWT that can contain another components like buttons, textfields, labels etc.?", "Window", "Panel", "Frame", " Container", 4, Languages.JAVA, Categories.GUI);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Enums);
+        Question question9 = new Question("Which package provides many event classes and Listener interfaces for event handling?", "java.awt", "java.awt.Graphics", "java.awt.event", "None of the above", 3, Languages.JAVA, Categories.GUI);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Enums);
+        Question question10 = new Question("Which of the following sets the frame to 300 pixels wide by 200 high?", "frm.setSize(300, 200);", "frm.setSize(200, 300);", " frm.paint(300, 200);", "frm.setVisible(300, 200);", 1, Languages.JAVA, Categories.GUI);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Enums);
+        Question question11 = new Question("What is the one component that nearly all GUI programs will have?", "Button", "Monitor", "Mouse", "Frame", 4, Languages.JAVA, Categories.GUI);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Enums);
+        Question question12 = new Question("The three software parts of a GUI program are:", " Windows, Buttons, Mice", " GUI Components, Graphics, Code", "GUI Components, Event Listeners, Application Code", "Frames, Code, Events", 3, Languages.JAVA, Categories.GUI);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Enums);
+        Question question13 = new Question(" What is a Graphics object?", "The part of the Frame that you can draw on.", "The whole Frame.", "The entire monitor.", "The graphics board.", 1, Languages.JAVA, Categories.GUI);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Enums);
+        Question question14 = new Question("Which class provides many methods for graphics programming?", "java.awt", "java.Graphics", "java.awt.Graphics", "None of the above", 3, Languages.JAVA, Categories.GUI);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Enums);
+        Question question15 = new Question("Swing components that don't rely on native GUI are referred to as ______.", "lightweight components", "heavyweight components", "GUI components", " Non-GUI components", 1, Languages.JAVA, Categories.GUI);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Enums);
+        Question question16 = new Question("Which of these methods can be used to know which key is pressed ?", "getActionEvent()", "getActionKey()", "getModifier()", "getKey()", 3, Languages.JAVA, Categories.GUI);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Enums);
+        Question question17 = new Question("Which of the following classes is a heavyweight component?", "JButton", "JTextField", "JPanel", "JFrame", 4, Languages.JAVA, Categories.GUI);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Enums);
+        Question question18 = new Question("Which component cannot be added to a container?", "JButton", "JPanel", "JFrame", "JComponent", 3, Languages.JAVA, Categories.GUI);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Enums);
+        Question question19 = new Question("What is best to describe the relationship between JComponent and JButton?", "Association", "Aggregation", "Composition", "Inheritance", 4, Languages.JAVA, Categories.GUI);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.JAVA, Categories.Enums);
+        Question question20 = new Question("Where can the event handling code be written?", "Same class", "Other class", "Anonymous class", "All mentioned above", 4, Languages.JAVA, Categories.GUI);
         insertQuestion(question20);
     }
 
@@ -706,14 +706,14 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories7);
         Categories categories8 = new Categories("Inner Class", Languages.JAVA);
         insertCategory(categories8);
-        Categories categories9 = new Categories("Enums", Languages.JAVA);
-        insertCategory(categories9);
         Categories categories10 = new Categories("Data Structure", Languages.JAVA);
         insertCategory(categories10);
         Categories categories11 = new Categories("Collection FrameWork", Languages.JAVA);
         insertCategory(categories11);
         Categories categories12 = new Categories("JDBC", Languages.JAVA);
         insertCategory(categories12);
+        Categories categories9 = new Categories("GUI", Languages.JAVA);
+        insertCategory(categories9);
 
     }
 

@@ -19,7 +19,7 @@ public class Categories {
 
     public static final String Multi_Threading = " Multi Threading";
     public static final String Inner_Class = "Inner Class";
-    public static final String Enums = "Enums";
+    public static final String GUI = "GUI";
 
     public static final String Data_Structure = "Data Structure";
     public static final String Collection_FrameWork = "Collection FrameWork";
@@ -43,7 +43,7 @@ public class Categories {
                     new Categories("EXCEPTION Handling", Languages.JAVA),
                     new Categories("Multi Threading", Languages.JAVA),
                     new Categories("Inner Class", Languages.JAVA),
-                    new Categories("Enums", Languages.JAVA),
+                    new Categories("GUI", Languages.JAVA),
                     new Categories("Data Structure", Languages.JAVA),
                     new Categories("Collection FrameWork", Languages.JAVA),
                     new Categories("JDBC", Languages.JAVA),
