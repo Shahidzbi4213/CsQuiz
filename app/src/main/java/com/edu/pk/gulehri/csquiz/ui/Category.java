@@ -5,6 +5,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -21,6 +22,7 @@ public class Category extends AppCompatActivity {
     private static final String TAG = "myTag";
     private Toolbar toolbar;
     private String Language;
+    private TextView mTitle;
     public static RecyclerView mRecyclerView;
 
     //Helper Class Variable to get reference
@@ -35,6 +37,7 @@ public class Category extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
         toolbar = findViewById(R.id.mtoolbar);
+        mTitle = toolbar.findViewById(R.id.toolBarTitle);
         mRecyclerView = findViewById(R.id.category);
         helper = new MyDbOpenHelper(this);
 
@@ -57,10 +60,12 @@ public class Category extends AppCompatActivity {
         if (!QuizActivity.check) {
             //Storing value of Language name and passing it it getCategory method
             Language = intent.getStringExtra(LanguageAdaptor.LANGUAGE_POSITION);
+            mTitle.setText(Language);
             mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
             mRecyclerView.setAdapter(new MyAdaptor(this, helper.getCategory(Language)));
         } else {
             String lang = intent.getStringExtra("LANG_NAME");
+            mTitle.setText(lang);
             mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
             mRecyclerView.setAdapter(new MyAdaptor(this, helper.getCategory(lang)));
         }
