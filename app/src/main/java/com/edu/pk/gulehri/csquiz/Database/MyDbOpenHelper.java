@@ -553,7 +553,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
-    //Adding Enums Questions
+    //Adding GUI Questions
     private void javaGUI() {
         Question question1 = new Question("Which of these package is used for graphical user interface?", "java.applet", "java.awt", "java.io", "java.awt.image", 2, Languages.JAVA, Categories.GUI);
         insertQuestion(question1);
