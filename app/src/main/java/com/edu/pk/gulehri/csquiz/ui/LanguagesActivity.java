@@ -17,7 +17,6 @@ public class LanguagesActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
     private Toolbar toolbar;
-    private static long backPressedTime;
     private static boolean flag;
 
     @Override
@@ -25,11 +24,8 @@ public class LanguagesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_languages);
 
-
         toolbar = findViewById(R.id.myToolbar);
-
         try {
-
             setSupportActionBar(toolbar);
             getSupportActionBar().setDisplayShowTitleEnabled(false);
 
@@ -38,13 +34,13 @@ public class LanguagesActivity extends AppCompatActivity {
             getSupportActionBar().setHomeButtonEnabled(true);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
         } catch (NullPointerException e) {
         }
 
         mRecyclerView = findViewById(R.id.languages);
         mRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         mRecyclerView.setAdapter(new LanguageAdaptor(this));
+
     }
 
     @Override

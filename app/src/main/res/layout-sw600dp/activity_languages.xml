@@ -8,7 +8,8 @@
     tools:context=".ui.LanguagesActivity">
 
 
-    <include layout="@layout/language_toolbar" />
+    <include layout="@layout/language_toolbar"
+        android:fitsSystemWindows="true"/>
 
 
     <androidx.recyclerview.widget.RecyclerView

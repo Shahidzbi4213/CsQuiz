@@ -9,20 +9,20 @@ public class Categories {
     public int id;
 
     public static final String BASICS = "Basics";
-    public static final String Data_Types = "Data Types";
+    public static final String DATA_TYPES = "Data Types";
     public static final String OOP = "OOP";
 
-    public static final String Keywords = "Keywords";
-    public static final String Function = "Function";
-    public static final String Interfaces = "Interfaces";
-    public static final String Exception_Handling = "EXCEPTION Handling";
+    public static final String KEYWORDS = "Keywords";
+    public static final String FUNCTION = "Function";
+    public static final String INTERFACES = "Interfaces";
+    public static final String EXCEPTION_HANDLING = "EXCEPTION Handling";
 
-    public static final String Multi_Threading = " Multi Threading";
-    public static final String Inner_Class = "Inner Class";
+    public static final String MULTI_THREADING = "MULTI THREADING";
+    public static final String INNER_CLASS = "Inner Class";
     public static final String GUI = "GUI";
 
-    public static final String Data_Structure = "Data Structure";
-    public static final String Collection_FrameWork = "Collection FrameWork";
+    public static final String DATA_STRUCTURE = "Data Structure";
+    public static final String COLLECTION_FRAME_WORK = "Collection FrameWork";
     public static final String JDBC = "JDBC";
     public static final String Android = "Android";
 
@@ -41,7 +41,7 @@ public class Categories {
                     new Categories("Keywords", Languages.JAVA),
                     new Categories("Interfaces", Languages.JAVA),
                     new Categories("EXCEPTION Handling", Languages.JAVA),
-                    new Categories("Multi Threading", Languages.JAVA),
+                    new Categories("MULTI THREADING", Languages.JAVA),
                     new Categories("Inner Class", Languages.JAVA),
                     new Categories("GUI", Languages.JAVA),
                     new Categories("Data Structure", Languages.JAVA),

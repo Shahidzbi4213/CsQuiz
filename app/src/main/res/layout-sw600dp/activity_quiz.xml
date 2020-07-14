@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1f1f1d"
-    android:fitsSystemWindows="true"
     android:orientation="vertical"
     android:weightSum="5"
     tools:context=".ui.QuizActivity">
@@ -22,7 +21,7 @@
             android:id="@+id/content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
             tools:ignore="UselessParent">
 
             <TextView
@@ -31,19 +30,21 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_gravity="start"
-                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:elevation="@dimen/_2sdp"
                 android:fontFamily="@font/asap_medium_italic"
                 android:paddingStart="@dimen/_10sdp"
                 android:paddingEnd="@dimen/_10sdp"
                 android:textColor="@android:color/black"
-                android:textSize="@dimen/_18sdp" />
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="normal" />
 
             <ticker.views.com.ticker.widgets.circular.timer.view.CircularView
                 android:id="@+id/circular_view_with_timer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_2sdp"
                 android:fontFamily="@font/asap_medium_italic"
                 android:freezesText="true"
                 app:m_arc_stroke_color="#FFFFFF"
@@ -56,7 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:elevation="@dimen/_2sdp"
                 android:fontFamily="@font/asap_medium_italic"
                 android:gravity="center"
@@ -98,9 +99,9 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_minus60sdp"
-        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
         android:layout_weight="1.3"
         android:background="@drawable/linearlayout">
 
@@ -109,8 +110,8 @@
             android:id="@+id/question"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:elevation="@dimen/_20sdp"
-            android:fontFamily="@font/asap_medium_italic"
+            android:elevation="@dimen/_5sdp"
+            android:fontFamily="@font/abeezee_italic"
             android:gravity="center"
             android:paddingStart="@dimen/_5sdp"
             android:paddingEnd="@dimen/_5sdp"
@@ -143,7 +144,7 @@
             android:layout_weight="1.2"
             android:background="@drawable/button_background"
             android:button="@null"
-            android:fontFamily="@font/asap_medium_italic"
+            android:fontFamily="@font/abeezee_italic"
             android:freezesText="true"
             android:gravity="center"
             android:padding="@dimen/_8sdp"
@@ -158,7 +159,7 @@
             android:layout_weight="1.2"
             android:background="@drawable/button_background"
             android:button="@null"
-            android:fontFamily="@font/asap_medium_italic"
+            android:fontFamily="@font/abeezee_italic"
             android:freezesText="true"
             android:gravity="center"
             android:padding="@dimen/_8sdp"
@@ -173,7 +174,7 @@
             android:layout_weight="1.2"
             android:background="@drawable/button_background"
             android:button="@null"
-            android:fontFamily="@font/asap_medium_italic"
+            android:fontFamily="@font/abeezee_italic"
             android:freezesText="true"
             android:gravity="center"
             android:padding="@dimen/_8sdp"
@@ -188,7 +189,7 @@
             android:layout_weight="1.2"
             android:background="@drawable/button_background"
             android:button="@null"
-            android:fontFamily="@font/asap_medium_italic"
+            android:fontFamily="@font/abeezee_italic"
             android:freezesText="true"
             android:gravity="center"
             android:padding="@dimen/_8sdp"
@@ -213,8 +214,7 @@
             android:text="@string/changeToConfirm"
             android:textAllCaps="false"
             android:textColor="@android:color/black"
-            android:textSize="@dimen/_17sdp"
-            android:textStyle="bold" />
+            android:textSize="@dimen/_17sdp" />
     </RadioGroup>
 
 

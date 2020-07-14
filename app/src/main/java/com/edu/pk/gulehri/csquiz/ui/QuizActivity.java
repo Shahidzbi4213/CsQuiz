@@ -136,6 +136,7 @@ public class QuizActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate: QuizActivity ");
     }
 
+
     //Here we take reference of all the views
     private void setReferences() {
         mradioGroup = findViewById(R.id.radio_group);
@@ -594,9 +595,9 @@ public class QuizActivity extends AppCompatActivity {
         playAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                check=true;
+                check = true;
                 Intent myIntent = new Intent(QuizActivity.this, Category.class);
-                myIntent.putExtra("LANG_NAME",language);
+                myIntent.putExtra("LANG_NAME", language);
                 startActivity(myIntent);
                 finish();
             }
@@ -638,7 +639,7 @@ public class QuizActivity extends AppCompatActivity {
 
             check = true;
             Intent intent = new Intent(this, Category.class);
-            intent.putExtra("LANG_NAME",language);
+            intent.putExtra("LANG_NAME", language);
             startActivity(intent);
             //When intent is send the object of current Activity will destroy
             finish();

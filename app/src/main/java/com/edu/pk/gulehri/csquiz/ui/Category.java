@@ -1,10 +1,12 @@
 package com.edu.pk.gulehri.csquiz.ui;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,6 +37,7 @@ public class Category extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_category);
         toolbar = findViewById(R.id.mtoolbar);
         mTitle = toolbar.findViewById(R.id.toolBarTitle);
@@ -50,6 +53,8 @@ public class Category extends AppCompatActivity {
             getSupportActionBar().setHomeAsUpIndicator(backArrow);
             getSupportActionBar().setHomeButtonEnabled(true);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
 
 
         } catch (NullPointerException e) {

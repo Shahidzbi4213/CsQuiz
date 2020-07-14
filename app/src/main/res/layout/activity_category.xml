@@ -9,8 +9,7 @@
     tools:context=".ui.Category">
 
 
-    <include layout="@layout/tool_bar"
-        />
+    <include layout="@layout/tool_bar" />
 
 
     <androidx.recyclerview.widget.RecyclerView
