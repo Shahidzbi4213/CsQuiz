@@ -1,5 +1,6 @@
 package com.edu.pk.gulehri.csquiz.adaptor;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -63,6 +64,7 @@ public class MyAdaptor extends RecyclerView.Adapter<MyAdaptor.MyViewHolder> {
                 intent.putExtra(LANGUAGE, language);
                 context.startActivity(intent);
                 //Toast.makeText(context, ITEM_NAME, Toast.LENGTH_SHORT).show();
+                ((Activity)context).finish();
             }
         });
     }

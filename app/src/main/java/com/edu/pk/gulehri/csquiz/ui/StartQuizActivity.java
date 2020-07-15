@@ -85,6 +85,7 @@ public class StartQuizActivity extends AppCompatActivity {
         exitApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                finish();
                 System.exit(0);
             }
         });
