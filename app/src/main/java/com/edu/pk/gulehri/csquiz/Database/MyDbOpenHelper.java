@@ -378,7 +378,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
 
     //Adding Multi Treading Questions
     private void javaMultiThreading() {
-        Question question1 = new Question("What is multithreaded programming?", "It’s a process in which two different processes run simultaneously.", "It’s a process in which two or more parts of same process run simultaneously.", " Its a process in which many different process are able to access same information.", "Its a process in which a single process can access information from many sources.", 2, Languages.JAVA, Categories.MULTI_THREADING);
+        Question question1 = new Question("Multithreaded programming is a process?", "where two different processes run simultaneously", "where two or more parts of same process run simultaneously.", " where many different process are able to access same information.", "where a single process can access information from many sources.", 2, Languages.JAVA, Categories.MULTI_THREADING);
         insertQuestion(question1);
         Question question2 = new Question("What is maximum thread priority in Java", "5", "10", "12", "15", 2, Languages.JAVA, Categories.MULTI_THREADING);
         insertQuestion(question2);

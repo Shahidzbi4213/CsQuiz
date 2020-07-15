@@ -3,9 +3,9 @@
     android:id="@+id/mtoolbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#141823"
-    android:paddingTop="@dimen/_20sdp"
-    android:elevation="@dimen/_2sdp">
+    android:background="#0f52ba"
+    android:elevation="@dimen/_10sdp"
+    android:paddingTop="@dimen/_20sdp">
 
     <TextView
         android:id="@+id/toolBarTitle"
