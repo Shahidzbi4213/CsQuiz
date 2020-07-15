@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
         <item>@font/abeezee_italic</item>
+        <item>@font/adamina</item>
         <item>@font/asap_medium_italic</item>
         <item>@font/baloo</item>
+        <item>@font/croissant_one</item>
+        <item>@font/droid_sans</item>
+        <item>@font/kite_one</item>
         <item>@font/mukta_vaani_bold</item>
+        <item>@font/ropa_sans</item>
         <item>@font/supermercado_one</item>
     </array>
 </resources>
