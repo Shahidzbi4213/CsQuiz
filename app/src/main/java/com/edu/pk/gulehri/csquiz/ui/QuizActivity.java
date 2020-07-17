@@ -121,7 +121,7 @@ public class QuizActivity extends AppCompatActivity {
 
 
         //Getting question of selected category and storing it list
-        questionList = helper.getAllData(category, 10, language);
+        questionList = helper.getAllData(category, language);
 
         //This giver us the number of total question in the list
         questionTotal = questionList.size();

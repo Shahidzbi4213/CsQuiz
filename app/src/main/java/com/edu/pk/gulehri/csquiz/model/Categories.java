@@ -3,10 +3,12 @@ package com.edu.pk.gulehri.csquiz.model;
 
 public class Categories {
 
+
     public String category;
     public String language;
 
     public int id;
+
 
     public static final String BASICS = "Basics";
     public static final String DATA_TYPES = "Data Types";
@@ -24,6 +26,17 @@ public class Categories {
     public static final String DATA_STRUCTURE = "Data Structure";
     public static final String COLLECTION_FRAME_WORK = "Collection FrameWork";
     public static final String JDBC = "JDBC";
+
+    public static final String TAGS1 = "Tags-1";
+    public static final String TAGS2 = "Tags-2";
+    public static final String LISTS = "Lists";
+    public static final String LAYOUTS = "Layouts";
+    public static final String MEDIA = "MEDIA";
+    public static final String GRAPHICS = "Graphics";
+    public static final String FORMS = "FORM";
+    public static final String API = "Api";
+
+
     public static final String Android = "Android";
 
 
@@ -47,6 +60,17 @@ public class Categories {
                     new Categories("Data Structure", Languages.JAVA),
                     new Categories("Collection FrameWork", Languages.JAVA),
                     new Categories("JDBC", Languages.JAVA),
+
+                    new Categories("Basics", Languages.HTML),
+                    new Categories("Tags-1", Languages.HTML),
+                    new Categories("Tags-2", Languages.HTML),
+                    new Categories("Lists", Languages.HTML),
+                    new Categories("Layouts", Languages.HTML),
+                    new Categories("MEDIA", Languages.HTML),
+                    new Categories("Graphics", Languages.HTML),
+                    new Categories("FORM", Languages.HTML),
+                    new Categories("Api", Languages.HTML),
+
 
                     new Categories("Intents", Languages.ANDROID)
             };

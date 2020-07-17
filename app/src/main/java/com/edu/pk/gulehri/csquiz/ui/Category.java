@@ -32,6 +32,7 @@ public class Category extends AppCompatActivity {
     private static boolean flag;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,9 +52,6 @@ public class Category extends AppCompatActivity {
             getSupportActionBar().setHomeAsUpIndicator(backArrow);
             getSupportActionBar().setHomeButtonEnabled(true);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-
-
 
         } catch (NullPointerException e) {
         }

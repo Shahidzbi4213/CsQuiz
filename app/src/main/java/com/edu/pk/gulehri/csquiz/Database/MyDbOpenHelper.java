@@ -54,6 +54,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
 
     private void addQuestions() {
 
+        //Java
         javaBasicQuestions();
         javaKeywordQuestions();
         javaDataTypesQuestions();
@@ -67,6 +68,18 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         javaInterfaces();
         javaGUI();
         javaJDBC();
+
+        //Html
+        htmlBasics();
+        htmlTagsFirst();
+        htmllTagsSecond();
+        htmlApi();
+        htmlForms();
+        htmlList();
+        htmlMedia();
+        htmlLayouts();
+        htmlGraphics();
+
     }
 
     private void addCategory() {
@@ -686,6 +699,403 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
     }
 
 
+    //Adding Html Basics Questions
+    private void htmlBasics() {
+        Question question1 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        insertQuestion(question20);
+    }
+
+    //Adding Html Tags Questions
+    private void htmlTagsFirst() {
+        Question question1 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS1);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS1);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS1);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS1);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS1);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS1);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS1);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS1);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS1);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS1);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS1);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS1);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS1);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS1);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS1);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS1);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS1);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS1);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS1);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS1);
+        insertQuestion(question20);
+    }
+
+    //Adding Html Tags Questions
+    private void htmllTagsSecond() {
+        Question question1 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        insertQuestion(question20);
+    }
+
+    //Adding Html Lists Questions
+    private void htmlList() {
+        Question question1 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        insertQuestion(question20);
+    }
+
+    //Adding Html Layouts Questions
+    private void htmlLayouts() {
+        Question question1 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        insertQuestion(question20);
+    }
+
+    //Adding Html Forms Questions
+    private void htmlForms() {
+        Question question1 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        insertQuestion(question20);
+    }
+
+    //Adding Html Graphics Questions
+    private void htmlGraphics() {
+        Question question1 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question20);
+    }
+
+    //Adding Html Media Questions
+    private void htmlMedia() {
+        Question question1 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question20);
+    }
+
+    //Adding Html API Questions
+    private void htmlApi() {
+        Question question1 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        insertQuestion(question20);
+    }
+
+
     //Java Category
     private void javaCategory() {
         Categories categories1 = new Categories("Basics", Languages.JAVA);
@@ -862,21 +1272,24 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
     private void html() {
         Categories categories1 = new Categories("Basics", Languages.HTML);
         insertCategory(categories1);
-        Categories categories2 = new Categories("Tags", Languages.HTML);
+        Categories categories2 = new Categories("Tags-1", Languages.HTML);
         insertCategory(categories2);
-        Categories categories3 = new Categories("List", Languages.HTML);
+        Categories categories22 = new Categories("Tags-2", Languages.HTML);
+        insertCategory(categories22);
+        Categories categories3 = new Categories("Lists", Languages.HTML);
         insertCategory(categories3);
         Categories categories4 = new Categories("Layout", Languages.HTML);
         insertCategory(categories4);
-        Categories categories5 = new Categories("Form", Languages.HTML);
+        Categories categories5 = new Categories("Forms", Languages.HTML);
         insertCategory(categories5);
         Categories categories6 = new Categories("Graphics", Languages.HTML);
         insertCategory(categories6);
         Categories categories7 = new Categories("Media", Languages.HTML);
         insertCategory(categories7);
-        Categories categories8 = new Categories("API's", Languages.HTML);
+        Categories categories8 = new Categories("API", Languages.HTML);
         insertCategory(categories8);
     }
+
 
     //Php
     private void php() {
@@ -931,32 +1344,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
 
     }
 
-    public List<Question> getAllData() {
-        List<Question> questionsList = new ArrayList<>();
-        db = getReadableDatabase();
-
-        String selection = Constants.COLUMN_CATEGORY + " = ?";
-        String[] selectionArgs = {};
-
-
-        Cursor c = db.query(Constants.TABLE_FIRST, Constants.ALL_COLUMNS, null, null, null, null, null);
-        if (c.moveToFirst()) {
-            do {
-                Question questions = new Question();
-                questions.setQuestion(c.getString(c.getColumnIndex(Constants.COLUMNS_QUESTION)));
-                questions.setOption1(c.getString(c.getColumnIndex(Constants.COLUMNS_OPTION1)));
-                questions.setOption2(c.getString(c.getColumnIndex(Constants.COLUMNS_OPTION2)));
-                questions.setOption3(c.getString(c.getColumnIndex(Constants.COLUMNS_OPTION3)));
-                questions.setOption4(c.getString(c.getColumnIndex(Constants.COLUMNS_OPTION4)));
-                questions.setAnswer(c.getInt(c.getColumnIndex(Constants.ANSWER)));
-                questionsList.add(questions);
-            } while (c.moveToNext());
-        }
-        c.close();
-        return questionsList;
-    }
-
-    public List<Question> getAllData(String Category, int number, String Language) {
+    public List<Question> getAllData(String Category, String Language) {
         List<Question> questionsList = new ArrayList<>();
         db = getReadableDatabase();
 
