@@ -701,45 +701,45 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
 
     //Adding Html Basics Questions
     private void htmlBasics() {
-        Question question1 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        Question question1 = new Question("HTML is what type of language ?", "Scripting Language", "Markup Language", "Programming Language", "Network Protocol", 2, Languages.HTML, Categories.BASICS);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        Question question2 = new Question("HTML uses", "User defined tags", "Pre-specified tags", "Fixed tags defined by the language", "Tags only for linking", 3, Languages.HTML, Categories.BASICS);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        Question question3 = new Question("The year in which HTML was first proposed _______.", "1990", "1995", "2000", "2005",1 , Languages.HTML, Categories.BASICS);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        Question question4 = new Question("What is the full form of HTML?", "Hyper Teach Markup Language", "Hyper Tech Markup Language", "Hyper Tech Makeup Language", "Hyper Text Markup Language", 4, Languages.HTML, Categories.BASICS);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        Question question5 = new Question("What should be the first tag in any HTML document?", "<head>", "<title>", "<html>", "<body>", 3, Languages.HTML, Categories.BASICS);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        Question question6 = new Question("HTML web pages can be read and rendered by _________.", "Compiler", "Server", "Web Browser", "Interpreter",3 , Languages.HTML, Categories.BASICS);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        Question question7 = new Question("HTML tags are surrounded by which type of brackets.", "Curly", "Square", "Round", "Angle",4 , Languages.HTML, Categories.BASICS);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        Question question8 = new Question("HTML documents stored in the file in the form ______", ".hxm", ".htm or .html", ".hm", ".hml", 2, Languages.HTML, Categories.BASICS);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        Question question9 = new Question("Which attribute sets the text direction as related to lang attribute.", " Sub", "Ds", "Lang", "Dir",3 , Languages.HTML, Categories.BASICS);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        Question question10 = new Question("Choose the correct tag for the largest heading in HTML.", "h1", "h3", "h4", "h6",1 , Languages.HTML, Categories.BASICS);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        Question question11 = new Question("In which part of the HTML metadata is contained?", "body tag", "hmtl tag", "head tag", "title tag",3 , Languages.HTML, Categories.BASICS);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        Question question12 = new Question("Which feature was already introduced before HTML5?", "Canvas/SVG", "Video", "Geolocation", "Frames", 4, Languages.HTML, Categories.BASICS);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        Question question13 = new Question("What is the correct syntax of doctype in HTML5?", "<doctype html!>", "<!doctype html>", "<doctype html>", "</doctype html>",2 , Languages.HTML, Categories.BASICS);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        Question question14 = new Question("Which tag supports Non-English language?", "<input>", "<audio>", "<embed>", "<bdo>",4 , Languages.HTML, Categories.BASICS);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        Question question15 = new Question("Which of the following is not supported in HTML5?", "scheme", "content", "http-equiv", "name", 1, Languages.HTML, Categories.BASICS);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        Question question16 = new Question("What if one does not use the doctype in the starting of HTML document?", "Browser finds the document in quirky mode", "Browser finds a document in standard mode", "Browser stops working", "Browser crashes after showing the page",1 , Languages.HTML, Categories.BASICS);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        Question question17 = new Question("Which of the following is not sectioning elements?", "<article>", "<aside>", "<nav>", "<header>",4 , Languages.HTML, Categories.BASICS);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        Question question18 = new Question("What is the replacement for cookies in HTML5?", "Web beacons", "Java scripts", "Local Storage", " All the above",3 , Languages.HTML, Categories.BASICS);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        Question question19 = new Question("The default character encoding in HTML5 is.", "UTF-16", "UTF-32", "UTF-8", "ISO-8859-1", 3, Languages.HTML, Categories.BASICS);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.BASICS);
+        Question question20 = new Question("The <applet> element in HTML5 is replaced with?", "<object>", "<frame>", "<form>", "<class>",1 , Languages.HTML, Categories.BASICS);
         insertQuestion(question20);
     }
 
