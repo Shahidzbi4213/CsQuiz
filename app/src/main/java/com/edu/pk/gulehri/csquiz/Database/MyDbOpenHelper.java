@@ -73,9 +73,9 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         htmlBasics();
         htmlTagsFirst();
         htmlTagsSecond();
+        htmlLinksAndList();
         htmlApi();
         htmlForms();
-        htmlList();
         htmlMedia();
         htmlLayouts();
         htmlGraphics();
@@ -832,46 +832,46 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
     }
 
     //Adding Html Lists Questions
-    private void htmlList() {
-        Question question1 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+    private void htmlLinksAndList() {
+        Question question1 = new Question("Which tag is used for List items?", "<li>", "<ol>", "<ul>", "<dl>", 1, Languages.HTML, Categories.LINKS_AND_LISTS);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        Question question2 = new Question("Which element contains definition?", "<dl>", "<dd>", "<dt>", "<ul>", 2, Languages.HTML, Categories.LINKS_AND_LISTS);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        Question question3 = new Question("Which of the following can’t be the value of list-style-type?", "square", "circle", "ellipse", "disc", 3, Languages.HTML, Categories.LINKS_AND_LISTS);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        Question question4 = new Question("For displaying a list horizontally, we can use ______", "<dd>", "display:inline", "<dt>", "type", 2, Languages.HTML, Categories.LINKS_AND_LISTS);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        Question question5 = new Question("Which attribute is only used with <ol>?", "value", "type", "compact", "start", 4, Languages.HTML, Categories.LINKS_AND_LISTS);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        Question question6 = new Question("From which tag descriptive list starts ?", "<LL>", "<DD>", "<DL>", "<DS>", 3, Languages.HTML, Categories.LINKS_AND_LISTS);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        Question question7 = new Question("Which one of the following is a type of lists that HTML supports?", "Ordered lists", "Unordered lists", "Description lists", "All of the above", 4, Languages.HTML, Categories.LINKS_AND_LISTS);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        Question question8 = new Question("By which tag, an unordered list is represented?", "<u>", "<ol>", "<ul>", "<l>", 3, Languages.HTML, Categories.LINKS_AND_LISTS);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        Question question9 = new Question("In order to start a list from 10, what attribute should be added in the opening tag of ordered list?", "begin= “10”", "start= “10”", "style= “begin:10”", "style= “start:10”", 2, Languages.HTML, Categories.LINKS_AND_LISTS);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        Question question10 = new Question("What is the default start of item marker in ordered list?", "1", "i", "l", "None of the above", 1, Languages.HTML, Categories.LINKS_AND_LISTS);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        Question question11 = new Question("What is the default item marker in unordered lists of HTML?", "Circle", "Square", "Disc", "None of the above", 3, Languages.HTML, Categories.LINKS_AND_LISTS);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        Question question12 = new Question("Which one of the following tag is used for creating a hyperlink?", "<link>", "<a>", "<hyperlink>", "<title>", 2, Languages.HTML, Categories.LINKS_AND_LISTS);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        Question question13 = new Question("Which attribute is used to give destination address in <a> tag of HTML?", "href", "type", "address", "link", 1, Languages.HTML, Categories.LINKS_AND_LISTS);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        Question question14 = new Question("Which one of the following value of target attribute opens the linked url in a new tab?", "_self", "_parent", " _top", "_blank", 4, Languages.HTML, Categories.LINKS_AND_LISTS);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        Question question15 = new Question("By default, an unvisited link in HTML is _____", "purple and underlined", "blue and underlined", "red and underlined", "blue and italics", 2, Languages.HTML, Categories.LINKS_AND_LISTS);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        Question question16 = new Question("By default, a visited link in HTML is _____", "purple and underlined", "blue and underlined", "red and underlined", "blue and italics", 1, Languages.HTML, Categories.LINKS_AND_LISTS);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        Question question17 = new Question("By default, the link in HTML is red and underlined when the link is _____", "visited", "unvisited", "active", "It is red and underlined", 3, Languages.HTML, Categories.LINKS_AND_LISTS);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        Question question18 = new Question("Default style of link can be changed by ", " javascript", "css", "php", "Cannot be changed at all", 2, Languages.HTML, Categories.LINKS_AND_LISTS);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        Question question19 = new Question("Default attribute value of 'target' is _____ in HTML.", "_parent", "_blank", "_top", "_self", 4, Languages.HTML, Categories.LINKS_AND_LISTS);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.LISTS);
+        Question question20 = new Question("___ attribute is used to specify MIME type of linked document ?", "Rev Attribute", "Media Attribute", "MIME Attribute", "Type Attribute", 4, Languages.HTML, Categories.LINKS_AND_LISTS);
         insertQuestion(question20);
     }
 
@@ -1276,7 +1276,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories2);
         Categories categories22 = new Categories("Tags-2", Languages.HTML);
         insertCategory(categories22);
-        Categories categories3 = new Categories("Lists", Languages.HTML);
+        Categories categories3 = new Categories("Links and Lists", Languages.HTML);
         insertCategory(categories3);
         Categories categories4 = new Categories("Layout", Languages.HTML);
         insertCategory(categories4);
