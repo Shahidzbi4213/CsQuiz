@@ -921,45 +921,45 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
 
     //Adding Html Forms Questions
     private void htmlForms() {
-        Question question1 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        Question question1 = new Question("Choose the correct option?", "HTML form elements are used for taking user input.", "HTML form elements are defined inside <for> tag.", "HTML form elements can be of different types.", "All of these.", 4, Languages.HTML, Categories.FORMS);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        Question question2 = new Question("Which one of the following is a form element?", "text box", "radio button", "submit button", " All of these", 4, Languages.HTML, Categories.FORMS);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        Question question3 = new Question("In HTML form the <input type=\"text\"> is used for", "One line text", "Block of text", "One paragraph", "None", 1, Languages.HTML, Categories.FORMS);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        Question question4 = new Question("Which one of the following does not hold true regarding GET method in HTML?", "Use of GET method in HTML is more secured.", "Use of GET method enables us to bookmark the page.", "GET has size limitation.", "None of the above", 1, Languages.HTML, Categories.FORMS);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        Question question5 = new Question("Which of the following tag is used for drop down list?", "<select>", "<text>", "<textarea>", "<dropdown>", 1, Languages.HTML, Categories.FORMS);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        Question question6 = new Question("What is the default type of ‘type’ attribute of <input> element?", "Numerals", "Text", "Password", "Special Characters", 2, Languages.HTML, Categories.FORMS);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        Question question7 = new Question("The attribute of <form> tag", "Method", "Action", "Both Method and Action", "None", 3, Languages.HTML, Categories.FORMS);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        Question question8 = new Question("Which of the following attributes of text box control allow to limit the maximum character?", "size", "len", "maxlength", "all of these", 3, Languages.HTML, Categories.FORMS);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        Question question9 = new Question("A label's for attribute should match the input's ______.", "Id ", "Type", "Name", "None", 1, Languages.HTML, Categories.FORMS);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        Question question10 = new Question("The action attribute tells the form?", "How to send the form’s data", "Where to send the form’s data", "When to send the form’s data", "All of the above", 2, Languages.HTML, Categories.FORMS);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        Question question11 = new Question("How do you create a button on a form?", "With a <form> tag.", "With an <input type=\"submit\"> tag.", "With a link.", "Don’t know", 2, Languages.HTML, Categories.FORMS);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        Question question12 = new Question("Attribute and value in form tag to tell the browser to take all the data submitted with the form to the end of the file’s URL", "Method=\"post\"", "Method=\"get\"", "Both", "None", 3, Languages.HTML, Categories.FORMS);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        Question question13 = new Question("Which attribute is not used on new forms?", "size", "text", "name", "maxlength", 1, Languages.HTML, Categories.FORMS);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        Question question14 = new Question("Which attribute is not used for the radio type?", "name", "value", "checked", " selected", 4, Languages.HTML, Categories.FORMS);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        Question question15 = new Question("What is the correct HTML for making a checkbox?", "<check>", "<input type=\"checkbox\">", "<checkbox>", "<input type=\"check\">", 3, Languages.HTML, Categories.FORMS);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        Question question16 = new Question("What is the correct HTML for making a text input field?", "<textinput type=\"text\">", "<input type=\"text\">  ", "<input type=\"textfield\">", "<textfield>", 2, Languages.HTML, Categories.FORMS);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        Question question17 = new Question("In HTML, which attribute is used to specify that an input field must be filled out?", "formvalidate", "required ", "validate", "placeholder", 2, Languages.HTML, Categories.FORMS);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        Question question18 = new Question("Which one of the following does not hold true regarding GET method in HTML?", "Use of GET method in HTML is more secured.", "Use of GET method enables us to bookmark the page.", "GET has size limitation.", "None of the above", 1, Languages.HTML, Categories.FORMS);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        Question question19 = new Question("Which one of the following does not hold true regarding POST method in HTML?", "Use of POST method in HTML is more secured.", "Use of POST method enables us to bookmark the page.", "POST has no size limitation.", "None of the above", 2, Languages.HTML, Categories.FORMS);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.FORMS);
+        Question question20 = new Question("How more than one option can be selected in drop down?", "Use of multiple attribute inside <option> tag.", "Use of multiple attribute inside <select> tag.", "use of multiple attribute inside <text> tag.", "Not possible to select more than one option in drop down.", 2, Languages.HTML, Categories.FORMS);
         insertQuestion(question20);
     }
 
