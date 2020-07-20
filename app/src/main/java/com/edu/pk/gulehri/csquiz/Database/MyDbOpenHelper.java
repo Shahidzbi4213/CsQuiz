@@ -789,45 +789,45 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
 
     //Adding Html Tags Questions
     private void htmlTagsSecond() {
-        Question question1 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        Question question1 = new Question("Some tags enclose the text. Those tags are known as", "Couple tags", "Single tags", "Double tags", "Pair tags", 4, Languages.HTML, Categories.TAGS2);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        Question question2 = new Question("Tags and test that are not directly displayed on the page are written in _____ section.", "<html>", "<head>", "<title>", "<body>", 2, Languages.HTML, Categories.TAGS2);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        Question question3 = new Question("Which tag inserts a line horizontally on your web page?", "<hr>", "<line>", "<br>", "<tr>", 1, Languages.HTML, Categories.TAGS2);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        Question question4 = new Question("Which tag allows you to add a row in a table?", "<td> and </td>", "<cr> and </cr>", "<th> and </th>", "<tr> and </tr>", 4, Languages.HTML, Categories.TAGS2);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        Question question5 = new Question("Which HTML tag is used to define a table?", "<tb>", "<tl>", "<table>", "<tab>", 3, Languages.HTML, Categories.TAGS2);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        Question question6 = new Question("With the help of which tag, is a row defined in HTML?", "<row>", "<table-row>", "<tablerow>", "<tr>", 4, Languages.HTML, Categories.TAGS2);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        Question question7 = new Question("Each cell of the table can be represented by using ______", "<tr>", "<td>", "<th>", "<thead>", 2, Languages.HTML, Categories.TAGS2);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        Question question8 = new Question("Headings of table lies inside ___________", "<thead>", "<tfoot>", "<th>", "<tbody>", 1, Languages.HTML, Categories.TAGS2);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        Question question9 = new Question("border-spacing is given in _______", "cm", "pixel", "foot", "inch", 2, Languages.HTML, Categories.TAGS2);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        Question question10 = new Question("In HTML tables gap between two cells of same tables are known as", "Cell spacing", "Cell difference", "Cell padding", "All of above", 1, Languages.HTML, Categories.TAGS2);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        Question question11 = new Question("In HTML document the tags", "Should be written in upper case", "should be written in lower case", "should be written in propercase", "can be written in both uppercase or lowercase", 4, Languages.HTML, Categories.TAGS2);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        Question question12 = new Question("There are ____ different of heading tags in HTML", "5", "6", "4", "7", 2, Languages.HTML, Categories.TAGS2);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        Question question13 = new Question("Which of the following is not a style tag?", "<b>", "<tt>", "<i>", "All of above are style tags", 4, Languages.HTML, Categories.TAGS2);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        Question question14 = new Question("Which attribute you’ll use with TD tag to merge two cells horizontally?", "merge=colspan2", "rowspan=2", "colspan=2", "merge=row2", 3, Languages.HTML, Categories.TAGS2);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        Question question15 = new Question("Which attribute is used to name an element uniquely?", "class", "id", "dot", "none", 2, Languages.HTML, Categories.TAGS2);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        Question question16 = new Question("<script>...</script> tag can be placed within ____", "Header", "Body", "both A and B", "none of the above", 3, Languages.HTML, Categories.TAGS2);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        Question question17 = new Question("What should be the first tag in any HTML document?", "<head>", "<document>", "<html>", "<body>", 3, Languages.HTML, Categories.TAGS2);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        Question question18 = new Question("<b> tag makes the enclosed text bold. What is other tag to make text bold", "<strong>", "<dar>", "<black>", "<emp>", 1, Languages.HTML, Categories.TAGS2);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        Question question19 = new Question("Marquee is a tag in HTML to", "Marquee is a tag in HTML to", "Mark the text so that it is hidden in browser", "Display text with scrolling effect", "None of above", 3, Languages.HTML, Categories.TAGS2);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.TAGS2);
+        Question question20 = new Question("The way the browser displays the object can be modified by _____", "attributes", "parameters", "modifiers", "None of above", 1, Languages.HTML, Categories.TAGS2);
         insertQuestion(question20);
     }
 
