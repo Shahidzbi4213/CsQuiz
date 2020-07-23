@@ -10,30 +10,29 @@ public class Categories {
     public int id;
 
 
+    //java
     public static final String BASICS = "Basics";
     public static final String DATA_TYPES = "Data Types";
     public static final String OOP = "OOP";
-
     public static final String KEYWORDS = "Keywords";
     public static final String FUNCTION = "Function";
     public static final String INTERFACES = "Interfaces";
     public static final String EXCEPTION_HANDLING = "EXCEPTION Handling";
-
     public static final String MULTI_THREADING = "MULTI THREADING";
     public static final String INNER_CLASS = "Inner Class";
     public static final String GUI = "GUI";
-
     public static final String DATA_STRUCTURE = "Data Structure";
     public static final String COLLECTION_FRAME_WORK = "Collection FrameWork";
     public static final String JDBC = "JDBC";
 
+    //html
     public static final String TAGS1 = "Tags-1";
     public static final String TAGS2 = "Tags-2";
     public static final String LINKS_AND_LISTS = "Links and Lists";
     public static final String LAYOUTS = "Layouts";
     public static final String MEDIA = "MEDIA";
     public static final String GRAPHICS = "Graphics";
-    public static final String FORMS = "FORM";
+    public static final String FORMS = "FORMS";
     public static final String API = "Api";
 
 
@@ -68,7 +67,7 @@ public class Categories {
                     new Categories("Layouts", Languages.HTML),
                     new Categories("MEDIA", Languages.HTML),
                     new Categories("Graphics", Languages.HTML),
-                    new Categories("FORM", Languages.HTML),
+                    new Categories("FORMS", Languages.HTML),
                     new Categories("Api", Languages.HTML),
 
 

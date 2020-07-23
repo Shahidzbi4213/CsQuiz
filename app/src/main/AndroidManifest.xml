@@ -10,19 +10,19 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".ui.AboutUs" />
         <activity
             android:name=".ui.LanguagesActivity"
-            android:theme="@style/AppTheme.MyTheme" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".ui.Category"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.MyTheme"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".ui.QuizActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.MyTheme"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".ui.StartQuizActivity"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1f1f1d"
+    android:background="@color/background"
     android:orientation="vertical"
     android:weightSum="5"
     tools:context=".ui.QuizActivity">
@@ -21,7 +21,7 @@
             android:id="@+id/content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_24sdp"
             tools:ignore="UselessParent">
 
             <TextView
@@ -48,8 +48,8 @@
                 android:fontFamily="@font/asap_medium_italic"
                 android:freezesText="true"
                 app:m_arc_stroke_color="#FFFFFF"
-                app:m_cicle_stroke_width="12"
-                app:m_circle_radius="40"
+                app:m_cicle_stroke_width="11"
+                app:m_circle_radius="38"
                 app:m_circle_stroke_color="@android:color/black" />
 
             <TextView
