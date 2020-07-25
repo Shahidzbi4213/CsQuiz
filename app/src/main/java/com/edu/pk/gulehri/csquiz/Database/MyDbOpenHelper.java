@@ -75,8 +75,8 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         htmlTagsSecond();
         htmlLinksAndList();
         htmlForms();
+       /* htmlMedia();*/
        /* htmlApi();
-        htmlMedia();
         htmlLayouts();
         htmlGraphics();*/
 
@@ -919,6 +919,51 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
+   /* //Adding Html Media Questions
+    private void htmlMedia() {
+        Question question1 = new Question("Which of the following is not a HTML5 tag?", "<video>", "<audio>", "<source>", "<slider>", 4, Languages.HTML, Categories.MEDIA);
+        insertQuestion(question1);
+        Question question2 = new Question("Which of the following HTML Video – Media Type is not supported in IE?", "WebM", "MP4", "Ogg", "MP4 FLAC", 3, Languages.HTML, Categories.MEDIA);
+        insertQuestion(question2);
+        Question question3 = new Question("HTML5 features, include native audio and video support without the need for.", "Flash", "Canvas", "Svg", "None of the above", 1, Languages.HTML, Categories.MEDIA);
+        insertQuestion(question3);
+        Question question4 = new Question("Which boolean attribute if specified, will allow video automatically seek back to the start after reaching at the end.", "autoplay", "loop", "autobuffer", "controls", 2, Languages.HTML, Categories.MEDIA);
+        insertQuestion(question4);
+        Question question5 = new Question("In HTML Audio/Video DOM ________ sets or returns the volume of the audio/video.", "src", "volume controls", "volume", "None of the above", 3, Languages.HTML, Categories.MEDIA);
+        insertQuestion(question5);
+        Question question6 = new Question("What will happen if height and width of video are not set while video loads?", "page flickers", "page does not load", "page crash", "page closes", 1, Languages.HTML, Categories.MEDIA);
+        insertQuestion(question6);
+        Question question7 = new Question("Which of the following attribute adds audio controls, like play, pause, and volume?", "audio", "source", "src", "controls", 4, Languages.HTML, Categories.MEDIA);
+        insertQuestion(question7);
+        Question question8 = new Question("How to embedded Audio Files in HTML?", "<embed src = “song.mid” width = “100” height = “15”>", "<embed sound = “song.mid” width = “100” height = “15”>", "<embed audio = “song.mid” width = “100” height = “15”>", "<embed music = “song.mid” width = “100” height = “15”>", 1, Languages.HTML, Categories.MEDIA);
+        insertQuestion(question8);
+        Question question9 = new Question("Which one of the following does not support flash?", "iPhone", "android", "windows", " linux", 1, Languages.HTML, Categories.MEDIA);
+        insertQuestion(question9);
+        Question question10 = new Question("In handling media events which event is generated when the first frame of the media has finished loading.", "loadstart", "loadeddata", "ended", "error", 2, Languages.HTML, Categories.MEDIA);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        insertQuestion(question20);
+    }*/
+
+
 
    /* //Adding Html Layouts Questions
     private void htmlLayouts() {
@@ -1008,49 +1053,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
-    //Adding Html Media Questions
-    private void htmlMedia() {
-        Question question1 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
-        insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
-        insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
-        insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
-        insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
-        insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
-        insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
-        insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
-        insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
-        insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
-        insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
-        insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
-        insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
-        insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
-        insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
-        insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
-        insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
-        insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
-        insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
-        insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
-        insertQuestion(question20);
-    }
+
 
     //Adding Html API Questions
     private void htmlApi() {
@@ -1285,7 +1288,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories5);
         Categories categories6 = new Categories("Graphics", Languages.HTML);
         insertCategory(categories6);
-        Categories categories7 = new Categories("Media", Languages.HTML);
+        Categories categories7 = new Categories("MEDIA", Languages.HTML);
         insertCategory(categories7);
         Categories categories8 = new Categories("API", Languages.HTML);
         insertCategory(categories8);

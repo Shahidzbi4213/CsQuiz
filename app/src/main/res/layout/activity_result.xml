@@ -8,7 +8,7 @@
     android:layout_marginEnd="@dimen/_10sdp"
     android:layout_weight="1"
     android:background="@drawable/dialog"
-    android:elevation="@dimen/_10sdp"
+    android:elevation="@dimen/_15sdp"
     android:orientation="vertical"
     android:padding="@dimen/_7sdp">
 
@@ -28,6 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:elevation="@dimen/_5sdp"
         android:layout_marginTop="@dimen/_minus10sdp"
         android:orientation="vertical">
 
@@ -62,7 +63,7 @@
             android:layout_width="0dp"
             android:layout_height="@dimen/_77sdp"
             android:layout_weight="1"
-            android:background="#eaad43"
+            android:background="@color/orange"
             android:elevation="@dimen/_5sdp"
             android:gravity="center"
             android:orientation="vertical">
@@ -92,7 +93,7 @@
             android:layout_width="0dp"
             android:layout_height="@dimen/_77sdp"
             android:layout_weight="1"
-            android:background="#45bc62"
+            android:background="@color/green"
             android:elevation="@dimen/_5sdp"
             android:gravity="center"
             android:orientation="vertical">
@@ -122,7 +123,7 @@
             android:layout_width="0dp"
             android:layout_height="@dimen/_77sdp"
             android:layout_weight="1"
-            android:background="#E53935"
+            android:background="@color/red"
             android:elevation="@dimen/_5sdp"
             android:gravity="center"
             android:orientation="vertical">
@@ -163,7 +164,7 @@
             android:layout_height="@dimen/_70sdp"
             android:layout_weight="1"
             android:fontFamily="@font/asap_medium_italic"
-            android:background="#F47B55"
+            android:background="@color/pinkish"
             android:elevation="@dimen/_5sdp"
             android:gravity="center"
             android:orientation="vertical">
@@ -193,7 +194,7 @@
             android:layout_width="0dp"
             android:layout_height="@dimen/_70sdp"
             android:layout_weight="1"
-            android:background="#00ACC1"
+            android:background="@color/deepSkyBlue"
             android:elevation="@dimen/_5sdp"
             android:gravity="center"
             android:orientation="vertical">

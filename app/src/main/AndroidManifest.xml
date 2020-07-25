@@ -15,14 +15,17 @@
         <activity
             android:name=".ui.LanguagesActivity"
             android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.MyTheme"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".ui.Category"
             android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.MyTheme"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".ui.QuizActivity"
             android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.MyTheme"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".ui.StartQuizActivity"

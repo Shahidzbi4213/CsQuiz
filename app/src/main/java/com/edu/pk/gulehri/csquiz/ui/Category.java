@@ -5,7 +5,6 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
-import android.view.WindowManager;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,7 +32,6 @@ public class Category extends AppCompatActivity {
     private static boolean flag;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,11 +47,6 @@ public class Category extends AppCompatActivity {
             setSupportActionBar(toolbar);
             toolbar.setElevation((float) 10.00);
             getSupportActionBar().setDisplayShowTitleEnabled(false);
-
-            //Transparent status bar
-            getWindow().setFlags(
-                    WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
-                    WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
             final Drawable backArrow = getResources().getDrawable(R.drawable.back_arrow);
             getSupportActionBar().setHomeAsUpIndicator(backArrow);
