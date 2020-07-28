@@ -75,7 +75,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         htmlTagsSecond();
         htmlLinksAndList();
         htmlForms();
-       /* htmlMedia();*/
+        htmlMedia();
        /* htmlApi();
         htmlLayouts();
         htmlGraphics();*/
@@ -919,7 +919,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
-   /* //Adding Html Media Questions
+    //Adding Html Media Questions
     private void htmlMedia() {
         Question question1 = new Question("Which of the following is not a HTML5 tag?", "<video>", "<audio>", "<source>", "<slider>", 4, Languages.HTML, Categories.MEDIA);
         insertQuestion(question1);
@@ -941,27 +941,27 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question9);
         Question question10 = new Question("In handling media events which event is generated when the first frame of the media has finished loading.", "loadstart", "loadeddata", "ended", "error", 2, Languages.HTML, Categories.MEDIA);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        Question question11 = new Question("___________ returns the URL of the current audio/video", "url", "href", "src", "currentSrc", 4, Languages.HTML, Categories.MEDIA);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        Question question12 = new Question("___________ returns the length of the current audio/video (in seconds)", "time", "duration", "currentTime", "currentDuration", 2, Languages.HTML, Categories.MEDIA);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        Question question13 = new Question("Which of the following sets or returns whether the audio/video is muted or not", "mute", "muted", "volume", "sound", 2, Languages.HTML, Categories.MEDIA);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        Question question14 = new Question("___________ returns the current ready state of the audio/video", "isReady", "ready", "readyState", "runningState", 3, Languages.HTML, Categories.MEDIA);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        Question question15 = new Question("___________ returns whether the user is currently seeking in the audio/video", "seeking", "seekable", "seek", "seeked", 1, Languages.HTML, Categories.MEDIA);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        Question question16 = new Question("___________ returns whether the playback of the audio/video has ended or not", "finish", "end", "ended", "isEnd", 3, Languages.HTML, Categories.MEDIA);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        Question question17 = new Question("___________ returns an AudioTrackList object representing available audio tracks", "trackSize", "playlistLength", "tracks", "audioTracks", 4, Languages.HTML, Categories.MEDIA);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        Question question18 = new Question("___________ returns whether the audio/video is paused or not", "paused", "isPlaying", "paused", "stop", 1, Languages.HTML, Categories.MEDIA);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        Question question19 = new Question("___________ returns a VideoTrackList object representing the available video tracks", "trackSize", "playlistLength", "tracks", "videoTracks", 4, Languages.HTML, Categories.MEDIA);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.MEDIA);
+        Question question20 = new Question("___________ sets or returns whether the audio/video should start over again when finished", "loop", "repeat", "repetition", "None of the above", 1, Languages.HTML, Categories.MEDIA);
         insertQuestion(question20);
-    }*/
+    }
 
 
 
