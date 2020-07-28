@@ -963,6 +963,50 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
+    //Adding Html Graphics Questions
+    private void htmlGraphics() {
+        Question question1 = new Question("Which of the following is not the property of SVG images?", "SVG images are scalable", "SVG images are zoomable", "SVG is an open standard", "SVG images are resolution dependent", 4, Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question1);
+        Question question2 = new Question(" _______ drawings can be dynamic and interactive.", "Canvas based", "SVG", "CSS3", "JavaScript", 2, Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question2);
+        Question question3 = new Question("Which of the following is the predefined shape elements that can be used by developers?", "Path <path>", "Rectangle <rect>", "Circle <circle>", "Line <line>", 4, Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question3);
+        Question question4 = new Question("Which method is used to increase or decrease the units in a canvas grid.", "Canvas Transform", "Canvas Rotation", "Canvas Scaling", "Canvas Composition", 3, Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question4);
+        Question question5 = new Question("Which of the following element is used for canvas graphics?", "<paint>", "<canvas>", "<svg>", "<graphic>", 2, Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question5);
+        Question question6 = new Question("Which of the following statement is not true?", "SVG stands for Scalable Vector Graphics", "SVG is used to define graphics for the Web", "SVG is a W3C recommendation", "SVG doesn’t support event handlers", 4, Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question6);
+        Question question7 = new Question("The _______ method must add the scaling transformation described by the arguments to the transformation matrix.", "scale(x, y)", "translate(x, y)", "rotate(angle)", "skew(x,y)", 1, Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question7);
+        Question question8 = new Question("Which SVG element produces the same effect as if the nodes were deeply cloned into a non-exposed DOM?", "tref", "use", "stroke", "bin", 2, Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question8);
+        Question question9 = new Question("Which version does not support for HTML5 canvas natively?", "Firefox", "Safari", "Chrome", "IE8", 4, Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question9);
+        Question question10 = new Question("The canvas element has a DOM method it is called.", "getContext", "getId", "getElement", "None of the above", 1, Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question10);
+        Question question11 = new Question("HTML5 element <canvas> can be used to.", "Draw graphics", "Photo compositions", "Animations", "All the mentioned above", 4, Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question11);
+        Question question12 = new Question("The HTML canvas is a", "Three-dimensional grid", "One-dimensional grid", "Two-dimensional grid", "None of the above", 3, Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question12);
+        Question question13 = new Question("To draw text on a canvas, which property and method is used.", " font", "stokeText(text,x,y)", "fillText(text,x,y)", "None of the above", 2, Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question13);
+        Question question14 = new Question("Which of the following tag of SVG is used to draw a line?", "linear", "line", "Both of the above.", "None of the above.", 2, Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question14);
+        Question question15 = new Question("Which of the following is a valid SVG filter?", "feComposite", "feConvolveMatrix", "feDiffuseLighting", " All of the above.", 4, Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        insertQuestion(question20);
+    }
+
 
 
    /* //Adding Html Layouts Questions
@@ -1008,53 +1052,6 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question20);
     }
-
-    //Adding Html Graphics Questions
-    private void htmlGraphics() {
-        Question question1 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
-        insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
-        insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
-        insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
-        insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
-        insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
-        insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
-        insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
-        insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
-        insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
-        insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
-        insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
-        insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
-        insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
-        insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
-        insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
-        insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
-        insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
-        insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
-        insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
-        insertQuestion(question20);
-    }
-
-
-
     //Adding Html API Questions
     private void htmlApi() {
         Question question1 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
