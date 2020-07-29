@@ -74,11 +74,12 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         htmlTagsFirst();
         htmlTagsSecond();
         htmlLinksAndList();
+        htmlGraphics();
         htmlForms();
         htmlMedia();
+
        /* htmlApi();
-        htmlLayouts();
-        htmlGraphics();*/
+        htmlLayouts();*/
 
     }
 
@@ -995,15 +996,15 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question14);
         Question question15 = new Question("Which of the following is a valid SVG filter?", "feComposite", "feConvolveMatrix", "feDiffuseLighting", " All of the above.", 4, Languages.HTML, Categories.GRAPHICS);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        Question question16 = new Question("The main competitor to SVG is _______ .", "Microsoft's Paint", "Photoshop", "Flash", "None of these", 3, Languages.HTML, Categories.GRAPHICS);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        Question question17 = new Question("Which of the following tag of SVG is used to draw a ellipse?", "circle", "ellipse", "Both of the above", "None of the above", 2, Languages.HTML, Categories.GRAPHICS);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        Question question18 = new Question("What is SVG ?", "Scalable Visual Graphics", "Static Vector Graphics", "Scalable Vector Graphics", "Simple Vector Graphics", 3, Languages.HTML, Categories.GRAPHICS);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        Question question19 = new Question("Which property of SVG restricts the region to which paint can be applied?", "animateTransform", "radialGradient", "linearGradient", "clip-Path", 4, Languages.HTML, Categories.GRAPHICS);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.GRAPHICS);
+        Question question20 = new Question("Which element serves as a container for atomic filter operations?", "filter", "feimage", "feblend", "tref", 1, Languages.HTML, Categories.GRAPHICS);
         insertQuestion(question20);
     }
 
