@@ -1163,48 +1163,46 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
 
     //Adding Data Type Questions
     private void cPlusDataTypes() {
-        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        Question question1 = new Question("Identify wrong C Keywords below.", "auto, double, int, struct", "auto, double, int, struct", "case, enum, register, typedef", "char, extern, intern, return", 4, Languages.CPLUS, Categories.DATA_TYPES);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        Question question2 = new Question("What is size of void in bytes?", "0", "1", "2", "4", 1, Languages.CPLUS, Categories.DATA_TYPES);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        Question question3 = new Question("How would you declare an integer called sum and initialize it to 10?", " int sum 10", " int sum=10;", "integer sum =10;", "None of the above", 2, Languages.CPLUS, Categories.DATA_TYPES);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        Question question4 = new Question("It is guaranteed that a ____ has at least 8 bits and a ____ has at least 16 bits.", " int, float", "char, int", " char, short", "bool, char", 3, Languages.CPLUS, Categories.DATA_TYPES);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        Question question5 = new Question("The size_t integer type in C++ is?", "Unsigned integer of at least 64 bits", "Signed integer of at least 16 bits", "Unsigned integer of at least 16 bits", " Signed integer of at least 64 bits", 3, Languages.CPLUS, Categories.DATA_TYPES);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        Question question6 = new Question("Which of the following is not one of the sizes of the floating point types?", "short float", " float", "long double", " double", 1, Languages.CPLUS, Categories.DATA_TYPES);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        Question question7 = new Question("How much memory a float takes to store the value?", "1 bytes", "2 bytes", "4 bytes", "6 bytes", 3, Languages.CPLUS, Categories.DATA_TYPES);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        Question question8 = new Question("How much memory a double takes to store the value? ", "2 bytes", "4 bytes", "6 bytes", "8 bytes", 4, Languages.CPLUS, Categories.DATA_TYPES);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        Question question9 = new Question("How much memory a character takes to store the value?", "1 byte", "2 bytes", "4 bytes", "6 bytes", 1, Languages.CPLUS, Categories.DATA_TYPES);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        Question question10 = new Question("Is bool a fundamental data type in C++?", "Yes", "No, it is a typedef of unsigned char", "No, it is an enum of {false, true}", "No, it is expanded from macros", 1, Languages.CPLUS, Categories.DATA_TYPES);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        Question question11 = new Question("What is the value of the bool? \n bool is_int(789.54)", "True", "False", "789", ".54", 2, Languages.CPLUS, Categories.DATA_TYPES);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        Question question12 = new Question("Which of the two operators ++ and — work for the bool data type in C++?", "__", " ++ & —", "++", "None of the above", 3, Languages.CPLUS, Categories.DATA_TYPES);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        Question question13 = new Question("How many characters are specified in the ASCII scheme?", "32", "64", "128", "256", 3, Languages.CPLUS, Categories.DATA_TYPES);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        Question question14 = new Question("In which type do the enumerators are stored by the compiler?", " string", "integer", "float", " string & float", 2, Languages.CPLUS, Categories.DATA_TYPES);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        Question question15 = new Question("What will happen when defining the enumerated type?", "it will not allocate memory", "it will allocate memory", "it will not allocate memory to its variables", "allocate memory to objects", 1, Languages.CPLUS, Categories.DATA_TYPES);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        Question question16 = new Question("Which of the following belongs to the set of character types?", "char", "wchar_t", "only char", "both wchar_t and char", 4, Languages.CPLUS, Categories.DATA_TYPES);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        Question question17 = new Question("both wchar_t and char \n void a;", "variable a is of type void", "a is an object of type void", "declares a variable with value a", "flags an error", 4, Languages.CPLUS, Categories.DATA_TYPES);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        Question question18 = new Question("Which of three sizes of floating point types should be used when extended precision is required?", "float", "double", "long double", "extended float", 3, Languages.CPLUS, Categories.DATA_TYPES);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        Question question19 = new Question("What is the size of wchar_t in C++?", "2", "4", "6", "Based on the number of bits in the system", 4, Languages.CPLUS, Categories.DATA_TYPES);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        Question question20 = new Question("Identify the user-defined types from the following?", "enumeration", "classes", "both enumeration and classes", "None of the above", 3, Languages.CPLUS, Categories.DATA_TYPES);
         insertQuestion(question20);
-
-
     }
 
     //Adding Keywords Questions
