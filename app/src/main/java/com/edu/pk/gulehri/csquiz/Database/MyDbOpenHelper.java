@@ -77,10 +77,8 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         htmlGraphics();
         htmlForms();
         htmlMedia();
-
-       /* htmlApi();
-        htmlLayouts();*/
-
+        htmlLayouts();
+        htmlApi();
     }
 
     private void addCategory() {
@@ -1008,94 +1006,93 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
-
-
-   /* //Adding Html Layouts Questions
+    //Adding Html Layouts Questions
     private void htmlLayouts() {
-        Question question1 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        Question question1 = new Question("Which of the following works as a sidebar?", "<aside>", "<footer>", "<details>", "<section>", 1, Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        Question question2 = new Question("Which one of the following contains information about the author?", "<header>", "<footer>", "<address>", "<body>", 2, Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        Question question3 = new Question("Header element does not contain ______", " logo", "heading elements", "authorship information", "<address>", 4, Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        Question question4 = new Question("Which element contains major navigational block?", "<address>", "<footer>", "<nav>", "<header>", 3, Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        Question question5 = new Question("Which element represents self-contained composition in document?", " <nav>", "<header>", "<footer>", "<article>", 4, Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        Question question6 = new Question("Which element groups related content together?", "<aside>", "<footer>", "<section>", "<div>", 3, Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        Question question7 = new Question("For grouping together one or more <h1> to <h6> element what element is used?", "<header>", "<hgroup>", "<div>", "<section>", 2, Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        Question question8 = new Question("Bootstrap was first introduced in ______", "google", "twitter", "instagram", "snapchat", 2, Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        Question question9 = new Question("Which of the following specifies what happens if content overflow an element’s box?", "overflow", "overflow-x", "overflow-y", " float", 1, Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        Question question10 = new Question("Footer element can’t contain ____________ information.", "contact information", "copyright information", "the author of the document", "blog post", 4, Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        Question question11 = new Question("Which of the following specifies the main content of the document?", "<main>", "<time>", "<details>", "<section>", 1, Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        Question question12 = new Question("Which element denotes that the text is a short fragment of computer code?", "<data>", "<code>", " <cite>", "<dfn>", 2, Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        Question question13 = new Question("Which element represents a dialog box?", "<menu>", "<menuitem>", "<dialog>", "<summary>", 3, Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        Question question14 = new Question("Which of the following specifies relationship between current document and external resource?", " <meta>", " <style>", "<title>", "<link>", 4, Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        Question question15 = new Question("Which of the following is keyboard input element?", "<mark>", "<kbd>", "<dfn>", "<em>", 2, Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        Question question16 = new Question("Which element sets default font face, size and color for other elements?", " <applet>", "<big>", "<acronym>", "<basefont>", 4, Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        Question question17 = new Question("Which element is not a scripting element?", "<picture>", "<script>", "<canvas>", "<noscript>", 1, Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        Question question18 = new Question("Which element represents a scalar value within the given range?", "<option>", "<meter>", "<label>", "<input>", 2, Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        Question question19 = new Question("Which of the following is a generic inline container for phrasing content?", "<strong>", "<sub>", "<span>", "<sup>", 3, Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.LAYOUTS);
+        Question question20 = new Question("Variable element is ________", "<var>", "<wbr>", "<sup>", "<time>", 1, Languages.HTML, Categories.LAYOUTS);
         insertQuestion(question20);
     }
+
     //Adding Html API Questions
     private void htmlApi() {
-        Question question1 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        Question question1 = new Question("Which method is used to get user’s position?", " getCurrentPosition()", " getDirectPosition()", "post()", "getDirection()", 1, Languages.HTML, Categories.API);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        Question question2 = new Question("The HTML Geolocation API is used to get the geographical position of a user.", "direction", "position", "network", "None of the above", 2, Languages.HTML, Categories.API);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        Question question3 = new Question("How many kinds of map does Geo support?", "2", "3", "4", "5", 3, Languages.HTML, Categories.API);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        Question question4 = new Question(" Which method cancels an ongoing watchPosition call?", "getCurrentPosition()", "watchPosition()", "cancelWatch()", "clearWatch()", 4, Languages.HTML, Categories.API);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        Question question5 = new Question("The location of the device could not be determined,the error code is 2 then what will be the constant?", "UNKNOWN_ERROR", "PERMISSION_DENIED", "POSITION_UNAVAILABLE", "TIMEOUT", 3, Languages.HTML, Categories.API);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        Question question6 = new Question("What does showPosition() returns?", "only latitude", "only longitude", "only direction", " both latitude and longitude", 4, Languages.HTML, Categories.API);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        Question question7 = new Question("Which of the following technique is not for the mobile browser to identify the location of a user?", "GPS", "IP based position", "WIFI based position", "A-GPS", 2, Languages.HTML, Categories.API);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        Question question8 = new Question("Which event will fire every time when the mouse is moved while the object is being dragged.", "Drop", " Drag", "Dragend", "Dragstart", 2, Languages.HTML, Categories.API);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        Question question9 = new Question("DND API makes easy to copy, reorder and deletion of items with the help of _______", "Mouse", "Keyboard", "Both", "None of the above", 1, Languages.HTML, Categories.API);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        Question question10 = new Question("Which event is fired as the mouse is moving over an element when a drag is occurring?", "dragover", "dragenter", "dragstart", "dragleave", 1, Languages.HTML, Categories.API);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        Question question11 = new Question("Which of the following property is common in all drag events?", " dragEffects", "dataTransfer", "dragData", "dragEnter", 2, Languages.HTML, Categories.API);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        Question question12 = new Question("In localStorage object data ________", "is deleted after the browser closed", " is not deleted after the browser closed", "can be seen but can not edit", "can be seen as well as edit", 2, Languages.HTML, Categories.API);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        Question question13 = new Question("In sessionStorage object data ________", "is not deleted after the browser closed", "can be seen but can’t edit", " can be seen as well as edit", "is deleted after the browser closed", 4, Languages.HTML, Categories.API);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        Question question14 = new Question("Before HTML5 where data had to be stored?", "browser", "only in Chrome", "cookies ", "None of above", 3, Languages.HTML, Categories.API);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        Question question15 = new Question("Which of the following is not a web storage interface?", "storage", "window", "storageEvent", "privacy", 4, Languages.HTML, Categories.API);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        Question question16 = new Question("Which is a JavaScript running in the background, without affecting the performance of the page", "Web Worker", "Canvas", "SVG", "None of above", 1, Languages.HTML, Categories.API);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        Question question17 = new Question("To reuse the web worker which code is used.", "w.terminate();", "w = undefined;", "w = terminate;", "w.undefined();", 2, Languages.HTML, Categories.API);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        Question question18 = new Question("Server-Sent Events allows a web page to get updates from", "Windows", "Local Storage", "Server", "None of above", 3, Languages.HTML, Categories.API);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        Question question19 = new Question("Which event will be used when a connection to the server is opened.", "onopen", "onmessage", "onerror", "None of above", 1, Languages.HTML, Categories.API);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.HTML, Categories.API);
+        Question question20 = new Question("Which browser does a server-sent event does not support.", "Chrome", "Mozilla", "Internet explorer", "Opera", 3, Languages.HTML, Categories.API);
         insertQuestion(question20);
-    }*/
+    }
 
 
     //Java Category
