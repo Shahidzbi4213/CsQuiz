@@ -29,11 +29,11 @@ public class Categories {
     public static final String TAGS1 = "Tags-1";
     public static final String TAGS2 = "Tags-2";
     public static final String LINKS_AND_LISTS = "Links and Lists";
-    public static final String LAYOUTS = "Layouts";
+    public static final String LAYOUTS = "LAYOUTS";
     public static final String MEDIA = "MEDIA";
     public static final String GRAPHICS = "Graphics";
     public static final String FORMS = "FORMS";
-    public static final String API = "Api";
+    public static final String API = "API";
 
 
     public static final String Android = "Android";
@@ -64,11 +64,11 @@ public class Categories {
                     new Categories("Tags-1", Languages.HTML),
                     new Categories("Tags-2", Languages.HTML),
                     new Categories("Links and Lists", Languages.HTML),
-                    new Categories("Layouts", Languages.HTML),
+                    new Categories("LAYOUTS", Languages.HTML),
                     new Categories("MEDIA", Languages.HTML),
                     new Categories("Graphics", Languages.HTML),
                     new Categories("FORMS", Languages.HTML),
-                    new Categories("Api", Languages.HTML),
+                    new Categories("API", Languages.HTML),
 
 
                     new Categories("Intents", Languages.ANDROID)

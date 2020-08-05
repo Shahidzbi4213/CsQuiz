@@ -1277,7 +1277,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories22);
         Categories categories3 = new Categories("Links and Lists", Languages.HTML);
         insertCategory(categories3);
-        Categories categories4 = new Categories("Layout", Languages.HTML);
+        Categories categories4 = new Categories("LAYOUTS", Languages.HTML);
         insertCategory(categories4);
         Categories categories5 = new Categories("FORMS", Languages.HTML);
         insertCategory(categories5);
@@ -1288,7 +1288,6 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         Categories categories8 = new Categories("API", Languages.HTML);
         insertCategory(categories8);
     }
-
 
     //Php
     private void php() {
