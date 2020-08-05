@@ -1119,48 +1119,46 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
 
     //Adding Basics Questions
     private void cPlusBasics() {
-        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        Question question1 = new Question("Which of the following is the correct syntax of including a user defined header files in C++?", "#include <userdefined.h>", " #include <userdefined>", "#include “userdefined”", "#include [userdefined]", 3, Languages.CPLUS, Categories.BASICS);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        Question question2 = new Question("Which of the following is a correct identifier in C++?", "7var_name", "VAR_1234", "7VARNAME", "$var_name", 2, Languages.CPLUS, Categories.BASICS);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        Question question3 = new Question("Which of the following is called address operator?", " *", "$", "&", "%", 3, Languages.CPLUS, Categories.BASICS);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        Question question4 = new Question("Which of the following is used for comments in C++?", "// comment", " /* comment */", "// comment */", "both // comment OR /* comment */", 4, Languages.CPLUS, Categories.BASICS);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        Question question5 = new Question("What are the actual parameters in C++?", "with which functions are called", "which are used in the definition of a function", "Which are used in Defining Variable", "None of the above", 1, Languages.CPLUS, Categories.BASICS);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        Question question6 = new Question("What are the formal parameters in C++?", "with which functions are called", "which are used in the definition of a function", "Which are used in Defining Variable", "None of the above", 2, Languages.CPLUS, Categories.BASICS);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        Question question7 = new Question("Which function is used to read a single character from the console in C++?", " cin.get(ch)", " getline(ch)", " read(ch)", "scanf(ch)", 1, Languages.CPLUS, Categories.BASICS);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        Question question8 = new Question(" Which function is used to write a single character to console in C++?", "write(ch)", "printf(ch)", "cout.putline(ch)", "cout.put(ch)", 4, Languages.CPLUS, Categories.BASICS);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        Question question9 = new Question("Who created C++?", " Dennis Ritchie", "Ken Thompson", "Bjarne Stroustrup", " Brian Kernighan", 3, Languages.CPLUS, Categories.BASICS);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        Question question10 = new Question("Which of the following is called insertion/put to operator?", ">>", "<<", " >", "<", 2, Languages.CPLUS, Categories.BASICS);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        Question question11 = new Question("A language which has the capability to generate new data types are called ________ .", "Extensible", "Overloaded", " Encapsulated", "Reprehensible", 1, Languages.CPLUS, Categories.BASICS);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        Question question12 = new Question("Constant variables can be created in C++ by using ________ .", " enum", "const", " #define", "All of these", 4, Languages.CPLUS, Categories.BASICS);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        Question question13 = new Question("In C++, cin and cout are the predefined stream __________ .", "Operator", "Functions", "Objects", "Data types", 3, Languages.CPLUS, Categories.BASICS);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        Question question14 = new Question("Classes in C++ are________ .", "derived data types", " User defined data types", "built-in data types", "All of these", 2, Languages.CPLUS, Categories.BASICS);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        Question question15 = new Question("What is the only function all C++ programs must contain?", "System()", "Start()", "Program()", "Main()", 4, Languages.CPLUS, Categories.BASICS);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        Question question16 = new Question("What punctuation ends most lines of C++ code?", "semi-colon", "single quote", "colon", "dot", 1, Languages.CPLUS, Categories.BASICS);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        Question question17 = new Question("Which of the following is the correct operator to compare two variables?", "=", "==", "!=", "isEqual()", 2, Languages.CPLUS, Categories.BASICS);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        Question question18 = new Question("To perfor file input / output operation in C++, we must include which header file ?", "<fiostream>", "<ifstream>", "<ofstream>", "<fstream>", 4, Languages.CPLUS, Categories.BASICS);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        Question question19 = new Question("What was the original name given to C++?", "C++", "C with classes", "C with objects", "None of the above", 2, Languages.CPLUS, Categories.BASICS);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        Question question20 = new Question("when c++ was developed ________ .", "1996", "1997", "1998", "2000", 3, Languages.CPLUS, Categories.BASICS);
         insertQuestion(question20);
-
-
     }
 
     //Adding Data Type Questions
