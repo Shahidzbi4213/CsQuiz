@@ -10,7 +10,7 @@ public class Categories {
     public int id;
 
 
-    //java
+    //java + Common in All
     public static final String BASICS = "Basics";
     public static final String DATA_TYPES = "Data Types";
     public static final String OOP = "OOP";
@@ -34,6 +34,11 @@ public class Categories {
     public static final String GRAPHICS = "Graphics";
     public static final String FORMS = "FORMS";
     public static final String API = "API";
+
+
+    //C++
+    public static final String ENUMS = "ENUMS";
+    public static final String STANDARD_TEMPLATE_LIBRARY = "Standard Template Library";
 
 
     public static final String Android = "Android";
@@ -69,6 +74,9 @@ public class Categories {
                     new Categories("Graphics", Languages.HTML),
                     new Categories("FORMS", Languages.HTML),
                     new Categories("API", Languages.HTML),
+
+                    new Categories("ENUMS", Languages.CPLUS),
+                    new Categories("Standard Template Library", Languages.CPLUS),
 
 
                     new Categories("Intents", Languages.ANDROID)

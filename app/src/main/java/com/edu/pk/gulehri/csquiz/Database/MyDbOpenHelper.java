@@ -79,6 +79,21 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         htmlMedia();
         htmlLayouts();
         htmlApi();
+
+        //C++
+        cPlusBasics();
+        cPlusDataTypes();
+        cPlusKeyWord();
+        cPlusInterface();
+        cPlusOOP();
+        cPlusEnums();
+        cPlusExceptionHandling();
+        cPlusMultiThreading();
+        cPlusNestedClass();
+        cPlusStandardTemplateLibrary();
+        cPlusDataStructure();
+        cPlusFunction();
+
     }
 
     private void addCategory() {
@@ -92,7 +107,9 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         javaScriptCategory();
     }
 
-
+    /*===============================================================================================================================================*/
+    /* Java */
+    /*===============================================================================================================================================*/
     //Adding Basics Questions
     private void javaBasicQuestions() {
         Question b1 = new Question("Java Source Code is compiled into ______________.", ".Obj", "Source Code", "Bytecode", ".Exe", 3, Languages.JAVA, Categories.BASICS);
@@ -697,7 +714,9 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
-
+    /*===============================================================================================================================================*/
+    /* Html */
+    /*===============================================================================================================================================*/
     //Adding Html Basics Questions
     private void htmlBasics() {
         Question question1 = new Question("HTML is what type of language ?", "Scripting Language", "Markup Language", "Programming Language", "Network Protocol", 2, Languages.HTML, Categories.BASICS);
@@ -1094,6 +1113,565 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
+    /*===============================================================================================================================================*/
+    /* C++ */
+    /*===============================================================================================================================================*/
+
+    //Adding Basics Questions
+    private void cPlusBasics() {
+        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.BASICS);
+        insertQuestion(question20);
+
+
+    }
+
+    //Adding Data Type Questions
+    private void cPlusDataTypes() {
+        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_TYPES);
+        insertQuestion(question20);
+
+
+    }
+
+    //Adding Keywords Questions
+    private void cPlusKeyWord() {
+        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        insertQuestion(question20);
+
+
+    }
+
+    //Adding OOP Questions
+    private void cPlusOOP() {
+        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        insertQuestion(question20);
+
+
+    }
+
+    //Adding Function Questions
+    private void cPlusFunction() {
+        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        insertQuestion(question20);
+
+
+    }
+
+    //Adding Interface Questions
+    private void cPlusInterface() {
+        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        insertQuestion(question20);
+
+
+    }
+
+    //Adding Exception Handling Questions
+    private void cPlusExceptionHandling() {
+        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question20);
+
+
+    }
+
+    //Adding Multi Threading Questions
+    private void cPlusMultiThreading() {
+        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
+        insertQuestion(question20);
+
+
+    }
+
+    //Adding Nested Class Questions
+    private void cPlusNestedClass() {
+        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
+        insertQuestion(question20);
+
+
+    }
+
+    //Adding Enums Questions
+    private void cPlusEnums() {
+        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
+        insertQuestion(question20);
+
+
+    }
+
+    //Adding Data Structure Questions
+    private void cPlusDataStructure() {
+        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question20);
+
+
+    }
+
+    //Adding Standard Template Library Questions
+    private void cPlusStandardTemplateLibrary() {
+        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question20);
+
+
+    }
+
+    /*===============================================================================================================================================*/
+    /*Categories*/
+    /*===============================================================================================================================================*/
 
     //Java Category
     private void javaCategory() {
@@ -1146,11 +1724,11 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories7);
         Categories categories8 = new Categories("Nested Class", Languages.CPLUS);
         insertCategory(categories8);
-        Categories categories9 = new Categories("Enums", Languages.CPLUS);
+        Categories categories9 = new Categories("ENUMS", Languages.CPLUS);
         insertCategory(categories9);
         Categories categories10 = new Categories("Data Structure", Languages.CPLUS);
         insertCategory(categories10);
-        Categories categories11 = new Categories("Standard Template Library (STL)", Languages.CPLUS);
+        Categories categories11 = new Categories("Standard Template Library", Languages.CPLUS);
         insertCategory(categories11);
 
     }
