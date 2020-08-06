@@ -38,10 +38,11 @@ public class Categories {
 
     //C++
     public static final String ENUMS = "ENUMS";
+    public static final String KEYWORDS_POINTERS = "Keywords and Pointers";
     public static final String STANDARD_TEMPLATE_LIBRARY = "Standard Template Library";
 
 
-    public static final String Android = "Android";
+
 
 
     public Categories(String category, String language) {
@@ -76,6 +77,7 @@ public class Categories {
                     new Categories("API", Languages.HTML),
 
                     new Categories("ENUMS", Languages.CPLUS),
+                    new Categories("Keywords and Pointers", Languages.CPLUS),
                     new Categories("Standard Template Library", Languages.CPLUS),
 
 

@@ -628,7 +628,6 @@ public class QuizActivity extends AppCompatActivity {
         highScore.setText(String.valueOf(HighScore));
     }
 
-
     @Override
     public void onBackPressed() {
 
@@ -642,7 +641,7 @@ public class QuizActivity extends AppCompatActivity {
             intent.putExtra("LANG_NAME", language);
             startActivity(intent);
             //When intent is send the object of current Activity will destroy
-            finish();
+
         }
         /*if back button is not pressed twice with in the 2 second the toast will appear*/
         else {
@@ -650,8 +649,8 @@ public class QuizActivity extends AppCompatActivity {
         }
         //this gives the current time in milliseconds.
         backPressedTime = System.currentTimeMillis();
-
     }
+
 }
 
 

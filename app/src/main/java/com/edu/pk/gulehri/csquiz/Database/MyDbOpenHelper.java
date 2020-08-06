@@ -83,8 +83,8 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         //C++
         cPlusBasics();
         cPlusDataTypes();
-        cPlusKeyWord();
-        cPlusInterface();
+        cPlusKeyWordAndPointers();
+        /*cPlusInterface();
         cPlusOOP();
         cPlusEnums();
         cPlusExceptionHandling();
@@ -92,7 +92,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         cPlusNestedClass();
         cPlusStandardTemplateLibrary();
         cPlusDataStructure();
-        cPlusFunction();
+        cPlusFunction();*/
 
     }
 
@@ -1206,52 +1206,52 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
     }
 
     //Adding Keywords Questions
-    private void cPlusKeyWord() {
-        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+    private void cPlusKeyWordAndPointers() {
+        Question question1 = new Question(" In C++ the words that is already defined and is reserved for a single special purpose, is called as", "Keywords", "Statements", "Functions", "Queries", 1, Languages.CPLUS, Categories.KEYWORDS_POINTERS);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        Question question2 = new Question("Which one is not a C++ keyword?", "for", "class", "void", "None of the above", 4, Languages.CPLUS, Categories.KEYWORDS_POINTERS);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        Question question3 = new Question("Keywords are also called", "Preprocessors", "Reserved words", "Punctuation marks", "Operators", 2, Languages.CPLUS, Categories.KEYWORDS_POINTERS);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        Question question4 = new Question("Total number of keywords in C++ is", "20", "48", "64", "128", 2, Languages.CPLUS, Categories.KEYWORDS_POINTERS);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        Question question5 = new Question("Which keyword is used to define the user defined data types?", "def", "union", "typedef", " type", 3, Languages.CPLUS, Categories.KEYWORDS_POINTERS);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        Question question6 = new Question("What does the following statement mean? \n \n int (*fp)(char*)", " pointer to a pointer", "pointer to an array of chars", "pointer to function taking a char* argument and returns an int", "None of the above", 4, Languages.CPLUS, Categories.KEYWORDS_POINTERS);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        Question question7 = new Question("Which of the followings is/are pointer-to-member declarator?", "->*", "*", "::*", "None of the above", 3, Languages.CPLUS, Categories.KEYWORDS_POINTERS);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        Question question8 = new Question("What is size of generic pointer in c?", "1", "2", "3", "Null", 2, Languages.CPLUS, Categories.KEYWORDS_POINTERS);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        Question question9 = new Question("Which of the following is the feature of pointers?", "Pointers save memory space", "Pointers are used to allocate memory dynamically", "Pointers are used for file handling", "All of the above", 4, Languages.CPLUS, Categories.KEYWORDS_POINTERS);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        Question question10 = new Question("Which other keywords are also used to declare the class other than class?", "struct", "union", "object", "both struct & union", 4, Languages.CPLUS, Categories.KEYWORDS_POINTERS);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        Question question11 = new Question("Which of these keywords is used to make a class?", "class", "struct", "int", "none of the mentioned", 1, Languages.CPLUS, Categories.KEYWORDS_POINTERS);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        Question question12 = new Question("Which of the following is illegal?", "int *ip;", "string s, *sp = 0;", "int i; double* dp = &i;", "int *pi = 0;", 3, Languages.CPLUS, Categories.KEYWORDS_POINTERS);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        Question question13 = new Question("int a = 100, b = 200;\n" +
+                "   int *p = &a, *q = &b;\n" +
+                "   p = q;", "b is assigned to a", "p now points to b", "a is assigned to b", "q now points to a", 2, Languages.CPLUS, Categories.KEYWORDS_POINTERS);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        Question question14 = new Question("A pointer can be initialized with", "Null", "Zero", "Address of an object of same type", "All of them", 4, Languages.CPLUS, Categories.KEYWORDS_POINTERS);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        Question question15 = new Question("A void pointer cannot point to which of these?", "methods in c++", "class member in c++", "variable in c++", "None of the above", 2, Languages.CPLUS, Categories.KEYWORDS_POINTERS);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        Question question16 = new Question(" Which of the following keywords is used to define an alternate name for an already existing data type?", "default", "volatile", "typedef", "static", 3, Languages.CPLUS, Categories.KEYWORDS_POINTERS);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        Question question17 = new Question("The loop keyword is", "Byte", "While", "Double", " Float", 2, Languages.CPLUS, Categories.KEYWORDS_POINTERS);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        Question question18 = new Question("Which one of the following is access keyword?", "Public", "Private", "Protected", "All of these", 4, Languages.CPLUS, Categories.KEYWORDS_POINTERS);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        Question question19 = new Question("The public keyword is an", "identifier", "access specifier", "variable type", "exception", 2, Languages.CPLUS, Categories.KEYWORDS_POINTERS);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.KEYWORDS);
+        Question question20 = new Question("Which keyword is used to explicitly throw an exception?", "try", "throwing", "catch", "throw", 4, Languages.CPLUS, Categories.KEYWORDS_POINTERS);
         insertQuestion(question20);
-
-
     }
 
-    //Adding OOP Questions
+   /* //Adding OOP Questions
     private void cPlusOOP() {
         Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
         insertQuestion(question1);
@@ -1663,7 +1663,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
 
 
-    }
+    }*/
 
     /*===============================================================================================================================================*/
     /*Categories*/
@@ -1708,7 +1708,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories2);
         Categories categories3 = new Categories("OOP", Languages.CPLUS);
         insertCategory(categories3);
-        Categories categories4 = new Categories("Keywords", Languages.CPLUS);
+        Categories categories4 = new Categories("Keywords and Pointers", Languages.CPLUS);
         insertCategory(categories4);
         Categories categories12 = new Categories("Function", Languages.CPLUS);
         insertCategory(categories12);

@@ -77,7 +77,6 @@ public class Category extends AppCompatActivity {
     public void onBackPressed() {
         flag = true;
         startActivity(new Intent(this, LanguagesActivity.class));
-        finish();
     }
 
     @Override

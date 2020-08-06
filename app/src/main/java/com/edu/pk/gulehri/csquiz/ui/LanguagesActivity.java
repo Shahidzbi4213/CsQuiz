@@ -47,7 +47,6 @@ public class LanguagesActivity extends AppCompatActivity {
     public void onBackPressed() {
         flag = true;
         startActivity(new Intent(this, StartQuizActivity.class));
-        finish();
     }
 
     @Override
