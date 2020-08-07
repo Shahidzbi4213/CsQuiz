@@ -84,10 +84,10 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         cPlusBasics();
         cPlusDataTypes();
         cPlusKeyWordAndPointers();
-        /*cPlusInterface();
-        cPlusOOP();
-        cPlusEnums();
         cPlusExceptionHandling();
+        cPlusOOP();
+        /*cPlusInterface();
+        cPlusEnums();
         cPlusMultiThreading();
         cPlusNestedClass();
         cPlusStandardTemplateLibrary();
@@ -1251,52 +1251,99 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
-   /* //Adding OOP Questions
+    //Adding OOP Questions
     private void cPlusOOP() {
-        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        Question question1 = new Question("The OOPs concept in C++, exposing only necessary information to users or clients is known as", "Abstraction", "Encapsulation", "Data hiding", "Hiding complexity", 1, Languages.CPLUS, Categories.OOP);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        Question question2 = new Question("Hiding the complexity is known as", "Abstraction", "Encapsulation", "Composition", "Hiding complexity", 2, Languages.CPLUS, Categories.OOP);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        Question question3 = new Question("For Cat and Animal class, correct way of inheritance is", "class Cat: public Animal", "class Animal: public Cat", "Both are correct way", "None is correct way", 1, Languages.CPLUS, Categories.OOP);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        Question question4 = new Question("In a class, encapsulating an object of another class is called", "Abstraction", "Encapsulation", "Composition", "Inheritance", 3, Languages.CPLUS, Categories.OOP);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        Question question5 = new Question("Features not available in C++ object oriented programming is", "Virtual destructor", "Virtual function", "Virtual constructor", "None of the above", 3, Languages.CPLUS, Categories.OOP);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        Question question6 = new Question(" IS A relationship in C++ is", "Composition", "Encapsulation", "Abstraction", "Inheritance", 4, Languages.CPLUS, Categories.OOP);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        Question question7 = new Question("What does polymorphism in OOPs mean?", "Concept of allowing overiding of functions", "Concept of hiding data", "Concept of keeping things in differnt modules/files", "Concept of wrapping things into a single unit", 1, Languages.CPLUS, Categories.OOP);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        Question question8 = new Question("Which concept allows you to reuse the written code?", "Encapsulation", " Abstraction", "Polymorphism", "Inheritance", 4, Languages.CPLUS, Categories.OOP);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        Question question9 = new Question("Which of the following shows multiple inheritances?", "A->B->C", "A->B; A->C", "A,B->C", "B->A", 3, Languages.CPLUS, Categories.OOP);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        Question question10 = new Question("Which of the following explains Polymorphism?", "int func(int, int);\n" +
+                "float func1(float, float);", "int func(int);\n" +
+                "int func(int);", "int func(float);\n" +
+                "float func(int, int, char);", "int func();\n" +
+                "int new_func();", 3, Languages.CPLUS, Categories.OOP);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        Question question11 = new Question("What does modularity mean?", "Hiding part of program", " Subdividing program into small independent parts", "Overriding parts of program", "Wrapping things into single unit", 2, Languages.CPLUS, Categories.OOP);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        Question question12 = new Question("Which of the following is not a type of Constructor?", "Friend constructor", "Copy constructor", "Default constructor", "Parameterized constructor", 1, Languages.CPLUS, Categories.OOP);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        Question question13 = new Question("How many types of polymorphism are there in C++?", "1", "2", "4", "5", 2, Languages.CPLUS, Categories.OOP);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        Question question14 = new Question("How run-time polymorphisms are implemented in C++?", "Using Inheritance", "Using Virtual functions", "Using Templates", "Using Inheritance and Virtual functions", 4, Languages.CPLUS, Categories.OOP);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        Question question15 = new Question("How compile-time polymorphisms are implemented in C++?", "Using Inheritance", "Using Virtual functions", "Using Templates", "Using Inheritance and Virtual functions", 3, Languages.CPLUS, Categories.OOP);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        Question question16 = new Question("What is Inheritance in C++?", "Wrapping of data into a single class", "Deriving new classes from existing classes", "Overloading of classes", "Classes with same names", 2, Languages.CPLUS, Categories.OOP);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        Question question17 = new Question("How many specifiers are used to derive a class?", "1", "2", "3", "5", 3, Languages.CPLUS, Categories.OOP);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        Question question18 = new Question("What is the role of a constructor in classes?", "To modify the data whenever required", " To destroy an object", "To initialize the data members of an object when it is created", "To call private functions from the outer world", 3, Languages.CPLUS, Categories.OOP);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        Question question19 = new Question("How many types of constructors are there in C++?", "4", "3", "2", "5", 2, Languages.CPLUS, Categories.OOP);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.OOP);
+        Question question20 = new Question("How many Destructors are allowed in a Class?", "1", "2", "3", "4", 1, Languages.CPLUS, Categories.OOP);
         insertQuestion(question20);
-
-
     }
 
+    //Adding Exception Handling Questions
+    private void cPlusExceptionHandling() {
+        Question question1 = new Question("Which keyword is used to handle the exception?", "Try", "Throw", "Catch", "None of the above", 3, Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question1);
+        Question question2 = new Question("Which is used to throw a exception?", "Try", "Throw", "Catch", "None of the above", 2, Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question2);
+        Question question3 = new Question("What will happen when the exception is not caught in the program?", "error", "program will execute", "block of that code will not execute", " program will execute & displays wrong output", 1, Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question3);
+        Question question4 = new Question("What is an exception in C++ program?", "A problem that arises during compilation", "Also known as the syntax error", " Also known as semantic error", "A problem that arises during the execution of a program", 4, Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question4);
+        Question question5 = new Question("Why do we need to handle exceptions?", "To avoid unexpected behaviour of a program during run-time", "To let compiler remove all exceptions by itself", "To successfully compile the program", "To get correct output", 1, Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question5);
+        Question question6 = new Question("Which part of the try-catch block is always fully executed?", " try part", "catch part", "finally part", "throw part", 3, Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question6);
+        Question question7 = new Question("Which of the following is an exception in C++?", "Divide by zero", "Semicolon not written", "Variable not declared", "An expression is wrongly written", 1, Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question7);
+        Question question8 = new Question("Return type of uncaught_exception() is ___________.", "int", "bool", "char *", "double", 2, Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question8);
+        Question question9 = new Question("Which is the Parent class for all exceptions?", "std::bad_exception", "std::logic_error", "std::exception", " std::runtime_error", 3, Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question9);
+        Question question10 = new Question("What are the different types of exceptions?", "1", "2", "4", "5", 2, Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question10);
+        Question question11 = new Question("What id the syntax for catching any type of exceptions?", "catch(Exception e)", "catch(…)", "catch(Exception ALL)", " catch(ALL)", 2, Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question11);
+        Question question12 = new Question("Header file used for exception handling in C++?", "<cstdlib>", "<string>", "<handler>", "<exception>", 4, Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question12);
+        Question question13 = new Question("Which function is invoked when we try to throw an exception that is not supported by a function?", " indeterminate()", "unutilized()", "unexpected()", "unpredicted()", 3, Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question13);
+        Question question14 = new Question("Where should we place catch block of the derived class in a try-catch block?", "Before the catch block of Base class", "After the catch block of Base class", " Anywhere in the sequence of catch blocks", " After all the catch blocks", 1, Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question14);
+        Question question15 = new Question("How Exception handling is implemented in the C++ program?", "Using Exception keyword", " Using Exception block", "Using Error handling schedules", "Using try-catch block", 4, Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question15);
+        Question question16 = new Question("Which exception is thrown by dynamic_cast?", "bad_cast", "bad_typeid", "bad_exception", "bad_alloc", 1, Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question16);
+        Question question17 = new Question("How do define the user-defined exceptions?", "Overriding class functionality", "Inheriting class functionality", "Inheriting & overriding exception class functionality", "None of the above", 3, Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question17);
+        Question question18 = new Question("Which type of program is recommended to include in try block?", "Static memory allocation", "Dynamic memory allocation", "Const reference", "Pointer", 2, Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question18);
+        Question question19 = new Question("What kind of exceptions are available in c++?", "Handled", "Unhandled", "Static", "Dynamic", 2, Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question19);
+        Question question20 = new Question("How many standard exception exist in c++", "9.0", "8.0", "6.0", "5.0", 4, Languages.CPLUS, Categories.EXCEPTION_HANDLING);
+        insertQuestion(question20);
+    }
+
+   /*
     //Adding Function Questions
     private void cPlusFunction() {
         Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
@@ -1388,53 +1435,6 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
 
 
     }
-
-    //Adding Exception Handling Questions
-    private void cPlusExceptionHandling() {
-        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
-        insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
-        insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
-        insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
-        insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
-        insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
-        insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
-        insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
-        insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
-        insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
-        insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
-        insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
-        insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
-        insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
-        insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
-        insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
-        insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
-        insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
-        insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
-        insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.EXCEPTION_HANDLING);
-        insertQuestion(question20);
-
-
-    }
-
     //Adding Multi Threading Questions
     private void cPlusMultiThreading() {
         Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
