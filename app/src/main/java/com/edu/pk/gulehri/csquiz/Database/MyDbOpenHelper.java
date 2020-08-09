@@ -86,13 +86,14 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         cPlusKeyWordAndPointers();
         cPlusExceptionHandling();
         cPlusOOP();
+        cPlusFunction();
         /*cPlusInterface();
         cPlusEnums();
         cPlusMultiThreading();
         cPlusNestedClass();
         cPlusStandardTemplateLibrary();
         cPlusDataStructure();
-        cPlusFunction();*/
+        */
 
     }
 
@@ -1343,52 +1344,52 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
-   /*
     //Adding Function Questions
     private void cPlusFunction() {
-        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        Question question1 = new Question("Which of the following is the default return value of functions in C++?", " int", "char", "float", "void", 1, Languages.CPLUS, Categories.FUNCTION);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        Question question2 = new Question("From which function the execution of a C++ program starts?", "start() function", "main() function", "new() function", "end() function", 2, Languages.CPLUS, Categories.FUNCTION);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        Question question3 = new Question("Which of the following is important in a function?", "Return type", " Function name", "Both return type and function name", "The return type, function name and parameter list", 3, Languages.CPLUS, Categories.FUNCTION);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        Question question4 = new Question("Correct way to declare pure virtual function in a C++ class is", "Virtual void foo() =0 ;", "Void virtual foo()= { 0 }", "Virtual void foo() {} = 0;", "None of the above", 1, Languages.CPLUS, Categories.FUNCTION);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        Question question5 = new Question("How are many minimum numbers of functions need to be presented in c++?", "0", "3", "2", "1", 4, Languages.CPLUS, Categories.FUNCTION);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        Question question6 = new Question("The variable that are listed in the function's calls are called", "Actual parameter", "Declared parameter", "Passed parameter", "None of them", 1, Languages.CPLUS, Categories.FUNCTION);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        Question question7 = new Question("The maths function acos (x) stands for", "Inverse Cosine of x", "Inverse Sine of x", "Inverse Tangent of x", "  Floor of x", 1, Languages.CPLUS, Categories.FUNCTION);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        Question question8 = new Question("which of the following is used to terminate the function declaration?", ":", ")", ";", "]", 3, Languages.CPLUS, Categories.FUNCTION);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        Question question9 = new Question("Which is more effective while calling the functions?", "call by value", "call by pointer", "call by object", "call by reference", 4, Languages.CPLUS, Categories.FUNCTION);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        Question question10 = new Question("What is the scope of the variable declared in the user defined function?", "whole program", "only inside the {} block", "the main function", "header section", 2, Languages.CPLUS, Categories.FUNCTION);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        Question question11 = new Question("How many ways of passing a parameter are there in c++?", "1", "2", "3", "4", 3, Languages.CPLUS, Categories.FUNCTION);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        Question question12 = new Question("Which is used to keep the call by reference value as intact?", "static", " const", "absolute", "virtual", 2, Languages.CPLUS, Categories.FUNCTION);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        Question question13 = new Question("By default how the value are passed in c++?", "call by value", "call by reference", "call by pointer", " call by object", 1, Languages.CPLUS, Categories.FUNCTION);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        Question question14 = new Question("What will happen when we use void in argument passing?", " It will return value with help of object", "Maybe or may not be return any value to its caller", " It will return value to its caller", "It will not return value to its caller", 4, Languages.CPLUS, Categories.FUNCTION);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        Question question15 = new Question(" What is an inline function?", "A function that is expanded at each call during execution", "A function that is called during compile time", "A function that is not checked for syntax errors", "A function that is not checked for semantic analysis", 1, Languages.CPLUS, Categories.FUNCTION);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        Question question16 = new Question("When we define the default values for a function?", "When a function is defined", "When a function is declared", "When the scope of the function is over", "When a function is called", 2, Languages.CPLUS, Categories.FUNCTION);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        Question question17 = new Question("Which of the following feature is used in function overloading and function with default argument?", "Encapsulation", "Polymorphism", "Abstraction", "Modularity", 3, Languages.CPLUS, Categories.FUNCTION);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        Question question18 = new Question("How many can max number of arguments present in function in the c99 compiler?", "99", "100", "102", "127", 4, Languages.CPLUS, Categories.FUNCTION);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        Question question19 = new Question("Which of the following function declaration using default arguments is incorrect?", "int foo(int x, int y =5, int z=10)", " int foo(int x=5, int y =10, int z)", " int foo(int x=5, int y, int z=10)", "All are correct", 1, Languages.CPLUS, Categories.FUNCTION);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.FUNCTION);
+        Question question20 = new Question("All variables declared in function definition are called", "Protected variables", "Local variable", "Global Variables", "Private variable", 2, Languages.CPLUS, Categories.FUNCTION);
         insertQuestion(question20);
-
-
     }
+
+   /*
+
 
     //Adding Interface Questions
     private void cPlusInterface() {
