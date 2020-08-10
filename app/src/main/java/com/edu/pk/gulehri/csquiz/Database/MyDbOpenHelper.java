@@ -85,13 +85,13 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         cPlusDataTypes();
         cPlusKeyWordAndPointers();
         cPlusExceptionHandling();
+        cPlusStandardTemplateLibrary();
         cPlusOOP();
         cPlusFunction();
+        cPlusClassesAndObjects();
         /*cPlusInterface();
         cPlusEnums();
         cPlusMultiThreading();
-        cPlusNestedClass();
-        cPlusStandardTemplateLibrary();
         cPlusDataStructure();
         */
 
@@ -115,61 +115,42 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
     private void javaBasicQuestions() {
         Question b1 = new Question("Java Source Code is compiled into ______________.", ".Obj", "Source Code", "Bytecode", ".Exe", 3, Languages.JAVA, Categories.BASICS);
         insertQuestion(b1);
-
         Question b2 = new Question("Which of the tool is used to compile java code ?", "java", "javac", "jar", " javadoc", 2, Languages.JAVA, Categories.BASICS);
         insertQuestion(b2);
-
         Question b3 = new Question("Which of these can not be used for a variable name in Java?", "identifier", "keyword", "identifier & keyword", "none of the mentioned", 2, Languages.JAVA, Categories.BASICS);
         insertQuestion(b3);
-
         Question b4 = new Question("What does AWT stands for?", "All Window Tools", "All Writing Tools", "Abstract Window Toolkit", " Abstract Writing Toolkit", 3, Languages.JAVA, Categories.BASICS);
         insertQuestion(b4);
-
         Question b5 = new Question("Which of the following is not a Java features?", "Dynamic", "Architecture Neutral", "Use of pointers", "Object-oriented", 3, Languages.JAVA, Categories.BASICS);
         insertQuestion(b5);
-
         Question b6 = new Question("_____ is used to find and fix bugs in the Java programs.", "JVM", "JDK", "JDB", "JRE", 3, Languages.JAVA, Categories.BASICS);
         insertQuestion(b6);
-
         Question b7 = new Question("In java, jar stands for_____.", "Java Archive Runner", "Java Application Resource", "Java Application Runner", "None of the above", 4, Languages.JAVA, Categories.BASICS);
         insertQuestion(b7);
-
         Question b8 = new Question("What is the extension of java file ?", ".exe", ".cpp", ".java", ".py", 3, Languages.JAVA, Categories.BASICS);
         insertQuestion(b8);
-
         Question b9 = new Question("Who created java language ?", "Bjarne Stroustrup", "James Gosling", "Guido van Rossum", "Rasmus Lerdorf", 2, Languages.JAVA, Categories.BASICS);
         insertQuestion(b9);
-
         Question b10 = new Question("What is a correct syntax to output 'Hello World' in Java?", "Console.WriteLine(\"Hello World\");", "echo(\"Hello World\");", "System.out.println(\"Hello World\");", "print (\"Hello World\");", 3, Languages.JAVA, Categories.BASICS);
         insertQuestion(b10);
-
         Question b11 = new Question("Which one is not valid COMMENTS in Java code?", "/* This is a comment  ", "// This is a comment  ", "/* This is a Comment */", "/** This is a Comment */", 1, Languages.JAVA, Categories.BASICS);
         insertQuestion(b11);
-
         Question b12 = new Question("How do you create a method in Java?", "methodName()", "methodName[]", "methodName.", "(methodName)", 1, Languages.JAVA, Categories.BASICS);
         insertQuestion(b12);
-
         Question b13 = new Question("Which keyword is used to create a class in Java?", "Class", "class", "className", "class()", 2, Languages.JAVA, Categories.BASICS);
         insertQuestion(b13);
-
         Question b14 = new Question("What is the correct way to create an object called myObj of MyClass?", "new myObj = MyClass();", "class MyClass = new myObj();", "MyClass myObj = new MyClass();", "class myObj = new MyClass();", 3, Languages.JAVA, Categories.BASICS);
         insertQuestion(b14);
-
         Question b15 = new Question("Which operator is used to multiply numbers?", "/", "x", "*", "%", 3, Languages.JAVA, Categories.BASICS);
         insertQuestion(b15);
-
         Question b16 = new Question("Which keyword is used to import a package from the Java API library?", "package", "import", "lib", "getlib", 2, Languages.JAVA, Categories.BASICS);
         insertQuestion(b16);
-
         Question b17 = new Question("Which statement is true regarding an object?", "An object is what classes instantiated are from", "An object is an instance of a class", " An object is a variable", "An object is not an instance of a class.", 2, Languages.JAVA, Categories.BASICS);
         insertQuestion(b17);
-
         Question b18 = new Question(" Which method can be defined only once in a program?", "static method", "main method", "finalize method", "private method", 2, Languages.JAVA, Categories.BASICS);
         insertQuestion(b18);
-
         Question b19 = new Question("Every statement in Java language should end with a?", "Dot or Period", "Comma", "Semicolon", "Colon", 3, Languages.JAVA, Categories.BASICS);
         insertQuestion(b19);
-
         Question b20 = new Question("When was first Version of Java i.e Java 1.0 was released?", "1991", "1994", "1999", "1996", 4, Languages.JAVA, Categories.BASICS);
         insertQuestion(b20);
     }
@@ -1388,6 +1369,97 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
+    //Adding Standard Template Library Questions
+    private void cPlusStandardTemplateLibrary() {
+        Question question1 = new Question("What is the Standard Template Library?", "Set of C++ template classes to provide common programming data structures and functions", "Set of C++ classes", "Set of Template functions used for easy data structures implementation", " Set of Template data structures only", 1, Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question1);
+        Question question2 = new Question("How many components STL has?", "1", "2", "3", "4", 4, Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question2);
+        Question question3 = new Question("What are the containers?", " Containers store objects and data", "Containers stores all the algorithms", "Containers contain overloaded functions", "Containers contain set of Iterators", 1, Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question3);
+        Question question4 = new Question("The list and vector classes is defined in", "STL classes", "Assert function", "String class", "None of them", 1, Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question4);
+        Question question5 = new Question("A collection of generic class and function is called as", "Header file", "Function template", "Standard Template Library (STL)", "None of the above", 3, Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question5);
+        Question question6 = new Question("How many Associative Containers are provided by C++?", "2", "3", "4", "6", 3, Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question6);
+        Question question7 = new Question("What are Iterators?", "Iterators are used to iterate over C-like arrays", "Iterators are used to iterate over pointers", "Iterators are used to point memory addresses of STL containers", "Iterators are used to iterate over functions", 3, Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question7);
+        Question question8 = new Question("How many types of Iterators are provided by C++?", "2", "3", "4", "5", 4, Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question8);
+        Question question9 = new Question("Which header file is used for Iterators?", "<iterator>", "<algorithm>", "<iter>", "<loopIter>", 1, Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question9);
+        Question question10 = new Question("Which of the following is used for generic programming?", "Virtual functions", "Modules", "Templates", "Abstract Classes", 3, Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question10);
+        Question question11 = new Question("What is a template?", "A template is used for creating the attributes", "A template is a formula for creating a generic class", "A template is used to manipulate the class", "None of the above", 2, Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question11);
+        Question question12 = new Question("Which of the following are the components of STL?", "Algorithms", "containers", "function, iterators", "All of these", 4, Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question12);
+        Question question13 = new Question("Container Adaptors provide a different interface for sequential containers these are", "Queue", "priority Queue", "stack", "All of these", 4, Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question13);
+        Question question14 = new Question("Which of the header file is used to implement algorithms provided by C++ STL?", "<algorithm>", "<header>", "<algos>", "<Algorithm>", 1, Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question14);
+        Question question15 = new Question("Which of the following is a Non-modifying Sequence Operation?", "swap()", "transform()", "remove()", "search()", 4, Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question15);
+        Question question16 = new Question("Which function is used increment the iterator by a particular value?", "next()", "advance()", "prev()", "move()", 2, Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question16);
+        Question question17 = new Question("Pick the correct statement.", "Input iterator moves sequentially forward", "Input iterator moves sequentially backward", "Input iterator moves in both direction", "Input iterator moves sequentially downwards", 1, Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question17);
+        Question question18 = new Question("Which function can be used to find the sum of a vector container?", "findsum()", "accumulate()", "calcsum()", "checksum()", 2, Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question18);
+        Question question19 = new Question("Which of the following is an advantage of Forward iterator over input and output iterator?", " Can be used as both accessing and assigning iterator", "Forward iterator can be incremented or decremented", "Can be used with relational operators also", "Can be used with arithmetic operators also", 1, Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question19);
+        Question question20 = new Question("vector<int>::iterator i1; \n " +
+                "for (i1=v1.begin();i1!=v1.end();++i1) \n" +
+                "*i1 = 1; \n \n" +
+                "Whats is i1?", " Input Iterator", "Output Iterator", "Both Input and Output Iterator", "Neither Input nor Output Iterator", 2, Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
+        insertQuestion(question20);
+    }
+
+    //Adding Nested Class Questions
+    private void cPlusClassesAndObjects() {
+        Question question1 = new Question("Which among the following best describes a nested class?", "Class inside a class", "Class inside a function", "Class inside a package", "Class inside a structure", 1, Languages.CPLUS, Categories.CLASSES_AND_OBJECTS);
+        insertQuestion(question1);
+        Question question2 = new Question("What does a class in C++ holds?", "data", "functions", "both data & functions", " arrays", 3, Languages.CPLUS, Categories.CLASSES_AND_OBJECTS);
+        insertQuestion(question2);
+        Question question3 = new Question("Which is used to define the member of a class externally?", " :", " ::", "#", " !!$", 2, Languages.CPLUS, Categories.CLASSES_AND_OBJECTS);
+        insertQuestion(question3);
+        Question question4 = new Question("Which other keywords are also used to declare the class other than class?", " struct", "union", "object", "both struct & union", 4, Languages.CPLUS, Categories.CLASSES_AND_OBJECTS);
+        insertQuestion(question4);
+        Question question5 = new Question("Which of the following is a valid class declaration?", "class A { int x; };", "class B {}", "public class A {}", "object A { int x; };", 1, Languages.CPLUS, Categories.CLASSES_AND_OBJECTS);
+        insertQuestion(question5);
+        Question question6 = new Question("The data members and functions of a class in C++ are by default ____________", "protected", "private", "public", "public & protected", 2, Languages.CPLUS, Categories.CLASSES_AND_OBJECTS);
+        insertQuestion(question6);
+        Question question7 = new Question(" Which category of data type a class belongs to?", "Fundamental data type", "Derived data type", "User defined derived data type", "Atomic data type", 3, Languages.CPLUS, Categories.CLASSES_AND_OBJECTS);
+        insertQuestion(question7);
+        Question question8 = new Question("Which operator a pointer object of a class uses to access its data members and member functions?", ".", " ->", ":", "::", 2, Languages.CPLUS, Categories.CLASSES_AND_OBJECTS);
+        insertQuestion(question8);
+        Question question9 = new Question("Which is also called as abstract class?", "Virtual function", "Derived class", "Pure virtual function", "None of the mentioned", 3, Languages.CPLUS, Categories.CLASSES_AND_OBJECTS);
+        insertQuestion(question9);
+        Question question10 = new Question("How to access the object in the class?", "Ternary operator", "Scope resolution operator", "Direct member access operator", "None of the above", 3, Languages.CPLUS, Categories.CLASSES_AND_OBJECTS);
+        insertQuestion(question10);
+        Question question11 = new Question("Which of the following can derived class inherit?", "members", "functions", " both members & functions", " classes", 3, Languages.CPLUS, Categories.CLASSES_AND_OBJECTS);
+        insertQuestion(question11);
+        Question question12 = new Question("Which constructor will initialize the base class data member?", "derived class", "base class", "class", "derived & base class", 2, Languages.CPLUS, Categories.CLASSES_AND_OBJECTS);
+        insertQuestion(question12);
+        Question question13 = new Question("Which class is used to design the base class?", "abstract class", "derived class", "base class", "derived & base class", 1, Languages.CPLUS, Categories.CLASSES_AND_OBJECTS);
+        insertQuestion(question13);
+        Question question14 = new Question("Which is used to create a pure virtual function?", "$", "=0", "&", " !", 2, Languages.CPLUS, Categories.CLASSES_AND_OBJECTS);
+        insertQuestion(question14);
+        Question question15 = new Question("Where does the abstract class is used?", "base class only", "derived class", "both derived & base class", "virtual class", 1, Languages.CPLUS, Categories.CLASSES_AND_OBJECTS);
+        insertQuestion(question15);
+        Question question16 = new Question("Which of these following members are not accessed by using direct member access operator?", "public", "private", "protected", "both private & protected", 4, Languages.CPLUS, Categories.CLASSES_AND_OBJECTS);
+        insertQuestion(question16);
+        Question question17 = new Question("Pick out the other definition of objects.", "member of the class", "associate of the class", " attribute of the class", "instance of the class", 4, Languages.CPLUS, Categories.CLASSES_AND_OBJECTS);
+        insertQuestion(question17);
+        Question question18 = new Question("How many objects can present in a single class?", "1", "2", "4", "As many as possible", 4, Languages.CPLUS, Categories.CLASSES_AND_OBJECTS);
+        insertQuestion(question18);
+        Question question19 = new Question("Pick out the correct option.", "We cannot make an instance of an abstract base class", "We can make an instance of an abstract base class", "We can make an instance of an abstract super class", "We can make an instance of an abstract derived class", 1, Languages.CPLUS, Categories.CLASSES_AND_OBJECTS);
+        insertQuestion(question19);
+        Question question20 = new Question("Where does the object is created?", " class", "constructor", "destructor", "attributes", 1, Languages.CPLUS, Categories.CLASSES_AND_OBJECTS);
+        insertQuestion(question20);
+    }
+
    /*
 
 
@@ -1482,51 +1554,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
 
     }
 
-    //Adding Nested Class Questions
-    private void cPlusNestedClass() {
-        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
-        insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
-        insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
-        insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
-        insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
-        insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
-        insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
-        insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
-        insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
-        insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
-        insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
-        insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
-        insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
-        insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
-        insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
-        insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
-        insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
-        insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
-        insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
-        insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INNER_CLASS);
-        insertQuestion(question20);
 
-
-    }
 
     //Adding Enums Questions
     private void cPlusEnums() {
@@ -1619,52 +1647,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
 
 
     }
-
-    //Adding Standard Template Library Questions
-    private void cPlusStandardTemplateLibrary() {
-        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
-        insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
-        insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
-        insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
-        insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
-        insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
-        insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
-        insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
-        insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
-        insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
-        insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
-        insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
-        insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
-        insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
-        insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
-        insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
-        insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
-        insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
-        insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
-        insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.STANDARD_TEMPLATE_LIBRARY);
-        insertQuestion(question20);
-
-
-    }*/
+    */
 
     /*===============================================================================================================================================*/
     /*Categories*/
@@ -1719,7 +1702,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories6);
         Categories categories7 = new Categories("Multi Threading", Languages.CPLUS);
         insertCategory(categories7);
-        Categories categories8 = new Categories("Nested Class", Languages.CPLUS);
+        Categories categories8 = new Categories("Classes and Objects", Languages.CPLUS);
         insertCategory(categories8);
         Categories categories9 = new Categories("ENUMS", Languages.CPLUS);
         insertCategory(categories9);

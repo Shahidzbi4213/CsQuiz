@@ -38,6 +38,7 @@ public class Categories {
 
     //C++
     public static final String ENUMS = "ENUMS";
+    public static final String CLASSES_AND_OBJECTS = "Classes and Objects";
     public static final String KEYWORDS_POINTERS = "Keywords and Pointers";
     public static final String STANDARD_TEMPLATE_LIBRARY = "Standard Template Library";
 
@@ -79,6 +80,7 @@ public class Categories {
                     new Categories("ENUMS", Languages.CPLUS),
                     new Categories("Keywords and Pointers", Languages.CPLUS),
                     new Categories("Standard Template Library", Languages.CPLUS),
+                    new Categories("Classes and Objects", Languages.CPLUS),
 
 
                     new Categories("Intents", Languages.ANDROID)
