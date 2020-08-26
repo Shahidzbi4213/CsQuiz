@@ -89,7 +89,8 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         cPlusOOP();
         cPlusFunction();
         cPlusClassesAndObjects();
-        /*cPlusInterface();
+        cPlusModularizationInterfacesAndNameSpace();
+        /*
         cPlusEnums();
         cPlusMultiThreading();
         cPlusDataStructure();
@@ -1460,54 +1461,55 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
-   /*
-
-
     //Adding Interface Questions
-    private void cPlusInterface() {
-        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+    private void cPlusModularizationInterfacesAndNameSpace() {
+        Question question1 = new Question("which of the following is used to implement the c++ interfaces?", "absolute variables", "abstract classes", "constant variables", "default variables", 2, Languages.CPLUS, Categories.MODULARIZATION_AND_INTERFACES_NAMESPACE);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        Question question2 = new Question(" What is the ability to group some lines of code that can be included?", "specific task", "program control", "modularization", "macros", 3, Languages.CPLUS, Categories.MODULARIZATION_AND_INTERFACES_NAMESPACE);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        Question question3 = new Question("What is similar to interface in c++", " methods", " instance of class", "pure abstract class", "None of the mentioned", 3, Languages.CPLUS, Categories.MODULARIZATION_AND_INTERFACES_NAMESPACE);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        Question question4 = new Question("Identify the correct statement.", "c++ does not have built-in interfaces", "c++ does have built-in interfaces", "c++ have no cocept of interfaces", "None of the mentioned", 1, Languages.CPLUS, Categories.MODULARIZATION_AND_INTERFACES_NAMESPACE);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        Question question5 = new Question("What does the client module import?", "macro", "interface", "records", "None of the mentioned", 2, Languages.CPLUS, Categories.MODULARIZATION_AND_INTERFACES_NAMESPACE);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        Question question6 = new Question("How many types of modularization are there in c++?", "3", "4", "1", "None of the mentioned", 4, Languages.CPLUS, Categories.MODULARIZATION_AND_INTERFACES_NAMESPACE);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        Question question7 = new Question("How many types do functions fall depends on modularization?", "1", "2", "3", "4", 2, Languages.CPLUS, Categories.MODULARIZATION_AND_INTERFACES_NAMESPACE);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        Question question8 = new Question("Interface class in C++ is created by", "Using interface keyword before class", "Using pure virtual function", "Using pure virtual function and virtual function both", "Using class keyword", 2, Languages.CPLUS, Categories.MODULARIZATION_AND_INTERFACES_NAMESPACE);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        Question question9 = new Question("For a method to be an Interface between the outside world and a class, it has to be declared __________.", "private", "protected", "public", "external", 1, Languages.CPLUS, Categories.MODULARIZATION_AND_INTERFACES_NAMESPACE);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        Question question10 = new Question("What does an interface contain?", "Method definition", " Method declaration", "Method declaration and definition", "Method Name", 2, Languages.CPLUS, Categories.MODULARIZATION_AND_INTERFACES_NAMESPACE);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        Question question11 = new Question("What happens when a constructor is defined for an interface?", "Compilation failure", "Runtime Exception", "The interface compiles successfully", "The implementing class will throw exception", 1, Languages.CPLUS, Categories.MODULARIZATION_AND_INTERFACES_NAMESPACE);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        Question question12 = new Question("Which operator is used to signify the namespace?", "conditional operator", "ternary operator", "scope operator", "bitwise operator", 3, Languages.CPLUS, Categories.MODULARIZATION_AND_INTERFACES_NAMESPACE);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        Question question13 = new Question("Identify the correct statement.", " Namespace is used to group class, objects and functions", "Namespace is used to mark the beginning of the program", "A namespace is used to separate the class, objects", "Namespace is used to mark the beginning & end of the program", 1, Languages.CPLUS, Categories.MODULARIZATION_AND_INTERFACES_NAMESPACE);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        Question question14 = new Question("What is the use of Namespace?", "To encapsulate the data", "To structure a program into logical units", "Encapsulate the data & structure a program into logical units", "It is used to mark the beginning of the program", 2, Languages.CPLUS, Categories.MODULARIZATION_AND_INTERFACES_NAMESPACE);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        Question question15 = new Question(" What is the general syntax for accessing the namespace variable?", "namespace::operator", " namespace,operator", "namespace#operator", "namespace$operator", 1, Languages.CPLUS, Categories.MODULARIZATION_AND_INTERFACES_NAMESPACE);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        Question question16 = new Question("Which keyword is used to access the variable in the namespace?", "using", "  dynamic", "const", "static ", 1, Languages.CPLUS, Categories.MODULARIZATION_AND_INTERFACES_NAMESPACE);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        Question question17 = new Question("namespace A{ int var = 10;\n" +
+                "\tnamespace B{ int i = 15; \n" +
+                "\t}}", "cout<<A::i;", "cout<<B::i;", "cout<<A::B::i;", "cout<<i;", 3, Languages.CPLUS, Categories.MODULARIZATION_AND_INTERFACES_NAMESPACE);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        Question question18 = new Question("What is the correct syntax of defining a namespace?", "namespace name{}", "Namespace name{};", "namespace name{};", "typedef namespace name{} NAME", 1, Languages.CPLUS, Categories.MODULARIZATION_AND_INTERFACES_NAMESPACE);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        Question question19 = new Question("namespace A{ int var; }\n" +
+                "\t\t\tA::var = 5;", "namespace A{ int i }", "namespace B{ int i; };", "namespace C{ int i; }", "Namespace D{ int i }", 3, Languages.CPLUS, Categories.MODULARIZATION_AND_INTERFACES_NAMESPACE);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.INTERFACES);
+        Question question20 = new Question("Which operator is used for accessing a member of namespace?", " :", " ::", "->", ".", 2, Languages.CPLUS, Categories.MODULARIZATION_AND_INTERFACES_NAMESPACE);
         insertQuestion(question20);
-
-
     }
+
+
+   /*
     //Adding Multi Threading Questions
     private void cPlusMultiThreading() {
         Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
@@ -1696,7 +1698,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories4);
         Categories categories12 = new Categories("Function", Languages.CPLUS);
         insertCategory(categories12);
-        Categories categories5 = new Categories("Interfaces", Languages.CPLUS);
+        Categories categories5 = new Categories("Modularization,Interfaces and Namespace", Languages.CPLUS);
         insertCategory(categories5);
         Categories categories6 = new Categories("EXCEPTION Handling", Languages.CPLUS);
         insertCategory(categories6);

@@ -39,11 +39,19 @@ public class Categories {
     //C++
     public static final String ENUMS = "ENUMS";
     public static final String CLASSES_AND_OBJECTS = "Classes and Objects";
+    public static final String MODULARIZATION_AND_INTERFACES_NAMESPACE = "Modularization,Interfaces and Namespace";
     public static final String KEYWORDS_POINTERS = "Keywords and Pointers";
     public static final String STANDARD_TEMPLATE_LIBRARY = "Standard Template Library";
 
 
-
+    //Js
+    public static final String DOM = "DOM";
+    public static final String ERROR_HANDLING = "ERROR Handling";
+    public static final String EXPRESSION_AND_OPERATORS = "Expression and Operators";
+    public static final String REGULAR_EXPRESSION = "Regular Expression";
+    public static final String TYPES_VALUES_AND_VARIABLES = "Types, Values and Variable";
+    public static final String AJAX = "AJAX";
+    public static final String JSON = "JSON";
 
 
     public Categories(String category, String language) {
@@ -81,6 +89,16 @@ public class Categories {
                     new Categories("Keywords and Pointers", Languages.CPLUS),
                     new Categories("Standard Template Library", Languages.CPLUS),
                     new Categories("Classes and Objects", Languages.CPLUS),
+                    new Categories("Modularization,Interfaces and Namespace", Languages.CPLUS),
+
+
+                    new Categories("DOM", Languages.JAVA_SCRIPT),
+                    new Categories("ERROR Handling", Languages.JAVA_SCRIPT),
+                    new Categories("Expression and Operators", Languages.JAVA_SCRIPT),
+                    new Categories("Regular Expression", Languages.JAVA_SCRIPT),
+                    new Categories("Types, Values and Variable", Languages.JAVA_SCRIPT),
+                    new Categories("AJAX", Languages.JAVA_SCRIPT),
+                    new Categories("JSON", Languages.JAVA_SCRIPT),
 
 
                     new Categories("Intents", Languages.ANDROID)
