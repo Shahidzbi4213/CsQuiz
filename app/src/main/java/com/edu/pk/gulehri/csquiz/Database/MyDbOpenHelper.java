@@ -1698,7 +1698,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories4);
         Categories categories12 = new Categories("Function", Languages.CPLUS);
         insertCategory(categories12);
-        Categories categories5 = new Categories("Modularization,Interfaces and Namespace", Languages.CPLUS);
+        Categories categories5 = new Categories("Modularization,Interfaces And \nNamespace", Languages.CPLUS);
         insertCategory(categories5);
         Categories categories6 = new Categories("EXCEPTION Handling", Languages.CPLUS);
         insertCategory(categories6);

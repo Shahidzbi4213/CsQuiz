@@ -39,7 +39,7 @@ public class Categories {
     //C++
     public static final String ENUMS = "ENUMS";
     public static final String CLASSES_AND_OBJECTS = "Classes and Objects";
-    public static final String MODULARIZATION_AND_INTERFACES_NAMESPACE = "Modularization,Interfaces and Namespace";
+    public static final String MODULARIZATION_AND_INTERFACES_NAMESPACE = "Modularization,Interfaces And \nNamespace";
     public static final String KEYWORDS_POINTERS = "Keywords and Pointers";
     public static final String STANDARD_TEMPLATE_LIBRARY = "Standard Template Library";
 
@@ -89,7 +89,7 @@ public class Categories {
                     new Categories("Keywords and Pointers", Languages.CPLUS),
                     new Categories("Standard Template Library", Languages.CPLUS),
                     new Categories("Classes and Objects", Languages.CPLUS),
-                    new Categories("Modularization,Interfaces and Namespace", Languages.CPLUS),
+                    new Categories("Modularization,Interfaces And \nNamespace", Languages.CPLUS),
 
 
                     new Categories("DOM", Languages.JAVA_SCRIPT),

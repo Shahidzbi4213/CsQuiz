@@ -38,7 +38,7 @@
             android:layout_gravity="center"
             android:contentDescription="@string/app_name"
             android:elevation="@dimen/_20sdp"
-            android:src="@drawable/logoround" />
+            android:src="@drawable/bg" />
 
         <TextView
             android:layout_width="wrap_content"

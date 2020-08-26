@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical"
+    android:weightSum="2"
     tools:context=".ui.SplashScreen">
 
     <RelativeLayout
@@ -59,48 +60,42 @@
             android:background="@drawable/white_line" />
     </RelativeLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_gravity="center">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom">
 
         <TextView
             android:id="@+id/a"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
             android:fontFamily="@font/baloo"
+            android:gravity="center"
             android:layout_marginStart="@dimen/_20sdp"
             android:layout_marginEnd="@dimen/_20sdp"
             android:text="@string/app_name"
             android:textColor="@android:color/white"
             android:textSize="@dimen/_60sdp" />
-    </RelativeLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom">
 
-        <RelativeLayout
+        <TextView
+            android:id="@+id/tagLine"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            tools:ignore="UselessParent">
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/developerName"
+            android:textColor="#8A8585"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold|italic" />
 
-            <TextView
-                android:id="@+id/tagLine"
-                android:layout_width="@dimen/_127sdp"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:gravity="center"
-                android:layout_marginBottom="50dp"
-                android:fontFamily="cursive"
-                android:text="@string/developerName"
-                android:textColor="#8A8585"
-                android:textSize="@dimen/_16sdp"
-                android:textStyle="bold|italic" />
-        </RelativeLayout>
     </LinearLayout>
 </LinearLayout>

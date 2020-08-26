@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical"
+    android:weightSum="2"
     tools:context=".ui.SplashScreen">
-
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -64,69 +64,72 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginStart="@dimen/_30sdp"
-        android:layout_marginTop="@dimen/_30sdp"
-        android:layout_marginEnd="@dimen/_30sdp"
-        android:layout_weight="1"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_weight="1.5"
         android:orientation="vertical">
 
         <Button
             android:id="@+id/startquiz"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
             android:layout_weight="1"
             android:background="@drawable/button_start_quiz"
-            android:elevation="10dp"
-            android:fontFamily="@font/mukta_vaani_bold"
+            android:elevation="@dimen/_10sdp"
+            android:fontFamily="@font/nobile_bold_italic"
             android:gravity="center"
-            android:padding="@dimen/_minus1sdp"
             android:text="@string/startQuiz"
             android:textColor="@android:color/black"
-            android:textSize="30sp" />
+            android:textSize="@dimen/_20sdp" />
 
         <Button
             android:id="@+id/aboutUs"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_30sdp"
             android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
             android:layout_weight="1"
             android:background="@drawable/button_start_quiz"
-            android:elevation="10dp"
-            android:fontFamily="@font/mukta_vaani_bold"
+            android:elevation="@dimen/_10sdp"
+            android:fontFamily="@font/nobile_bold_italic"
             android:gravity="center"
             android:text="About Us"
             android:textColor="@android:color/black"
-            android:textSize="30sp" />
+            android:textSize="@dimen/_20sdp" />
 
         <Button
             android:id="@+id/exit"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_30sdp"
             android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
             android:layout_weight="1"
             android:background="@drawable/button_start_quiz"
-            android:elevation="10dp"
-            android:fontFamily="@font/mukta_vaani_bold"
+            android:elevation="@dimen/_10sdp"
+            android:fontFamily="@font/nobile_bold_italic"
             android:gravity="center"
             android:text="Exit"
             android:textColor="@android:color/black"
-            android:textSize="30sp" />
+            android:textSize="@dimen/_20sdp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.3">
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="bottom">
 
         <TextView
             android:id="@+id/tagLine"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
             android:fontFamily="cursive"
             android:gravity="center"
-            android:padding="@dimen/_20sdp"
+            android:padding="@dimen/_5sdp"
             android:text=" We Welcome You"
             android:textColor="#8A8585"
             android:textSize="@dimen/_18sdp"
