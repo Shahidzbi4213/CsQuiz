@@ -91,12 +91,6 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         cPlusClassesAndObjects();
         cPlusDataStructure();
         cPlusModularizationInterfacesAndNameSpace();
-        /*
-        cPlusEnums();
-        cPlusMultiThreading();
-
-        */
-
     }
 
     private void addCategory() {
@@ -1553,101 +1547,6 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
-
-
-   /*
-    //Adding Multi Threading Questions
-    private void cPlusMultiThreading() {
-        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
-        insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
-        insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
-        insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
-        insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
-        insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
-        insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
-        insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
-        insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
-        insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
-        insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
-        insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
-        insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
-        insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
-        insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
-        insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
-        insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
-        insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
-        insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
-        insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.MULTI_THREADING);
-        insertQuestion(question20);
-
-
-    }
-
-
-
-    //Adding Enums Questions
-    private void cPlusEnums() {
-        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
-        insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
-        insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
-        insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
-        insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
-        insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
-        insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
-        insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
-        insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
-        insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
-        insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
-        insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
-        insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
-        insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
-        insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
-        insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
-        insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
-        insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
-        insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
-        insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
-        insertQuestion(question20);
-    }
-    */
 
     /*===============================================================================================================================================*/
     /*Categories*/
