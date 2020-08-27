@@ -89,11 +89,12 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         cPlusOOP();
         cPlusFunction();
         cPlusClassesAndObjects();
+        cPlusDataStructure();
         cPlusModularizationInterfacesAndNameSpace();
         /*
         cPlusEnums();
         cPlusMultiThreading();
-        cPlusDataStructure();
+
         */
 
     }
@@ -1508,6 +1509,51 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
+    //Adding Data Structure Questions
+    private void cPlusDataStructure() {
+        Question question1 = new Question("Which of these best describes an array?", "A data structure that shows a hierarchical behaviour", "Container of objects of similar types", "Arrays are immutable once initialised", "Array is not a data structure", 2, Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question1);
+        Question question2 = new Question("Which of the following correctly declares an array?", "int array[10];", "int array;", "array{10};", "array array[10];", 1, Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question2);
+        Question question3 = new Question("Which of the following accesses the seventh element stored in array?", "array[6];", "array[7];", "array(7);", " array;", 1, Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question3);
+        Question question4 = new Question("What is the meaning of the following declaration? \n int(*p[5])();", "p is pointer to function", "p is array of pointer to function", "p is pointer to such function which return type is the array", "p is pointer to array of function", 2, Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question4);
+        Question question5 = new Question("Which of the following data structure is non-linear type?", "Strings", "Lists", "Stacks", "None of above", 4, Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question5);
+        Question question6 = new Question("A binary tree whose every node has either zero or two children is called", "Complete binary tree", "Binary search tree", "Extended binary tree", "None of above", 3, Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question6);
+        Question question7 = new Question("Which of the following sorting algorithms can be used to sort a random linked list with minimum time complexity?", "Insertion Sort", "Quick Sort", "Heap Sort", "Merge Sort", 4, Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question7);
+        Question question8 = new Question("Which of these is not an application of linked list?", "To implement file systems", "For separate chaining in hash-tables", "Random Access of elements", "To implement non-binary trees", 3, Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question8);
+        Question question9 = new Question("If the elements “A”, “B”, “C” and “D” are placed in a queue and are deleted one at a time, in what order will they be removed?", "ABCD", "DCBA", "DCAB", "ABDC", 1, Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question9);
+        Question question10 = new Question("Which of the following deletes the element pointed to X from doubly LL , if X pointed last element:", "X -> fwd -> bwd = X -> bwd;", "X -> bwd -> fwd = X -> bwd;", "X -> bwd -> fwd = NULL;", "X -> fwd -> bwd = NULL;", 3, Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question10);
+        Question question11 = new Question("What does ‘stack overflow’ refer to?", "accessing item from an undefined stack", "adding items to a full stack", "removing items from an empty stack", "index out of bounds exception", 2, Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question11);
+        Question question12 = new Question("The operation for adding an entry to a stack is traditionally called:", "insert", "append", "add", "push", 4, Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question12);
+        Question question13 = new Question("What is the value of the postfix expression \n 6 3 2 4 + – *", "Something between 15 and 100", "Something between -5 and -15", "Something between 5 and 15", "Something between -15 and -100", 4, Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question13);
+        Question question14 = new Question("Evaluate the following prefix expression:\n" + "+ * 2 + / 14 2 5 1", "40", "50", "25", "15", 3, Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question14);
+        Question question15 = new Question("What is the worst-case time for quick sort to sort an array of n elements?", "O(n log n)", "O(n)", "O(n²)", "O(log n)", 3, Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question15);
+        Question question16 = new Question("Which searching can be performed iteratively ?", "linear search", "Binary search", "Above Both", "None of the Above", 3, Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question16);
+        Question question17 = new Question("A tree with n vertices, consists of________ edges.", "n", "n-1", "n-2", "log(n)", 2, Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question17);
+        Question question18 = new Question("Heap is a good data structure to implement", "priority Queue", "Deque", "linear queue", "None of the Above", 1, Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question18);
+        Question question19 = new Question("A stack follows __________", "FIFO (First In First Out) principle", "LIFO (Last In First Out) principle", "Ordered array", "Linear tree", 2, Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question19);
+        Question question20 = new Question("A queue follows __________", "FIFO (First In First Out) principle", "LIFO (Last In First Out) principle", "Ordered array", "Linear tree", 1, Languages.CPLUS, Categories.DATA_STRUCTURE);
+        insertQuestion(question20);
+    }
+
+
 
    /*
     //Adding Multi Threading Questions
@@ -1600,54 +1646,6 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question19);
         Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.ENUMS);
         insertQuestion(question20);
-
-
-    }
-
-    //Adding Data Structure Questions
-    private void cPlusDataStructure() {
-        Question question1 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
-        insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
-        insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
-        insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
-        insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
-        insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
-        insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
-        insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
-        insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
-        insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
-        insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
-        insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
-        insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
-        insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
-        insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
-        insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
-        insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
-        insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
-        insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
-        insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.CPLUS, Categories.DATA_STRUCTURE);
-        insertQuestion(question20);
-
-
     }
     */
 
@@ -1702,16 +1700,12 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories5);
         Categories categories6 = new Categories("EXCEPTION Handling", Languages.CPLUS);
         insertCategory(categories6);
-        Categories categories7 = new Categories("Multi Threading", Languages.CPLUS);
+        Categories categories7 = new Categories("Data Structure", Languages.CPLUS);
         insertCategory(categories7);
         Categories categories8 = new Categories("Classes and Objects", Languages.CPLUS);
         insertCategory(categories8);
-        Categories categories9 = new Categories("ENUMS", Languages.CPLUS);
+        Categories categories9 = new Categories("Standard Template Library", Languages.CPLUS);
         insertCategory(categories9);
-        Categories categories10 = new Categories("Data Structure", Languages.CPLUS);
-        insertCategory(categories10);
-        Categories categories11 = new Categories("Standard Template Library", Languages.CPLUS);
-        insertCategory(categories11);
 
     }
 
