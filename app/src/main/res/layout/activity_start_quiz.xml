@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical"
-    android:weightSum="2"
+    android:weightSum="3"
     tools:context=".ui.SplashScreen">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="0dp"
+        android:layout_weight="1.1">
 
         <View
             android:id="@+id/first_line"
@@ -64,8 +65,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="@dimen/_15sdp"
-        android:layout_weight="1.5"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_weight="1.4"
+        android:padding="@dimen/_10sdp"
+        android:weightSum="3"
         android:orientation="vertical">
 
         <Button
@@ -81,7 +84,7 @@
             android:gravity="center"
             android:text="@string/startQuiz"
             android:textColor="@android:color/black"
-            android:textSize="@dimen/_20sdp" />
+            android:textSize="@dimen/_17sdp" />
 
         <Button
             android:id="@+id/aboutUs"
@@ -97,7 +100,7 @@
             android:gravity="center"
             android:text="About Us"
             android:textColor="@android:color/black"
-            android:textSize="@dimen/_20sdp" />
+            android:textSize="@dimen/_17sdp" />
 
         <Button
             android:id="@+id/exit"
@@ -113,7 +116,7 @@
             android:gravity="center"
             android:text="Exit"
             android:textColor="@android:color/black"
-            android:textSize="@dimen/_20sdp" />
+            android:textSize="@dimen/_17sdp" />
 
     </LinearLayout>
 

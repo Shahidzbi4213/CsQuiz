@@ -22,13 +22,11 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
     private String TAG = "myTag";
     private SQLiteDatabase db;
 
-
     public MyDbOpenHelper(Context context) {
         super(context, DB_NAME, null, VERSION);
         db = getReadableDatabase();
         db = getWritableDatabase();
     }
-
 
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -50,7 +48,6 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         Log.d(TAG, "onUpgrade: DatabaseUpgraded");
 
     }
-
 
     private void addQuestions() {
 
