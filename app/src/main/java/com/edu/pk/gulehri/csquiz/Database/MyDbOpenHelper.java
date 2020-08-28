@@ -88,6 +88,9 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         cPlusClassesAndObjects();
         cPlusDataStructure();
         cPlusModularizationInterfacesAndNameSpace();
+
+        //Android
+        androidBasics();
     }
 
     private void addCategory() {
@@ -1543,6 +1546,97 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         Question question20 = new Question("A queue follows __________", "FIFO (First In First Out) principle", "LIFO (Last In First Out) principle", "Ordered array", "Linear tree", 1, Languages.CPLUS, Categories.DATA_STRUCTURE);
         insertQuestion(question20);
     }
+
+    /*===============================================================================================================================================*/
+    /* Android */
+    /*===============================================================================================================================================*/
+    private void androidBasics() {
+        Question question1 = new Question("In android application Which file holds to use the internet_____.", " create file", "Manifest file", "system file", "None of these", 2, Categories.BASICS, Languages.ANDROID);
+        insertQuestion(question1);
+        Question question2 = new Question("Android is", "Web server", " web browser", "operating system", "None of these", 3, Categories.BASICS, Languages.ANDROID);
+        insertQuestion(question2);
+        Question question3 = new Question("Which one is not a nickname of a version of Android? ", "cupcake", "Gingerbread", "Honeycomb", "Muffin", 4, Categories.BASICS, Languages.ANDROID);
+        insertQuestion(question3);
+        Question question4 = new Question("_____method is used to close an activity.", "Finish", "Stop", "Destroy", "Close", 1, Categories.BASICS, Languages.ANDROID);
+        insertQuestion(question4);
+        Question question5 = new Question("Src folder contain____files", " Java source code", "XML", "Manifest", "None of these", 1, Categories.BASICS, Languages.ANDROID);
+        insertQuestion(question5);
+        Question question6 = new Question("When did Google purchase Android?", "2007", "2005", "2008", "2010", 2, Categories.BASICS, Languages.ANDROID);
+        insertQuestion(question6);
+        Question question7 = new Question(" _____is the first callback method invoked by the system during an Activity life-cycle?", "on Start()", "on Stop()", "onResume()", "onCreate()", 4, Categories.BASICS, Languages.ANDROID);
+        insertQuestion(question7);
+        Question question8 = new Question("The Android project folder “res/” contain_____?", "Resource files", "Java Activity classes", "Libraries", "None of these", 1, Categories.BASICS, Languages.ANDROID);
+        insertQuestion(question8);
+        Question question9 = new Question("Android is developed by the", "Apple", "Google", "Microsoft", "Android Inc", 4, Categories.BASICS, Languages.ANDROID);
+        insertQuestion(question9);
+        Question question10 = new Question("APK stands for ?", "Android power key", "Android packaging kit", "Android packaging key", "Android pin key", 3, Categories.BASICS, Languages.ANDROID);
+        insertQuestion(question10);
+        Question question11 = new Question("How can pass the data between the activities", "Content provider", "Intent", "Service", "All of the above", 2, Categories.BASICS, Languages.ANDROID);
+        insertQuestion(question11);
+        Question question12 = new Question("AVD stands for ", "Android virtual device", "Application virtual device", "Android virtual display", "None of these", 1, Categories.BASICS, Languages.ANDROID);
+        insertQuestion(question12);
+        Question question13 = new Question("What Activity method is used to get reference to view using id of a resource XML?", "findViewByReference(int id);", "findViewById(int id)", "retrieveResourceById(int id)", "findViewById(String id)", 2, Categories.BASICS, Languages.ANDROID);
+        insertQuestion(question13);
+        Question question14 = new Question("What is the name of the folder that contains the R.java file?", "src", "res", "bin", "gen", 4, Categories.BASICS, Languages.ANDROID);
+        insertQuestion(question14);
+        Question question15 = new Question("Which of these files contains text values that you can use in your application?", "AndroidManifest.xml", "res/Text.xml", "res/values/strings.xml", "res/layout/Main.xml", 3, Categories.BASICS, Languages.ANDROID);
+        insertQuestion(question15);
+        Question question16 = new Question("Which of the following is not an Activity lifecycle call-back method?", "onStart", "onBackPressed", "onCreate", "onPause", 2, Categories.BASICS, Languages.ANDROID);
+        insertQuestion(question16);
+        Question question17 = new Question("Which of the following methods is called in an Activity when another activity gets into the foreground?", "onStop()", "onPause()", "onDestroy()", "onResume()", 2, Categories.BASICS, Languages.ANDROID);
+        insertQuestion(question17);
+        Question question18 = new Question("Which of the following attributes is used to set an activity screen to landscape orientation?", "screenorientation = landscape", "screenOrientation=”landscape”", "android:ScreenOrientation=“landscape”", "android:ScreenOrientation=“landscape”", 4, Categories.BASICS, Languages.ANDROID);
+        insertQuestion(question18);
+        Question question19 = new Question("What is the is count of android life cycle methods?", "4", "7", "5", "8", 2, Categories.BASICS, Languages.ANDROID);
+        insertQuestion(question19);
+        Question question20 = new Question("Which are the screen sizes in Android?", "Small", "Normal", "Large", "All of the Above", 4, Categories.BASICS, Languages.ANDROID);
+        insertQuestion(question20);
+    }
+
+
+
+   /* private void androidBasics(){
+        Question question1 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        insertQuestion(question1);
+        Question question2 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        insertQuestion(question2);
+        Question question3 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        insertQuestion(question3);
+        Question question4 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        insertQuestion(question4);
+        Question question5 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        insertQuestion(question5);
+        Question question6 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        insertQuestion(question6);
+        Question question7 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        insertQuestion(question7);
+        Question question8 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        insertQuestion(question8);
+        Question question9 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        insertQuestion(question9);
+        Question question10 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        insertQuestion(question10);
+        Question question11 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        insertQuestion(question11);
+        Question question12 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        insertQuestion(question12);
+        Question question13 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        insertQuestion(question13);
+        Question question14 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        insertQuestion(question14);
+        Question question15 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        insertQuestion(question15);
+        Question question16 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        insertQuestion(question16);
+        Question question17 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        insertQuestion(question17);
+        Question question18 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        insertQuestion(question18);
+        Question question19 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        insertQuestion(question19);
+        Question question20 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        insertQuestion(question20);
+    }*/
 
 
     /*===============================================================================================================================================*/
