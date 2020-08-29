@@ -53,6 +53,9 @@ public class Categories {
     public static final String AJAX = "AJAX";
     public static final String JSON = "JSON";
 
+    //Android
+    public static final String ACTIVITY_AND_INTENTS = "ACTIVITY And INTENTS";
+
 
     public Categories(String category, String language) {
         this.category = category;
@@ -101,7 +104,7 @@ public class Categories {
                     new Categories("JSON", Languages.JAVA_SCRIPT),
 
 
-                    new Categories("Intents", Languages.ANDROID)
+                    new Categories("ACTIVITY And INTENTS", Languages.ANDROID)
             };
 
 

@@ -91,6 +91,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
 
         //Android
         androidBasics();
+        androidActivityAndIntents();
     }
 
     private void addCategory() {
@@ -1550,6 +1551,8 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
     /*===============================================================================================================================================*/
     /* Android */
     /*===============================================================================================================================================*/
+
+    //Adding Basics
     private void androidBasics() {
         Question question1 = new Question("In android application Which file holds to use the internet_____.", " create file", "Manifest file", "system file", "None of these", 2, Categories.BASICS, Languages.ANDROID);
         insertQuestion(question1);
@@ -1593,50 +1596,49 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
-
-
-   /* private void androidBasics(){
-        Question question1 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+    //Adding Activity and Inents in adroid
+    private void androidActivityAndIntents() {
+        Question question1 = new Question("Intent intent = new Intent(First.this, Second.class );", "Creates an hidden Intent", "Creates an implicit Intent", "Create an explicit Intent", "Starts an activity", 4, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question1);
-        Question question2 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        Question question2 = new Question("Which type of intent, specify the component to start by name (the fully-qualified class name).", "Explicit", "Implicit", "Depends upon the application", "None of these", 1, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question2);
-        Question question3 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        Question question3 = new Question("To retrieve the bundle object, _____________ is used.", "getExtra()", "getExtras()", "gets()", "putExtras()", 2, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question3);
-        Question question4 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        Question question4 = new Question("The 'type' part of intent object-based messages stores", "Intent type", "Parameter type", "Data type in MIME", "Intent action", 3, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question4);
-        Question question5 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        Question question5 = new Question(" _____________ is called when the activity is no more visible to the user.", "onDestroy()", "onDestroyed()", "onStopped()", "onStop()", 4, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question5);
-        Question question6 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        Question question6 = new Question("The main purpose of the activity is ___________.", "Interaction with user", "Send messages", "POP up notifications", "Data sharing", 1, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question6);
-        Question question7 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        Question question7 = new Question("When multiple activities match the intents, it is handled by _____________.", "chooser()", "createChooser()", "getChooser()", "makeChooser()", 2, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question7);
-        Question question8 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        Question question8 = new Question("An integer value to recognise the calling activity is _____________.", "resultcode", "code", "requestcode", "All of the Above", 3, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question8);
-        Question question9 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        Question question9 = new Question("To free up the resources before getting destroyed,_____________ is called", "onDestroy()", "onFree()", "onStop()", "onDetach()", 1, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question9);
-        Question question10 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        Question question10 = new Question("_____________ method explicitly specifies the MIME data type to indicate the type of data.", "setDataType()", "setType()", "Type", "None of the Above", 2, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question10);
-        Question question11 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        Question question11 = new Question("_____________ is called when the activity becomes visible to the user.", "onStart()", "onResume()", "onAttach()", "onCreate()", 1, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question11);
-        Question question12 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        Question question12 = new Question("_____________ is used to send back data to the activity.", "startActivity()", "startActivityForResult()", "startActivities()", "startIntent()", 2, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question12);
-        Question question13 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        Question question13 = new Question("For creating an activity like WhatsApp, _____________ activity is used.", "Basic", "Blank", "navigation drawer", "tabbed", 4, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question13);
-        Question question14 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        Question question14 = new Question("Intents are mainly used to _____________.", "Display a Webpage", "Launch an activity", "Open another App", "All of the Above", 4, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question14);
-        Question question15 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        Question question15 = new Question("For creating an activity, java class has to extend _____________.", "Activitymain", "Activity base class", "ShowActivity class", "None of the Above", 2, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question15);
-        Question question16 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        Question question16 = new Question("The activity available for working with fragments is _____________.", "Fragments", "Blank activity", "Blank activity with fragment", "None of the Above", 3, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question16);
-        Question question17 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        Question question17 = new Question("Which of the following is used to set the data back ?", "Both uri.parse() and setData()", "uri.parse()", "setData()", "None of the Above", 1, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question17);
-        Question question18 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        Question question18 = new Question("The types of intents in android is/are ", "Explicit intents", "Implicit intents", "Above Both", "Start intents", 3, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question18);
-        Question question19 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        Question question19 = new Question("The activity life cycle doesn’t contain _____________.", " onCreate()", "onPause()", "onAttach()", "onStart()", 3, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question19);
-        Question question20 = new Question("","","","","",,Categories.BASICS,Languages.ANDROID);
+        Question question20 = new Question("What is not specified by implicit intent ", "Components within the intent object", "Parameters of the intent object", "Return value of the intent object", "None of the Above", 1, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question20);
-    }*/
+    }
 
 
     /*===============================================================================================================================================*/
@@ -1793,7 +1795,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories4);
         Categories categories5 = new Categories("Text, Input & Selection", Languages.ANDROID);
         insertCategory(categories5);
-        Categories categories6 = new Categories("Activity and Intents", Languages.ANDROID);
+        Categories categories6 = new Categories("ACTIVITY And INTENTS", Languages.ANDROID);
         insertCategory(categories6);
         Categories categories7 = new Categories("Usability & Styling", Languages.ANDROID);
         insertCategory(categories7);
