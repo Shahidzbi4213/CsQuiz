@@ -93,7 +93,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         androidBasics();
         androidActivityAndIntents();
         androidFragments();
-        androidFragments();
+
     }
 
     private void addCategory() {
