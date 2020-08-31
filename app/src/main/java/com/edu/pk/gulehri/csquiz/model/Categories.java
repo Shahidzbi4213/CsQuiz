@@ -55,6 +55,8 @@ public class Categories {
 
     //Android
     public static final String ACTIVITY_AND_INTENTS = "ACTIVITY And INTENTS";
+    public static final String CONTENT_PROVIDERS = "Content Provider";
+    public static final String FRAGMENTS = "Fragments";
 
 
     public Categories(String category, String language) {
@@ -104,7 +106,9 @@ public class Categories {
                     new Categories("JSON", Languages.JAVA_SCRIPT),
 
 
-                    new Categories("ACTIVITY And INTENTS", Languages.ANDROID)
+                    new Categories("ACTIVITY And INTENTS", Languages.ANDROID),
+                    new Categories("Content Provider", Languages.ANDROID),
+                    new Categories("Fragments", Languages.ANDROID)
             };
 
 

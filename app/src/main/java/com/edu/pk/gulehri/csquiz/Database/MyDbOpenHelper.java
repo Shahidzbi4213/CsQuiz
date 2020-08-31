@@ -92,6 +92,8 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         //Android
         androidBasics();
         androidActivityAndIntents();
+        androidFragments();
+        androidFragments();
     }
 
     private void addCategory() {
@@ -1640,6 +1642,49 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
+    private void androidFragments() {
+        Question question1 = new Question("Fragment in Android can be found through ?", "findByID", "findFragmentByID", "getContext.findFragmentByID", "FragmentManager.findFragmentByID", 4, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question1);
+        Question question2 = new Question("What is fragment in android?", "JSON", "Layout", "Peace of Activity", "Container", 3, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question2);
+        Question question3 = new Question("What is fragment life cycle in android?", "onReceive", "onCreate", "onAttach-> onCreate −>onCreateView −>\n onActivityCreated −> onStart −> onResume", "None of the above", 3, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question3);
+        Question question4 = new Question("How many methods are there in an Fragment lifecycle?", "A.13", "10", "12", "8", 2, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question4);
+        Question question5 = new Question("Which method is called first in fragment life cycle methods?", "onAttach()", "onActivityCreated()", "onViewCreated()", "onCreate()", 1, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question5);
+        Question question6 = new Question("Which one is NOT related to fragment class?", "dialogFragment", " listFragment", "preferenceFragment", "cursorFragment", 4, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question6);
+        Question question7 = new Question("The android component that shows the part of an activity on screen is called", "intent", "fragment", "view", "manifest", 2, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question7);
+        Question question8 = new Question("Which of the following are type of fragment?", "Single frame fragments", "List fragments", "Fragments transaction", "All of the Above", 4, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question8);
+        Question question9 = new Question("Which of the following Is used to embed fragment in and activity?", "using Java ", "using XML", "Above Both", "None of the Above", 3, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question9);
+        Question question10 = new Question("Which method is used for looking an existing fragment instance?", "findFragmentById", "findFragmentByTag", "Above Both", "findFragmentByView", 3, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question10);
+        Question question11 = new Question("How many ways we can communicate with fragment?", "2", "3", "4", "5", 2, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question11);
+        Question question12 = new Question("_________ is called once the fragment is ready to be displayed on screen.", "onStart()", "onResume()", "onViewCreated()", "onCreateView()", 1, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question12);
+        Question question13 = new Question("_________ is called when fragment is no longer connected to the activity.", "onDestroyView()", "onDetach()", "onStop()", "onDestroy()", 2, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question13);
+        Question question14 = new Question("_________ creates a new transaction to change fragments at runtime.", "beginTransaction()", "startTransaction()", "addTransaction()", "createTransaction()", 1, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question14);
+        Question question15 = new Question(" when interacting with nested fragments we can use the following method.", "getSupportFragmentManager()", "getChildFragmentManager()", "getFragmentManager()", "None of the Above", 2, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question15);
+        Question question16 = new Question("Which method is used to remove fragment from Back Stack?", "removeBackStack()", "stopBackStack()", "popBackStack()", "None of the Above", 3, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question16);
+        Question question17 = new Question("The _________ is responsible for all runtime management of fragments including adding, removing, hiding, showing.", "Fragment manager", "Interface", "Fragment Controller", "BackStack", 1, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question17);
+        Question question18 = new Question("In order to respond to changes in user interface at runtime we can add fragment to activity using _________.", "<LinearLayout>", "<RelativeLayout>", "<FrameLayout>", "<ConstraintLayout>", 3, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question18);
+        Question question19 = new Question("Which of the following is used to communicate with fragments?", "Bundle", "Methods", "Listener ", "All of the Above", 4, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question19);
+        Question question20 = new Question("View Pager Is Used For ", " Swiping Activities", "Swiping Fragments", "Paging Down List Items", "View Pager Is Not Supported By Android SDK", 2, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question20);
+    }
+
 
     /*===============================================================================================================================================*/
     /*Categories*/
@@ -1811,6 +1856,9 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories12);
         Categories categories13 = new Categories("Notifications & Messages", Languages.ANDROID);
         insertCategory(categories13);
+        Categories categories14 = new Categories("Content Provider", Languages.ANDROID);
+        insertCategory(categories14);
+
     }
 
     //Html
