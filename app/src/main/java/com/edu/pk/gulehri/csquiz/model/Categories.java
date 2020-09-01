@@ -55,7 +55,7 @@ public class Categories {
 
     //Android
     public static final String ACTIVITY_AND_INTENTS = "ACTIVITY And INTENTS";
-    public static final String CONTENT_PROVIDERS = "Content Provider";
+    public static final String CONTENT_PROVIDER = "Content Provider";
     public static final String FRAGMENTS = "Fragments";
 
 

@@ -93,6 +93,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         androidBasics();
         androidActivityAndIntents();
         androidFragments();
+        androidContentProvider();
 
     }
 
@@ -1598,7 +1599,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
-    //Adding Activity and Inents in adroid
+    //Adding Activity and Intents in android
     private void androidActivityAndIntents() {
         Question question1 = new Question("Intent intent = new Intent(First.this, Second.class );", "Creates an hidden Intent", "Creates an implicit Intent", "Create an explicit Intent", "Starts an activity", 4, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
         insertQuestion(question1);
@@ -1642,6 +1643,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
+    //Adding Fragments
     private void androidFragments() {
         Question question1 = new Question("Fragment in Android can be found through ?", "findByID", "findFragmentByID", "getContext.findFragmentByID", "FragmentManager.findFragmentByID", 4, Languages.ANDROID, Categories.FRAGMENTS);
         insertQuestion(question1);
@@ -1682,6 +1684,50 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         Question question19 = new Question("Which of the following is used to communicate with fragments?", "Bundle", "Methods", "Listener ", "All of the Above", 4, Languages.ANDROID, Categories.FRAGMENTS);
         insertQuestion(question19);
         Question question20 = new Question("View Pager Is Used For ", " Swiping Activities", "Swiping Fragments", "Paging Down List Items", "View Pager Is Not Supported By Android SDK", 2, Languages.ANDROID, Categories.FRAGMENTS);
+        insertQuestion(question20);
+    }
+
+    //Adding Content Providers
+    private void androidContentProvider() {
+        Question question1 = new Question("What is the use of content provider in android?", "To send the data from an application to another application", "To store the data in a database", "To share the data between applications", "None of the above", 3, Languages.ANDROID, Categories.CONTENT_PROVIDER);
+        insertQuestion(question1);
+        Question question2 = new Question("To access a provider in \"batch mode\", which object array is created", "ContentProviderArray", "ContentProviderBatch", "ContentProviderBatchOperation", "ContentProviderOperation", 4, Languages.ANDROID, Categories.CONTENT_PROVIDER);
+        insertQuestion(question2);
+        Question question3 = new Question("What are the predefined query string constants available in Android?", "ContactsContract.Contacts.CONTENT_URI", "Browser.SEARCHES_URI", "MediaStore.Images.Media.INTERNAL_CONTENT_URI", "All of the Above", 4, Languages.ANDROID, Categories.CONTENT_PROVIDER);
+        insertQuestion(question3);
+        Question question4 = new Question("Status data will be exposed to the rest of the Android system via _________ .", "Intents", "Content provider", "Network receivers", "Altering permissions", 2, Languages.ANDROID, Categories.CONTENT_PROVIDER);
+        insertQuestion(question4);
+        Question question5 = new Question("_________ is the recommended way for sharing data across packages?", "Content providers", "Data persistence", "Messaging", "None of the Above", 1, Languages.ANDROID, Categories.CONTENT_PROVIDER);
+        insertQuestion(question5);
+        Question question6 = new Question("Which of the following is not a ContentProvider provided natively by android", "The application list", "The bookmarks", "The telephone log", "The contacts list", 1, Languages.ANDROID, Categories.CONTENT_PROVIDER);
+        insertQuestion(question6);
+        Question question7 = new Question("What is the use of content provider in android?", "To send data from an app to another app", "To share the data between applications", "To store the data in a database", "None of the Above", 2, Languages.ANDROID, Categories.CONTENT_PROVIDER);
+        insertQuestion(question7);
+        Question question8 = new Question("The requests from Content Provider class is handled by method", "onCreate", "onSelect", "onClick", "contentResolver", 4, Languages.ANDROID, Categories.CONTENT_PROVIDER);
+        insertQuestion(question8);
+        Question question9 = new Question("When ContentProvider would be activated?", "Using Intent", "Using SQLite", "Using ContentResolver", "None of the Above", 3, Languages.ANDROID, Categories.CONTENT_PROVIDER);
+        insertQuestion(question9);
+        Question question10 = new Question("The sortOrder parameter of query method in cursor object has data type of", "boolean", "int", "string array", "string", 4, Languages.ANDROID, Categories.CONTENT_PROVIDER);
+        insertQuestion(question10);
+        Question question11 = new Question("For Creating your own content provider which class you will inherit?", "Content", "ContentProvider", "Object", "None of the Above", 2, Languages.ANDROID, Categories.CONTENT_PROVIDER);
+        insertQuestion(question11);
+        Question question12 = new Question("For reading the contacts from the Contacts, Which permission you will set in AndroidManifest.xml file if you are using ContentProvider.", "FIND_CONTACTS", "GET_CONTACTS", "READ_CONTACTS", "None of the Above", 3, Languages.ANDROID, Categories.CONTENT_PROVIDER);
+        insertQuestion(question12);
+        Question question13 = new Question("Insert data into a content provider, you need to use ______", "insert() ", "bulkInsert() ", "getContentProvider()", "Both insert() and bulkInsert()", 4, Languages.ANDROID, Categories.CONTENT_PROVIDER);
+        insertQuestion(question13);
+        Question question14 = new Question("Asynchronous queries can be implemented by using a", "CursorLoader object", "AsyncCursor object", "AsyncLoader object", "AsyncCursorLoader object", 1, Languages.ANDROID, Categories.CONTENT_PROVIDER);
+        insertQuestion(question14);
+        Question question15 = new Question("To update contents of content provider using curser and commit you need to call________", "updates()", "commitUpdates()", "commit()", "None of the Above", 2, Languages.ANDROID, Categories.CONTENT_PROVIDER);
+        insertQuestion(question15);
+        Question question16 = new Question("In the android content provider architecture, the component that does not resides on data layer is", "Internet", "SQLite", "Files", "Content Providers", 4, Languages.ANDROID, Categories.CONTENT_PROVIDER);
+        insertQuestion(question16);
+        Question question17 = new Question("A content provider is an ______ that allows apps to share data in a controlled way. ", "Interface", "Class", "Library", "None of the Above", 1, Languages.ANDROID, Categories.CONTENT_PROVIDER);
+        insertQuestion(question17);
+        Question question18 = new Question("The __________ methods provide the basic \"CRUD\" (create, retrieve, update, and delete) functions of persistent storage.", "CursorLoader", "ContentResolver", "CursorAdapter", "None of the Above", 2, Languages.ANDROID, Categories.CONTENT_PROVIDER);
+        insertQuestion(question18);
+        Question question19 = new Question("What does the following flag provide? \n FLAG_GRANT_READ_URI_PERMISSION", "Read permission", "Write permission", "Above Both", "None of the Above", 1, Languages.ANDROID, Categories.CONTENT_PROVIDER);
+        insertQuestion(question19);
+        Question question20 = new Question("The provider has the separate _________ permission for inserting, updating, or deleting data.", "android.permission.READ_USER_DICTIONARY", "FLAG_GRANT_WRITE_URI_PERMISSION", "android.permission.WRITE_USER_DICTIONARY", "None of the Above", 3, Languages.ANDROID, Categories.CONTENT_PROVIDER);
         insertQuestion(question20);
     }
 
