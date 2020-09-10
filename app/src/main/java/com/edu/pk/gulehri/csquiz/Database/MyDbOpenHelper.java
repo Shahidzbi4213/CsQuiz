@@ -95,6 +95,9 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         androidFragments();
         androidContentProvider();
 
+        //Php
+        phpBasics();
+
     }
 
     private void addCategory() {
@@ -1731,7 +1734,287 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
+    /*===============================================================================================================================================*/
+    /*PHP Multiple Choice Questions*/
+    /*===============================================================================================================================================*/
+    private void phpBasics() {
+        Question question1 = new Question("PHP files have a default file extension of_______", ".html", ".xml", ".php", ".ph", 3, Languages.PHP, Categories.BASICS);
+        insertQuestion(question1);
+        Question question2 = new Question("What should be the correct syntax to write a PHP code?", "< php >", "< ? php >", "<? ?>", "<?php ?>", 4, Languages.PHP, Categories.BASICS);
+        insertQuestion(question2);
+        Question question3 = new Question("Who is known as the father of PHP?", "Rasmus Lerdorf", "Willam Makepiece", "Drek Kolkevi", "List Barely", 1, Languages.PHP, Categories.BASICS);
+        insertQuestion(question3);
+        Question question4 = new Question("<?php $num  = 1;\n" +
+                "  $num1 = 2;\n" +
+                "    print $num . \"+\". $num1;?>\n", "3", "1+2", "1.+.2", "Error", 2, Languages.PHP, Categories.BASICS);
+        insertQuestion(question4);
+        Question question5 = new Question("Which of the following is not true?", "PHP can be used to develop web applications.", "PHP makes a website dynamic", "PHP applications can not be compile.", "PHP can not be embedded into html.", 4, Languages.PHP, Categories.BASICS);
+        insertQuestion(question5);
+        Question question6 = new Question("Which of the below statements is equivalent to $add += $add?", "$add = $add", "$add = $add +$add", "$add = $add + 1", "$add = $add + $add + 1", 2, Languages.PHP, Categories.BASICS);
+        insertQuestion(question6);
+        Question question7 = new Question("Which statement will output $x on the screen?", "echo “\\$x”;", "echo “$$x”;", "echo “/$x”;", "echo “$x;”;", 1, Languages.PHP, Categories.BASICS);
+        insertQuestion(question7);
+        Question question8 = new Question("PHP is a ________.", "Tightly typed language", "Loosely typed language", "Server typed language", "Client typed language", 2, Languages.PHP, Categories.BASICS);
+        insertQuestion(question8);
+        Question question9 = new Question("______ is concatenation operator in PHP ?", "+(plus)", ".(dot)", "^", "_", 2, Languages.PHP, Categories.BASICS);
+        insertQuestion(question9);
+        Question question10 = new Question("Which of the below symbols is a newline character?", "\\r", "/n", "\\n", "None of the Above", 3, Languages.PHP, Categories.BASICS);
+        insertQuestion(question10);
+        Question question11 = new Question("If $a = 12 what will be returned when ($a == 12) ? 5 : 1 is executed?", "12", "Error", "1", "5", 4, Languages.PHP, Categories.BASICS);
+        insertQuestion(question11);
+        Question question12 = new Question("Which of the following PHP statement/statements will store 111 in variable num?", "$num = 111;", "int $num = 111;", "int num = 111;", "111 = $num;", 1, Languages.PHP, Categories.BASICS);
+        insertQuestion(question12);
+        Question question13 = new Question("Which version of PHP introduced Try/catch Exception?", "PHP 4", "PHP 5", "PHP 6", "PHP 5 and later", 4, Languages.PHP, Categories.BASICS);
+        insertQuestion(question13);
+        Question question14 = new Question("Which sign is used to access variable of variable in PHP?", " $$", "$", "#@", "$::", 1, Languages.PHP, Categories.BASICS);
+        insertQuestion(question14);
+        Question question15 = new Question("<?php $a = \"clue\";\n" +
+                "      $a .= \"get\";\n" +
+                "     echo \"$a\"; ?>\n", "get", "clueget", "True", "False", 2, Languages.PHP, Categories.BASICS);
+        insertQuestion(question15);
+        Question question16 = new Question(". <?php  $total = \"25 students\";\n" +
+                "    $more = 10;\n" +
+                "    $total = $total + $more;\n" +
+                "    echo \"$total\"; ?>\n", "Error", "35 students", "35", "25 students", 3, Languages.PHP, Categories.BASICS);
+        insertQuestion(question16);
+        Question question17 = new Question("Which of the conditional statements is/are supported by PHP?", "if statements and if-else statements", "if-elseif statements", "switch statements", "All of the Above", 4, Languages.PHP, Categories.BASICS);
+        insertQuestion(question17);
+        Question question18 = new Question("Which is the right way of declaring a variable in PHP?", "$_hello", "$This", "Above Both", "$3hello", 3, Languages.PHP, Categories.BASICS);
+        insertQuestion(question18);
+        Question question19 = new Question("How should we add a single line comment in our PHP code?", "//", "#", "/* */", "All of the Above", 4, Languages.PHP, Categories.BASICS);
+        insertQuestion(question19);
+        Question question20 = new Question("What does PHP stand for?", "Personal Home Page", "Hypertext Preprocessor", "Above Both", "Preprocessor Home Page", 3, Languages.PHP, Categories.BASICS);
+        insertQuestion(question20);
+    }
 
+    private void phpOOP() {
+        Question question1 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        insertQuestion(question20);
+
+    }
+
+    private void phpArraysAndFunctions() {
+        Question question1 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        insertQuestion(question20);
+
+    }
+
+    private void phpErrorAndExceptionHandling() {
+        Question question1 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        insertQuestion(question20);
+
+    }
+
+    private void phpStringsAndRegularExpressions() {
+        Question question1 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        insertQuestion(question20);
+
+    }
+
+
+
+
+
+
+
+
+
+
+                                                                /* private void phpBasics(){
+        Question question1 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        insertQuestion(question1);
+        Question question2 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        insertQuestion(question2);
+        Question question3 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        insertQuestion(question3);
+        Question question4 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        insertQuestion(question4);
+        Question question5 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        insertQuestion(question5);
+        Question question6 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        insertQuestion(question6);
+        Question question7 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        insertQuestion(question7);
+        Question question8 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        insertQuestion(question8);
+        Question question9 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        insertQuestion(question9);
+        Question question10 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        insertQuestion(question10);
+        Question question11 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        insertQuestion(question11);
+        Question question12 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        insertQuestion(question12);
+        Question question13 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        insertQuestion(question13);
+        Question question14 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        insertQuestion(question14);
+        Question question15 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        insertQuestion(question15);
+        Question question16 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        insertQuestion(question16);
+        Question question17 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        insertQuestion(question17);
+        Question question18 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        insertQuestion(question18);
+        Question question19 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        insertQuestion(question19);
+        Question question20 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        insertQuestion(question20);
+
+    }*/
     /*===============================================================================================================================================*/
     /*Categories*/
     /*===============================================================================================================================================*/
@@ -1933,13 +2216,13 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
     private void php() {
         Categories categories1 = new Categories("Basics", Languages.PHP);
         insertCategory(categories1);
-        Categories categories2 = new Categories("Data types", Languages.PHP);
+        Categories categories2 = new Categories("ARRAYS AND FUNCTIONS", Languages.PHP);
         insertCategory(categories2);
-        Categories categories3 = new Categories("Keywords", Languages.PHP);
+        Categories categories3 = new Categories("ERROR AND EXCEPTION HANDLING", Languages.PHP);
         insertCategory(categories3);
         Categories categories4 = new Categories("OOP", Languages.PHP);
         insertCategory(categories4);
-        Categories categories5 = new Categories("Interfaces", Languages.PHP);
+        Categories categories5 = new Categories("STRINGS AND REGULAR EXPRESSIONS", Languages.PHP);
         insertCategory(categories5);
         Categories categories6 = new Categories("Data Structure", Languages.PHP);
         insertCategory(categories6);

@@ -58,6 +58,11 @@ public class Categories {
     public static final String CONTENT_PROVIDER = "Content Provider";
     public static final String FRAGMENTS = "Fragments";
 
+    //PHP
+    public static final String ARRAYS_AND_FUNCTIONS = "ARRAYS AND FUNCTIONS";
+    public static final String ERROR_AND_EXCEPTION_HANDLING = "ERROR AND EXCEPTION HANDLING";
+    public static final String STRINGS_AND_REGULAR_EXPRESSIONS = "STRINGS AND REGULAR EXPRESSIONS";
+
 
     public Categories(String category, String language) {
         this.category = category;
@@ -108,7 +113,12 @@ public class Categories {
 
                     new Categories("ACTIVITY And INTENTS", Languages.ANDROID),
                     new Categories("Content Provider", Languages.ANDROID),
-                    new Categories("Fragments", Languages.ANDROID)
+                    new Categories("Fragments", Languages.ANDROID),
+
+
+                    new Categories("ARRAYS AND FUNCTIONS", Languages.PHP),
+                    new Categories("ERROR AND EXCEPTION HANDLING", Languages.PHP),
+                    new Categories("STRINGS AND REGULAR EXPRESSIONS", Languages.PHP)
             };
 
 
