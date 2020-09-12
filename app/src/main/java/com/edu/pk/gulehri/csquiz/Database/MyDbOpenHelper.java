@@ -97,6 +97,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
 
         //Php
         phpBasics();
+        phpOOP();
 
     }
 
@@ -1788,47 +1789,46 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
     }
 
     private void phpOOP() {
-        Question question1 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        Question question1 = new Question("Which method scope prevents a method from being overridden by a subclass?", "Abstract", "Protected", "Final", "Static", 3, Languages.PHP, Categories.OOP);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        Question question2 = new Question("PHP recognizes constructors by the name _________", "classname()", "_construct()", "functionConstruct()", "function __construct()", 4, Languages.PHP, Categories.OOP);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        Question question3 = new Question("An individual instance in OOP is called as", "Class", "Function", "Object", "Constructor", 3, Languages.PHP, Categories.OOP);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        Question question4 = new Question("Which version of PHP introduced the advanced concepts of OOP?", "PHP 4", "PHP 5", "PHP 5.3", "PHP 6", 2, Languages.PHP, Categories.OOP);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        Question question5 = new Question("The practice of creating objects based on predefined classes is often referred to as _______", "class instantiation", "object instantiation", "object creation", "class creation", 1, Languages.PHP, Categories.OOP);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        Question question6 = new Question(". Which one of the following can be used to instantiate an object in PHP assuming class name to be Foo?", "$obj = new $foo;", "$obj = new foo;", "$obj = new foo ();", "obj = new foo ();", 3, Languages.PHP, Categories.OOP);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        Question question7 = new Question("Which one of the following is the right way to invoke a method?", "$object->methodName();", "object->methodName();", "object::methodName();", "$object::methodName();", 1, Languages.PHP, Categories.OOP);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        Question question8 = new Question("Which of the following method scopes is/are not supported by PHP?", "private", "friendly", "static", "abstract", 2, Languages.PHP, Categories.OOP);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        Question question9 = new Question("Which one of the following functions is used to determine whether a class exists?", "exist()", "exist_class()", "class_exist()", "__exist()", 3, Languages.PHP, Categories.OOP);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        Question question10 = new Question("Which one of the following keyword is used to inherit our subclass into a superclass?", "extends", "implements", "inherit", "include", 1, Languages.PHP, Categories.OOP);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        Question question11 = new Question("Which keyword is used to refer to properties or methods within the class itself?", "private", "public", "protected", "$this", 4, Languages.PHP, Categories.OOP);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        Question question12 = new Question("Which one of the following is the right way to clone an object?", "_clone(targetObject);", "destinationObject = clone targetObject;", "destinationObject = _clone(targetObject);", "destinationObject = clone(targetObject);", 2, Languages.PHP, Categories.OOP);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        Question question13 = new Question("The class from which the child class inherits is called ________", "Parent class", "Base class", "Above Both", "Super class", 3, Languages.PHP, Categories.OOP);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        Question question14 = new Question("Which feature allows us to call more than one method or function of the class in single instruction?", "Typecasting", "Method Including", "Method adding", "Method chaining", 4, Languages.PHP, Categories.OOP);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        Question question15 = new Question("Which magic method is used to implement overloading in PHP?", "__call", "__invoke", "__wakeup", "__unset", 1, Languages.PHP, Categories.OOP);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        Question question16 = new Question("Which one of the following is not a valid class name?", "ShopProduct", "1shopproduct", "Shopproduct1", "Shopproduct", 2, Languages.PHP, Categories.OOP);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        Question question17 = new Question("Which one of the following functions is used to determine object type?", "obj_type()", "type()", "is_a()", "is_obj()", 3, Languages.PHP, Categories.OOP);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        Question question18 = new Question("If your object must inherit behavior from several sources you must use a/an", "Interface", "Object", "Abstract class", "Static class", 1, Languages.PHP, Categories.OOP);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        Question question19 = new Question("If one intends to create a model that will be assumed by several closely related objects, which class must be used?", "Normal class", "Static class", "Abstract class", "Interface", 3, Languages.PHP, Categories.OOP);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.PHP, Categories.OOP);
+        Question question20 = new Question("Which one of the following is the right way to call a class constant, given that the class is mathFunction?", "echo PI;", "echo mathFunction::PI;", "echo mathFunction->PI;", "echo mathFunction=PI;", 2, Languages.PHP, Categories.OOP);
         insertQuestion(question20);
-
     }
 
     private void phpArraysAndFunctions() {
