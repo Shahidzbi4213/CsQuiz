@@ -98,6 +98,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         //Php
         phpBasics();
         phpOOP();
+        phpArraysAndFunctions();
 
     }
 
@@ -1832,45 +1833,58 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
     }
 
     private void phpArraysAndFunctions() {
-        Question question1 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        Question question1 = new Question("PHP’s numerically indexed array begin with position ___________", "1", "2", "0", "-1", 3, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        Question question2 = new Question("Which of the functions is used to sort an array in descending order?", "sort()", "rsort()", "asort()", "dsort()", 2, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        Question question3 = new Question("Which function will return true if a variable is an array or false if it is not?", "this_array()", "is_array()", "do_array()", "in_array()", 2, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        Question question4 = new Question("<?php\n" +
+                "$fruits = array (\"apple\", \"orange\", \"banana\");\n" +
+                "echo (next($fruits));\t\n" +
+                "echo (next($fruits)); ?>\n", "orangebanana", "appleorange", "orangeorange", "appleapple", 1, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        Question question5 = new Question("Which function can be used to move the pointer to the previous array position?", "last()", "before()", "prev()", "previous()", 3, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        Question question6 = new Question("Which in-built function will add a value to the end of an array?", "array_unshift()", "into_array()", "inend_array()", "array_push()", 4, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        Question question7 = new Question("<?php\n" +
+                "    $state = array (\"One\", \"Two\", \"Three\");\n" +
+                "    echo (array_search (\"Three\", $state) ); ?>\n", "2", "1", "True", "False", 1, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        Question question8 = new Question("<?php\n" +
+                "$a = array(12, 5, 2);\n" +
+                "echo(array_product($a)); ?>\n", "024", "120", "101", "060", 2, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        Question question9 = new Question("<?php\n" +
+                "$a = array(\"red\", \"green\", \"blue\");\n" +
+                "array_pop($a); print_r($a); ?>\n", "Array ( [0] => red [1] => green )", "Array ( [0] => green [1] => blue )", "Array ( [0] => red [1] => blue )", "Array ( [0] => blue [1] => blue )", 1, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        Question question10 = new Question("Which function should we use to sort the array in natural order?", "dsort()", "casesort()", "natcasesort()", "naturalsort()", 3, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        Question question11 = new Question("Which of the following are valid function names?", "function()", "€()", ".function()", "$function()", 2, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        Question question12 = new Question("A function in PHP which starts with __ (double underscore) is known as __________", "Magic Function", "Inbuilt Function", "Default Function", "User Defined Function", 1, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        Question question13 = new Question("How to define a function in PHP?", "function {body}", "data type functionName(params) {body}", "functionName(params) { body }", "function functionName(params) {body}", 4, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        Question question14 = new Question("Which one of the following PHP functions can be used to find files?", "glob()", "file()", "fold()", "get_file()", 1, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        Question question15 = new Question("The base conversion function DecHex () coverts from", "Base 10 to base 8", "Base 10 to base 16", "Base 16 to base 10", "Base 8 to base 10", 2, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        Question question16 = new Question("<?php\n" +
+                "    echo chr(52);  ?>\n", "1", "2", "3", "4", 4, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        Question question17 = new Question(" <?php\n" +
+                "    echo ucwords(\"i love my country\");\n" +
+                "    ?>\n", "I love my country", "i love my Country", "I love my Country", "I Love My Country", 4, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        Question question18 = new Question("What does explode () function do?", "Converts a string into integers", "Converts a string into arrays", "Finds the length of array", "Finds the length of string", 2, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        Question question19 = new Question("<?php\n" +
+                "    echo ord (\"hi\"); ?>\n", "106", "103", "104", "100", 3, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+        Question question20 = new Question("The current () function is a", "2 array argument", "1 array argument", "3 array argument", "None of the Above", 2, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question20);
 
     }
