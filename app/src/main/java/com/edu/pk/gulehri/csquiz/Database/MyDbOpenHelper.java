@@ -99,6 +99,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         phpBasics();
         phpOOP();
         phpArraysAndFunctions();
+        phpErrorAndExceptionHandling();
 
     }
 
@@ -1890,47 +1891,46 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
     }
 
     private void phpErrorAndExceptionHandling() {
-        Question question1 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        Question question1 = new Question("In Which php version Exception handling was added?", "PHP 5.1", "PHP 5.2", "PHP 5.3", "PHP 5", 4, Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        Question question2 = new Question("How many methods are available for the exception class?", "5", "6", "7", "9", 3, Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        Question question3 = new Question("Which of the following statements invoke the exception class?", "throws new Exception();", "throw new Exception();", "new Exception();", "new throws Exception();", 2, Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        Question question4 = new Question("We cannot override any of the preceding methods of exception base class because they are declared as_____", "final", "protected", "static", "private", 1, Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        Question question5 = new Question("Which of the following is/are an exception?", "OutOfBoundException", "OutOfRangeException", "OverflowException", "All of the Above", 4, Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        Question question6 = new Question("Which of the following are valid statements to raise an exception", "throw new exception()", "throw new exception(\"Error Occurred\")", "throw new exception(\"Error Occured\",5)", "All of the Above", 4, Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        Question question7 = new Question("For exception handling PHP5 introduced a class, name", "Exe { }", "Exception { }", "Catch { }", "None of the Above", 2, Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        Question question8 = new Question("How many error levels are available in PHP?", "14", "15", "16", "17", 3, Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        Question question9 = new Question("What is the description of Error level E_ERROR?", "Fatal run-time error", "Near-fatal error", "Compile-time error", "Fatal Compile-time error", 1, Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        Question question10 = new Question("Which function is responsible for sending a custom message to the system log?", "systemlog()", "syslog()", "log_system()", "sys_log()", 2, Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        Question question11 = new Question("Which character does the error_reporting directive use to represent the logical operator NOT?", "/", "!", "~", "^", 3, Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        Question question12 = new Question("Which version of PHP introduced E_STRICT Error level?", "PHP 4", "PHP 5", "PHP 5.3", "PHP 6", 2, Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        Question question13 = new Question("The statements that causes PHP to disregard repeated error messages that occur within same file and line?", "ignore_repeated_errors", "ignore_repeat_error", "repeatedly_ignore_error", "repeated_error_ignore", 1, Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        Question question14 = new Question("Which function initializes the constants necessary for using the openlog(), clodelog(), and syslog() functions?", "define_variable()", "define_log_variable()", "log_variable()", "define_syslog_variable()", 4, Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        Question question15 = new Question("Which is the error level to report probable run-time errors?", "E_ERROR", "E_NOTICE", "E_CORE", "E_USER_ERROR", 2, Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        Question question16 = new Question("Which is the correct method to turn off error display?", "ini_set(\"Off\")", "error_reporting=Off", "init_set(\"error_reporting\",\"Off\")", "init_set(\"error_reporting=Off\")", 3, Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        Question question17 = new Question("How can errors be logged in files?", "Turn on log_errors", "Set error_log to file name", "Both A and B", "None of the Above", 3, Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        Question question18 = new Question("An error that causes by failed code, is called as", "Notice error", "Fatal error", "Warning error", "None of them", 3, Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        Question question19 = new Question("What does SPL stand for?", "Standard PHP Library", "Source PHP Library", "Standard PHP List", "Source PHP List", 1, Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
+        Question question20 = new Question("How many predefined exceptions does SPL provide access to?", "13", "14", "15", "16", 1, Languages.PHP, Categories.ERROR_AND_EXCEPTION_HANDLING);
         insertQuestion(question20);
-
     }
 
     private void phpStringsAndRegularExpressions() {
