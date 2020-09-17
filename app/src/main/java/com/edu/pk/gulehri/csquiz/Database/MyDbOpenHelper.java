@@ -2124,9 +2124,138 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
+    private void phpObjectsAndDatabases1() {
+        Question question1 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        insertQuestion(question20);
 
+    }
 
+    private void phpObjectsAndDatabases2() {
+        Question question1 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        insertQuestion(question20);
 
+    }
+
+    private void phpObjectsAndDatabases3() {
+        Question question1 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        insertQuestion(question20);
+
+    }
+    
 
     /*private void phpFileAndSessionHandling(){
         Question question1 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
@@ -2385,13 +2514,12 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories7);
         Categories categories8 = new Categories("FILE AND SESSION HANDLING 3", Languages.PHP);
         insertCategory(categories8);
-        Categories categories9 = new Categories("State Management", Languages.PHP);
+        Categories categories9 = new Categories("OBJECTS AND DATABASES 1", Languages.PHP);
         insertCategory(categories9);
-        Categories categories10 = new Categories("Get & Post", Languages.PHP);
+        Categories categories10 = new Categories("OBJECTS AND DATABASES 2", Languages.PHP);
         insertCategory(categories10);
-        Categories categories11 = new Categories("Function", Languages.PHP);
+        Categories categories11 = new Categories("OBJECTS AND DATABASES 3", Languages.PHP);
         insertCategory(categories11);
-
     }
 
 

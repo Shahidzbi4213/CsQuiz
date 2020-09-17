@@ -65,6 +65,9 @@ public class Categories {
     public static final String FILE_AND_SESSION_HANDLING1 = "FILE AND SESSION HANDLING 1";
     public static final String FILE_AND_SESSION_HANDLING2 = "FILE AND SESSION HANDLING 2";
     public static final String FILE_AND_SESSION_HANDLING3 = "FILE AND SESSION HANDLING 3";
+    public static final String OBJECTS_AND_DATABASES1 = "OBJECTS AND DATABASES 1";
+    public static final String OBJECTS_AND_DATABASES2 = "OBJECTS AND DATABASES 2";
+    public static final String OBJECTS_AND_DATABASES3 = "OBJECTS AND DATABASES 3";
 
 
     public Categories(String category, String language) {
@@ -124,7 +127,10 @@ public class Categories {
                     new Categories("STRINGS AND REGULAR EXPRESSIONS", Languages.PHP),
                     new Categories("FILE AND SESSION HANDLING 1", Languages.PHP),
                     new Categories("FILE AND SESSION HANDLING 2", Languages.PHP),
-                    new Categories("FILE AND SESSION HANDLING 3", Languages.PHP)
+                    new Categories("FILE AND SESSION HANDLING 3", Languages.PHP),
+                    new Categories("OBJECTS AND DATABASES 1", Languages.PHP),
+                    new Categories("OBJECTS AND DATABASES 2", Languages.PHP),
+                    new Categories("OBJECTS AND DATABASES 3", Languages.PHP)
             };
 
 
