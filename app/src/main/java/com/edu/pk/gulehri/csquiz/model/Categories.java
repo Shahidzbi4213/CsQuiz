@@ -62,6 +62,9 @@ public class Categories {
     public static final String ARRAYS_AND_FUNCTIONS = "ARRAYS AND FUNCTIONS";
     public static final String ERROR_AND_EXCEPTION_HANDLING = "ERROR AND EXCEPTION HANDLING";
     public static final String STRINGS_AND_REGULAR_EXPRESSIONS = "STRINGS AND REGULAR EXPRESSIONS";
+    public static final String FILE_AND_SESSION_HANDLING1 = "FILE AND SESSION HANDLING 1";
+    public static final String FILE_AND_SESSION_HANDLING2 = "FILE AND SESSION HANDLING 2";
+    public static final String FILE_AND_SESSION_HANDLING3 = "FILE AND SESSION HANDLING 3";
 
 
     public Categories(String category, String language) {
@@ -118,7 +121,10 @@ public class Categories {
 
                     new Categories("ARRAYS AND FUNCTIONS", Languages.PHP),
                     new Categories("ERROR AND EXCEPTION HANDLING", Languages.PHP),
-                    new Categories("STRINGS AND REGULAR EXPRESSIONS", Languages.PHP)
+                    new Categories("STRINGS AND REGULAR EXPRESSIONS", Languages.PHP),
+                    new Categories("FILE AND SESSION HANDLING 1", Languages.PHP),
+                    new Categories("FILE AND SESSION HANDLING 2", Languages.PHP),
+                    new Categories("FILE AND SESSION HANDLING 3", Languages.PHP)
             };
 
 

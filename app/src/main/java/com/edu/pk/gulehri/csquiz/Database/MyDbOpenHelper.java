@@ -101,6 +101,9 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         phpArraysAndFunctions();
         phpErrorAndExceptionHandling();
         phpStringsAndRegularExpressions();
+        phpFileAndSessionHandling1();
+        phpFileAndSessionHandling2();
+        phpFileAndSessionHandling3();
 
     }
 
@@ -1990,11 +1993,143 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
 
     }
 
+    private void phpFileAndSessionHandling1() {
+        Question question1 = new Question("The filesize() function returns the file size in ___________", "bits", "bytes", " kilobytes", "gigabytes", 2, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING1);
+        insertQuestion(question1);
+        Question question2 = new Question("Which one of the following function is capable of reading a file into an array?", "file()", "arrfile()", "arr_file()", "file_arr()", 1, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING1);
+        insertQuestion(question2);
+        Question question3 = new Question("Which one of the following function is capable of reading a file into a string variable?", "file_contents()", "file_get_contents()", "file_content()", "file_get_content()", 2, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING1);
+        insertQuestion(question3);
+        Question question4 = new Question("Which one of the following function is capable of reading a specific number of characters from a file?", " fget()", "fileget()", "fgets()", "filegets()", 3, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING1);
+        insertQuestion(question4);
+        Question question5 = new Question("Which function is useful when you want to output the executed command result?", "out_cmm()", "out_system()", "cmm()", "system()", 4, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING1);
+        insertQuestion(question5);
+        Question question6 = new Question("Which one of the following function reads a directory into an Array?", "scandir()", "readdir()", "scandirectory()", "readdirectory()", 1, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING1);
+        insertQuestion(question6);
+        Question question7 = new Question("<?php\n" +
+                "    echo (checkdate(4,31,2020) ? 'Valid' : 'Invalid');\n" +
+                "    ?>", "TRUE", " FALSE", "Valid", "Invalid", 4, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING1);
+        insertQuestion(question7);
+        Question question8 = new Question("The date() function returns ___ representation of the current date and/or time.", "Integer", "String", "Boolean", "Float", 2, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING1);
+        insertQuestion(question8);
+        Question question9 = new Question(" Which one of the following format parameter can be used to identify timezone?", "T", "N", "E", "I", 3, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING1);
+        insertQuestion(question9);
+        Question question10 = new Question("Which one of the following function is useful for producing a timestamp based on a given date and time?", "time()", "mktime()", "mrtime()", "mtime()", 2, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING1);
+        insertQuestion(question10);
+        Question question11 = new Question("If the format is F then which one of the following will be returned?", "Complete text representation of month", "Day of month, with leading zero", "Daylight saving time", "Day of month, without zeros", 1, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING1);
+        insertQuestion(question11);
+        Question question12 = new Question("How to create object and set the date to JUNE 22, 2020? ", "$date = Date(“22 JUNE 2020”)", " $date = new Date(“JUNE 22 2020”)", "$date = DateTime(“22 JUNE 2020”)", "$date = new DateTime(“22 JUNE 2020”)", 4, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING1);
+        insertQuestion(question12);
+        Question question13 = new Question("How many methods does the DateTime class have?", "8", "9", "5", "10", 2, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING1);
+        insertQuestion(question13);
+        Question question14 = new Question("Which method is simply an object-oriented version of date()?", "DateTime::modify()", " DateTime::setTime()", "DateTime::setDate()", "DateTime::format()", 4, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING1);
+        insertQuestion(question14);
+        Question question15 = new Question("Which of the following is the right way to use the DateTime class?", "$date = get_Class(DateTime);", "$date = class DateTime;", "$date = new DateTime();", "$date = new class DateTime();", 3, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING1);
+        insertQuestion(question15);
+        Question question16 = new Question("Which of the following statements can be used to add two months to the existing date?", "$date = modify(‘+2 months’);", " $date->modify(‘+2 months’);", "$date = modify(‘2+ months’);", "$date->modify(‘2+ months’);", 2, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING1);
+        insertQuestion(question16);
+        Question question17 = new Question("Which method enables you to calculate whether daylight saving time is in force at a specific date and time?", "getOffset()", "getTranitions()", "ISODate()", "savingTime()", 2, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING1);
+        insertQuestion(question17);
+        Question question18 = new Question("Which of the following DateTimeZone classes are non-static?", " _construct()", "getName()", "getOffset()", "All of the Above", 4, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING1);
+        insertQuestion(question18);
+        Question question19 = new Question("Which of the following statements can be used to set the time zone in individual scripts?", "date_set_timezone(‘Europe/London’);", "date_default_timezone_set(‘Europe/London’);", "date_set_default_timezone(‘Europe/London’);", "date_default_timezone(‘Europe/London’);", 2, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING1);
+        insertQuestion(question19);
+        Question question20 = new Question("How many constants does the DateTime class have?", "8", "9", "10", "11", 4, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING1);
+        insertQuestion(question20);
+    }
+
+
+    private void phpFileAndSessionHandling2() {
+        Question question1 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        insertQuestion(question20);
+    }
+
+    private void phpFileAndSessionHandling3() {
+        Question question1 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        insertQuestion(question1);
+        Question question2 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        insertQuestion(question2);
+        Question question3 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        insertQuestion(question3);
+        Question question4 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        insertQuestion(question4);
+        Question question5 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        insertQuestion(question5);
+        Question question6 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        insertQuestion(question6);
+        Question question7 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        insertQuestion(question7);
+        Question question8 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        insertQuestion(question8);
+        Question question9 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        insertQuestion(question9);
+        Question question10 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        insertQuestion(question10);
+        Question question11 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        insertQuestion(question11);
+        Question question12 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        insertQuestion(question12);
+        Question question13 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        insertQuestion(question13);
+        Question question14 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        insertQuestion(question14);
+        Question question15 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        insertQuestion(question15);
+        Question question16 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        insertQuestion(question16);
+        Question question17 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        insertQuestion(question17);
+        Question question18 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        insertQuestion(question18);
+        Question question19 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        insertQuestion(question19);
+        Question question20 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        insertQuestion(question20);
+    }
 
 
 
 
-                                                                /* private void phpBasics(){
+
+    /*private void phpFileAndSessionHandling(){
         Question question1 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
         insertQuestion(question1);
         Question question2 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
@@ -2069,7 +2204,6 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories12);
         Categories categories9 = new Categories("GUI", Languages.JAVA);
         insertCategory(categories9);
-
     }
 
     //C++ Category
@@ -2246,11 +2380,11 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories4);
         Categories categories5 = new Categories("STRINGS AND REGULAR EXPRESSIONS", Languages.PHP);
         insertCategory(categories5);
-        Categories categories6 = new Categories("Data Structure", Languages.PHP);
+        Categories categories6 = new Categories("FILE AND SESSION HANDLING 1", Languages.PHP);
         insertCategory(categories6);
-        Categories categories7 = new Categories("Exception Handling", Languages.PHP);
+        Categories categories7 = new Categories("FILE AND SESSION HANDLING 2", Languages.PHP);
         insertCategory(categories7);
-        Categories categories8 = new Categories("Form", Languages.PHP);
+        Categories categories8 = new Categories("FILE AND SESSION HANDLING 3", Languages.PHP);
         insertCategory(categories8);
         Categories categories9 = new Categories("State Management", Languages.PHP);
         insertCategory(categories9);
