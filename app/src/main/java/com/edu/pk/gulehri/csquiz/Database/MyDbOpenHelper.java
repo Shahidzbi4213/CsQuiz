@@ -2038,49 +2038,49 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
-
     private void phpFileAndSessionHandling2() {
-        Question question1 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        Question question1 = new Question("Which two predefined variables are used to retrieve information from forms?", "$GET & $SET", "$_GET & $_SET", "$__GET & $__SET", "GET & SET", 2, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        Question question2 = new Question("When you use the $_GET variable to collect data, the data is visible to ________", "Only you", "Everyone", "Selected few", "None of the Above", 2, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        Question question3 = new Question("When you use the $_POST variable to collect data, the data is visible to ___________", "Only you", "Everyone", "Selected few", "None of the Above", 1, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        Question question4 = new Question("Which variable is used to collect form data sent with both the GET and POST methods?", "$BOTH", "$_BOTH", "$REQUEST", "$_REQUEST", 4, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        Question question5 = new Question("Which one of the following should not be used while sending passwords or other sensitive information?", "GET", "POST", "REQUEST", "NEXT", 1, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        Question question6 = new Question("To validate an email address, which flag is to be passed to the function filter_var()?", "FILTER_VALIDATE_MAIL", "VALIDATE_EMAIL", "FILTER_VALIDATE_EMAIL", "VALIDATE_MAIL", 3, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        Question question7 = new Question("The attack which involves the insertion of malicious code into a page frequented by other users is known as ______", "basic sql injection", "advanced sql injection", "cross-site scripting", "scripting", 3, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        Question question8 = new Question("How many predefined variables does PHP use to authenticate a user?", "1", "2", "3", "4", 2, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        Question question9 = new Question("Which is the most powerful authentication method among the four?", "Hard-coding a login pair directly into the script", "File-based authentication", "Data-based authentication", "PEAR’S HTTP authentication", 3, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        Question question10 = new Question("Which of the following variables does PHP use to authenticate a user?", "$_SERVER['PHP_AUTH_USER'].", "$_SERVER['PHP_AUTH_PW'].", "Above Both", "$_SERVER['PHP_AUTH_USERS'].", 3, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        Question question11 = new Question("Which of the following PHP function is commonly used when handling authentication via PHP?", "header()", " isset()", "inset()", "Both header() and isset() ", 4, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        Question question12 = new Question("Which function is used to verify whether a variable contains a value?", "isset()", "inset()", "header()", "footer()", 1, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        Question question13 = new Question("In which of the following situations does file-based authentication become inconvenient.", "large number of user", "users are being regularly added", "Above Both", "static authentication", 3, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        Question question14 = new Question("Which directive determines whether PHP scripts on the server can accept file uploads?", "file_uploads", "file_upload", "file_input", "file_intake", 1, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        Question question15 = new Question("Which function is used to determine whether a file was uploaded?", "is_file_uploaded()", "is_uploaded_file()", "file_uploaded(“filename”)", "uploaded_file(“filename”)", 2, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        Question question16 = new Question("Which super global stores a variety of information pertinent to a file uploaded to the server via a PHP script?", "$_FILE_UPLOADED Array", "$_FILES_UPLOADED Array", "$_FILE Array", "$_FILES Array", 4, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        Question question17 = new Question("Which directive sets a maximum allowable amount of memory in megabytes that a script can allow?", "max_size", "post_max_size", "max_memory_limit", "memory_limit", 4, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        Question question18 = new Question("What is the default value of the directive max_file_limit?", "10 files", "15 files", "20 files", "25 files", 3, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        Question question19 = new Question("What is the default value of max_input_time directive?", "30 seconds", "60 seconds", "120 seconds", "1 second", 2, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
+        Question question20 = new Question("How many items are available in the $_FILES array?", "2", "3", "4", "5", 4, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING2);
         insertQuestion(question20);
     }
+
 
     private void phpFileAndSessionHandling3() {
         Question question1 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
