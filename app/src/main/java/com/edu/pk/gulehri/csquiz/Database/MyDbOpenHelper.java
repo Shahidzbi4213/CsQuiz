@@ -104,6 +104,9 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         phpFileAndSessionHandling1();
         phpFileAndSessionHandling2();
         phpFileAndSessionHandling3();
+        phpObjectsAndDatabases1();
+        phpObjectsAndDatabases2();
+        phpObjectsAndDatabases3();
 
     }
 
