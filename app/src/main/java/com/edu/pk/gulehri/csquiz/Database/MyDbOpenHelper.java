@@ -2081,47 +2081,46 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
-
     private void phpFileAndSessionHandling3() {
-        Question question1 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        Question question1 = new Question("Which one of the following function checks for the existence of DNS records?", "checkdns()", "checkdnsr()", "checkdnsrr()", " checkdnsa()", 3, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        Question question2 = new Question("What is the default port number of HTTPs?", "70", "80", "90", "110", 2, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        Question question3 = new Question("Which of the following statements is used to add an attachment to the mail?", "$mimemail->attachment(‘file.pdf’);", "$mimemail=>attachment(‘file.pdf’);", "$mimemail->addAttachment(‘file.pdf’);", "$mimemail=>addAttachment(‘file.pdf’);", 3, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        Question question4 = new Question("How many configuration directives pertinent to PHP’s mail function are available?", "5", "6", "8", "7", 1, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        Question question5 = new Question("Which one of the following function returns the port number of a specified service?", "getportname()", "getservername()", "getserverbyname()", "getservbyname()", 4, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        Question question6 = new Question("Which one of the following is the very first task executed by a session enabled page?", "Delete the previous session", "Start a new session", "Check whether a valid session exists", "Handle the session", 3, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        Question question7 = new Question("How many ways can a session data be stored?", "4", "2", "3", "5", 1, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        Question question8 = new Question("If session.use_cookie is set to 0, this results in use of _____", "Session", "Cookie", "URL rewriting", "Nothing happens", 3, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        Question question9 = new Question("Which one of the following function is used to start a session?", "start_session()", "session_start()", "session_begin()", "begin_session()", 2, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        Question question10 = new Question("If the directive session.cookie_lifetime is set to 3600, the cookie will live until ____", "3600 sec", "3600 min", "3600 hrs", "the browser is restarted", 1, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        Question question11 = new Question(" Which one of the following is the default PHP session name?", "PHPSESSID", "PHPSESID", "PHPSESSIONID", "PHPIDSESS", 1, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        Question question12 = new Question("Which function is used to erase all session variables stored in the current session?", "session_destroy()", "session_change()", "session_remove()", "session_unset()", 4, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        Question question13 = new Question("Which one of the following statements should you use to set the session username to Khan?", "$SESSION[‘username’] = “Khan”;", "$_SESSION[‘username’] = “Khan”;", " session_start(“Khan”);", "$SESSION_START[“username”] = “Khan”;", 2, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        Question question14 = new Question("Which function effectively deletes all sessions that have expired?", "session_delete()", "session_destroy()", "session_garbage_collect()", "SessionHandler::gc", 4, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        Question question15 = new Question("Which function is used to transform PHP’s session-handler behavior into that defined by your custom handler?", "session_set_save()", "session_set_save_handler()", "Session_handler()", " session_save_handler()", 2, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        Question question16 = new Question("Which directive should we disable to obscure the fact that PHP is being used on our server?", "show_php", "print_php", "expose_php", "info_php", 3, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        Question question17 = new Question("Which Apache directive outputs Apache’s server version, server name, port and compile-in modules?", "ServerSignature", " ServerName", "ServerDetails", "ServerInfo", 1, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        Question question18 = new Question("The memory_limit is only applicable if ________ is enabled when you configure PHP.", "–enable-limit", "-enable-memory-limit", " –enable-memory-limit", "-memory-limit", 3, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        Question question19 = new Question("Which one of the following statements should be used to disable just the fopen(), and file() functions?", "disable_functions = fopen(), file()", "disable_functions = fopen, file", "functions_disable = fopen(), file()", "functions_disable = fopen, file", 2, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
+        Question question20 = new Question("The session_start() function must appear _________", "after the html tag", " after the body tag", "before the body tag", "before the html tag", 4, Languages.PHP, Categories.FILE_AND_SESSION_HANDLING3);
         insertQuestion(question20);
     }
 
