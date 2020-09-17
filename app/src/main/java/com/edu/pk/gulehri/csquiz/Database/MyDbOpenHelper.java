@@ -100,6 +100,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         phpOOP();
         phpArraysAndFunctions();
         phpErrorAndExceptionHandling();
+        phpStringsAndRegularExpressions();
 
     }
 
@@ -1934,53 +1935,60 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
     }
 
     private void phpStringsAndRegularExpressions() {
-        Question question1 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        Question question1 = new Question("Which one of the following regular expression matches any string containing zero or one p?", "p+", "p*", "P?", "p#", 3, Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        Question question2 = new Question("[:alpha:] can also be specified as ________", "[A-Za-z0-9]", "[A-za-z]", "[A-z]", "[a-z]", 2, Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        Question question3 = new Question("How many functions does PHP offer for searching strings using POSIX style regular expression?", "7", "8", "9", "10", 1, Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        Question question4 = new Question("POSIX implementation was deprecated in which version of PHP?", "PHP 4", "PHP 5", "PHP 5.2", "PHP 5.3", 4, Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        Question question5 = new Question("POSIX stands for ________", "Portable OS Interface for Unix", "Portable OS Interface for Linux", "Portative OS Interface for Unix", "Portative OS Interface for Linux", 1, Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        Question question6 = new Question("Which one of the following functions will convert a string to all uppercase?", "strtoupper()", "uppercase()", "str_uppercase()", "struppercase()", 1, Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        Question question7 = new Question("Which of the following is used to concatenate array elements to form a single delimited string?", "explode()", "implode()", "concat()", "concatenate()", 2, Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        Question question8 = new Question("Which of the following finds the last occurrence of a string, returning its position?", "strlastpos()", "strpos()", "strlast()", "strrpos()", 4, Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        Question question9 = new Question("For tokenizing a string which PHP function is used?", "ok ( )", "strtok ( )", "str ( )", "start( )", 2, Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        Question question10 = new Question("Process of breaking up a long string into words is called as", "Stroking", "Delimiters", "Tokenizing", "Parsing", 3, Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        Question question11 = new Question("What is meaning of  \".\" in POSIX style regex?", "Matches any character of a string", "Matches the beginning of a string", "Matches the end of a string", "None of them", 1, Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        Question question12 = new Question("<?php\n" +
+                "    $url = \"nachiketh@example.com\";\n" +
+                "    echo ltrim(strstr($url, \"@\"),\"@\");\n" +
+                "    ?>\n", "nachiketh@example.com", "nachiketh", "nachiketh@", "example.com", 4, Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        Question question13 = new Question("<?php\n" +
+                "    echo str_pad(\"Salad\", 5).\" is good.\";\n" +
+                "    ?>\n", "SaladSaladSaladSaladSalad is good.", "is good SaladSaladSaladSaladSalad.", "is good  Salad.", "Salad  is good.", 4, Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        Question question14 = new Question("What is the best all-purpose way of comparing two strings?", "Using the strpos function", "Using the == operator", "Using strcmp()", "Using strcasecmp()", 3, Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        Question question15 = new Question("Which of the following will not combine strings $s1 and $s2 into a single string?", "$s1 + $s2", "\"{$s1}{$s2}\"", "$s1.$s2", "implode(' ', array($s1,$s2))", 1, Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        Question question16 = new Question("Which of the following PCRE regular expressions best matches the string php|architect?", ".*", "\\d{3}\\|\\d{8}", "[a-z][a-z][a-z]\\|\\w{9}", "[az]{3}\\|[az]{9}", 3, Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        Question question17 = new Question("<?php\n" +
+                "$color = red;\n" +
+                "echo \"$color\";\n" +
+                "?>\n", "$color", "red", "$red", "error", 1, Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        Question question18 = new Question("<?php\n" +
+                "$one = “Hello”;\n" +
+                "$two = “World”;\n" +
+                "echo $one, $two;\n" +
+                "?>\n", "Hello World", "Hello", "World", "HelloWorld", 4, Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        Question question19 = new Question("Which among the following is/are not a metacharacter?", "\\a", "\\A", "\\b", "\\B", 1, Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
+        Question question20 = new Question("To compare two strings which of the following function/functions is use?", "strcmp()", "strcasecmp()", "strspn() ", "All of the Above", 4, Languages.PHP, Categories.STRINGS_AND_REGULAR_EXPRESSIONS);
         insertQuestion(question20);
 
     }
-
-
-
-
-
 
 
 
