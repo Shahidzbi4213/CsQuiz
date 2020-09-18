@@ -1756,7 +1756,8 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question3);
         Question question4 = new Question("<?php $num  = 1;\n" +
                 "  $num1 = 2;\n" +
-                "    print $num . \"+\". $num1;?>\n", "3", "1+2", "1.+.2", "Error", 2, Languages.PHP, Categories.BASICS);
+                "    print $num . \"+\". $num1;" +
+                "?>\n", "3", "1+2", "1.+.2", "Error", 2, Languages.PHP, Categories.BASICS);
         insertQuestion(question4);
         Question question5 = new Question("Which of the following is not true?", "PHP can be used to develop web applications.", "PHP makes a website dynamic", "PHP applications can not be compile.", "PHP can not be embedded into html.", 4, Languages.PHP, Categories.BASICS);
         insertQuestion(question5);
@@ -1780,12 +1781,14 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question14);
         Question question15 = new Question("<?php $a = \"clue\";\n" +
                 "      $a .= \"get\";\n" +
-                "     echo \"$a\"; ?>\n", "get", "clueget", "True", "False", 2, Languages.PHP, Categories.BASICS);
+                "     echo \"$a\"; " +
+                "?>\n", "get", "clueget", "True", "False", 2, Languages.PHP, Categories.BASICS);
         insertQuestion(question15);
         Question question16 = new Question(". <?php  $total = \"25 students\";\n" +
                 "    $more = 10;\n" +
                 "    $total = $total + $more;\n" +
-                "    echo \"$total\"; ?>\n", "Error", "35 students", "35", "25 students", 3, Languages.PHP, Categories.BASICS);
+                "    echo \"$total\"; " +
+                "?>\n", "Error", "35 students", "35", "25 students", 3, Languages.PHP, Categories.BASICS);
         insertQuestion(question16);
         Question question17 = new Question("Which of the conditional statements is/are supported by PHP?", "if statements and if-else statements", "if-elseif statements", "switch statements", "All of the Above", 4, Languages.PHP, Categories.BASICS);
         insertQuestion(question17);
@@ -1866,7 +1869,8 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question8);
         Question question9 = new Question("<?php\n" +
                 "$a = array(\"red\", \"green\", \"blue\");\n" +
-                "array_pop($a); print_r($a); ?>\n", "Array ( [0] => red [1] => green )", "Array ( [0] => green [1] => blue )", "Array ( [0] => red [1] => blue )", "Array ( [0] => blue [1] => blue )", 1, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
+                "array_pop($a); " +
+                "print_r($a); ?>\n", "Array ( [0] => red [1] => green )", "Array ( [0] => green [1] => blue )", "Array ( [0] => red [1] => blue )", "Array ( [0] => blue [1] => blue )", 1, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question9);
         Question question10 = new Question("Which function should we use to sort the array in natural order?", "dsort()", "casesort()", "natcasesort()", "naturalsort()", 3, Languages.PHP, Categories.ARRAYS_AND_FUNCTIONS);
         insertQuestion(question10);
@@ -2128,47 +2132,46 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
     }
 
     private void phpObjectsAndDatabases1() {
-        Question question1 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        Question question1 = new Question("Which one of the following functions are used to search a string?", "preg_match", "preg_search", "preg_find", "preg_found", 1, Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        Question question2 = new Question("Which one of the following preg PHP function is used to do a find and replace on a string or an array?", "preg_replace()", "preg_find()", "preg_find_replace()", "preg_findre()", 1, Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        Question question3 = new Question("Which one of the following preg PHP functions is used to take a string, and put it in an array?", "preg_destroy()", " preg_split()", "preg_unchain()", "preg_divide()", 2, Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        Question question4 = new Question("Which one of the following is not a preg PHP function?", "preg_match", "preg_match_all", "preg_matchall", "preg_split", 3, Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        Question question5 = new Question("Which one of the following databases has PHP supported almost since the beginning?", "Oracle Database", "SQL", "SQLite", "MySQL", 4, Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        Question question6 = new Question("Which one of the following statements instantiates the mysqli class?", "mysqli = new mysqli()", "$mysqli = new mysqli()", "$mysqli->new.mysqli()", "mysqli->new.mysqli()", 2, Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        Question question7 = new Question("Which one of the following statements can be used to select the database?", "$mysqli=select_db('databasename');", "mysqli=select_db('databasename');", "mysqli->select_db('databasename');", "$mysqli->select_db('databasename');", 4, Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        Question question8 = new Question("Which one of the following statements is used to create a table?", "CREATE TABLE table_name (column_name column_type);", "CREATE table_name (column_type column_name);", "CREATE table_name (column_name column_type);", "CREATE TABLE table_name (column_type column_name);", 1, Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        Question question9 = new Question("Which of the following lines need to be uncommented/added in the php.ini file to enable mysqli extension?", "extension=mysql.dll", "extension=php_mysqli.dl", "extension=php_mysqli.dll", "extension=mysqli.dl", 3, Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        Question question10 = new Question("The updated MySQL extension released with PHP 5 is typically referred to as ______", "MySQL", "mysql", "mysqli", "mysqly", 3, Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        Question question11 = new Question("Which one of the following methods is responsible for sending the query to the database?", "query()", "send_query()", "sendquery()", " mysqli_query()", 4, Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        Question question12 = new Question("Which method retrieves each row from the prepared statement result and assigns the fields to the bound results?", "get_row()", "fetch_row()", "fetch()", "mysqli_fetch_row()", 4, Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        Question question13 = new Question("Which one of the following method is used to retrieve the number of rows affected by an INSERT, UPDATE, or DELETE query?", "num_rows()", "affected_rows()", "changed_rows()", "mysqli_affected_rows()", 4, Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        Question question14 = new Question("Your confirmation form submits your choice, via the _______ method, to ________", "GET index.php", "POST admin.php", "GET admin.php", "POST index.php", 2, Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        Question question15 = new Question("You need to check whether ______ is set, to determine whether you’re editing an entry or creating a new one.", "$_GET[‘url’]", "$_SET[‘url’]", "$_GET[‘admin’]", "$_SET[‘admin’]", 1, Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        Question question16 = new Question("To identify entries marked for deletion, you check whether $_GET[‘page’] == ‘delete’ inside __________", "index.php", "index.ini", "admin.php", ".htaccess", 3, Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        Question question17 = new Question("Once your application can generate administrative links, you need to load those links into _________", "php.ini", " index.ini", "index.php", " start.php", 3, Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        Question question18 = new Question("Which one of the following methods is used to recuperating prepared statements resources?", "end()", "finish()", "mysqli_close()", "close()", 3, Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        Question question19 = new Question("To declare the function to confirm the deletion you need to add the code to __________", "inc.php", "functions.inc.php", " include.php", "functions.include.php", 2, Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
+        Question question20 = new Question("Which one of the following methods can be used to diagnose and display information about a MySQL connection error?", "mysqli_connect_errno()", "mysqli_connect_error()", "connect_error()", "connect_errno()", 1, Languages.PHP, Categories.OBJECTS_AND_DATABASES1);
         insertQuestion(question20);
-
     }
 
     private void phpObjectsAndDatabases2() {
