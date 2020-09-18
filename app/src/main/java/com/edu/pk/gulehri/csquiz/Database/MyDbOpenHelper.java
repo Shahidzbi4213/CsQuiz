@@ -2175,47 +2175,50 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
     }
 
     private void phpObjectsAndDatabases2() {
-        Question question1 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        Question question1 = new Question("Which characters is used to access property variables on an object-by-object basis?", "::", "=", "->", ".", 3, Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        Question question2 = new Question("Which keyword precedes a method name?", "method", "function", "public", "protected", 2, Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        Question question3 = new Question("Code that uses a class, function, or method is often described as the ____________", "client code", "user code", "object code", "class code", 1, Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        Question question4 = new Question("Which function is used to determine whether the variable’s value is either TRUE or FALSE?", "boolean()", "is_boolean()", " bool()", " is_bool()", 4, Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        Question question5 = new Question("A mutator method is also called as ___________", "Setter", "Accessor", "Getter", "Destructor", 1, Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        Question question6 = new Question("What should be used to refer to a method in the context of a class rather than an object you use?", "->", ".", "$", "::", 4, Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        Question question7 = new Question("When you’re uploading files you need to set the enctype of the form to __________", "text", "text/file", "multipart/form-data", "multimedia/form-data", 3, Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        Question question8 = new Question(" To check whether a file was uploaded, you look in the _______ superglobal array.", "$_FILES", "$_DOCS", "$_DOCUMENTS", "$_FOLDERS", 1, Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        Question question9 = new Question("Before you try to process the file, you need to make sure that your $err value is equivalent to _________", "UPLOAD_NO_ERR", "UPLOAD_ERR_OK", "UPLOAD_ERR_NO_OK", "UPLOAD_ERR", 2, Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        Question question10 = new Question("To make the ImageHandler class portable you should create a separate file for it called __________", " imagehandler.inc.php", "images.inc.php", "handler.inc.php", "imghandler.inc.php", 2, Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        Question question11 = new Question("Which function do you have to use to check whether the $path you’ve stored exists?", "path_dir()", "path()", "is_dir()", "path_dir()", 3, Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        Question question12 = new Question("Which one of the following variable cannot be used inside a static method?", "$this", "$get", "$set", "$date", 1, Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        Question question13 = new Question("Which one of the following is a constant variable?", "const $name", "const $NAME", "constant NAME", "const NAME", 4, Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        Question question14 = new Question("What will happen if you try to set a value to a constant once it has been declared?", "The value of the variable will change", "The value of the variable will not change", "Parse Error", "Nothing", 3, Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        Question question15 = new Question("Which keyword is used to put a stop on inheritance?", "stop", "end", "break", "final", 4, Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        Question question16 = new Question("Which one of the following methods in the exception class, is used to get a nested exception object?", "getPrevious()", "getCode()", "getFile()", "getLine()", 1, Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        Question question17 = new Question("class CopyMe {}\n" +
+                "$first = new CopyMe();\n" +
+                "$second = $first;", "In PHP 4: $second and $first are 2 distinct objects", "In PHP 5: $second and $first are 2 distinct objects", "In PHP 4: $second and $first refer to one object", "None of the mentioned", 1, Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        Question question18 = new Question("class StringThing {}\n" +
+                "$st = new StringThing();\n" +
+                "print $st;", " Object Not Found", "Object id #1", "PHP Catchable fatal error", "Cannot initialize object", 2, Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        Question question19 = new Question("__clone() is run on the ___ object.", "original", "copied", "external", "pseudo", 2, Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
+        Question question20 = new Question("Which method introduced in PHP 5, is invoked just before an object is a garbage collected?", "__collect()", " __garbage()", " __destruct()", "__destructor()", 3, Languages.PHP, Categories.OBJECTS_AND_DATABASES2);
         insertQuestion(question20);
-
     }
 
     private void phpObjectsAndDatabases3() {
