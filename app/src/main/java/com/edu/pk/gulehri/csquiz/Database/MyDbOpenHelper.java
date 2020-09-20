@@ -36,7 +36,6 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         Log.d(TAG, "onCreate: Database Created");
         addCategory();
         addQuestions();
-
     }
 
     @Override
@@ -46,7 +45,6 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         db.execSQL(Constants.DELETE_TABLE_SECOND);
         onCreate(db);
         Log.d(TAG, "onUpgrade: DatabaseUpgraded");
-
     }
 
     private void addQuestions() {
@@ -106,7 +104,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         phpFileAndSessionHandling3();
         phpObjectsAndDatabases1();
         phpObjectsAndDatabases2();
-        phpObjectsAndDatabases3();
+        phpObjectToolDesignAndVariables();
 
     }
 
@@ -2221,48 +2219,75 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
-    private void phpObjectsAndDatabases3() {
-        Question question1 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+    private void phpObjectToolDesignAndVariables() {
+        Question question1 = new Question("A package is a set of related _________", "Objects", "Classes", "Programs", "Functions", 2, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question1);
-        Question question2 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        Question question2 = new Question("Which of the following can you place inside a namespace?", "classes", "functions", "variables", "All of the Above", 4, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question2);
-        Question question3 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        Question question3 = new Question("Which one of the following is the correct way of declaring a namespace?", "namespace my;", "namespace my();", "my namespace;", "namespace(my);", 1, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question3);
-        Question question4 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        Question question4 = new Question("Which one of the following statements is true for require() and require_once()?", "They are functions", "They are statements", "They’ll not work if the () is not present", "They can not be used to require files", 2, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question4);
-        Question question5 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        Question question5 = new Question("Which one of the following will you use to check the class of an object?", "class()", "_class()", " class_check()", "get_class()", 4, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question5);
-        Question question6 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        Question question6 = new Question("PHP 4 did not support instanceof. Instead, which function did it provide?", "is()", " get_class()", "is_a()", "is_the()", 3, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question6);
-        Question question7 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        Question question7 = new Question("Placing a static method for generating ________ objects in the ____________ class is convenient.", "child parent", "parent child", "final static", "static final", 1, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question7);
-        Question question8 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        Question question8 = new Question("Polymorphism is also known as______", "switch", "overact", "encapsulation", "class switching", 4, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question8);
-        Question question9 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        Question question9 = new Question("Which one of the following is displayed below the class name in the class diagrams?", "Functions", "Methods", "Attributes", "Constraints", 3, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question9);
-        Question question10 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        Question question10 = new Question("# is the visibility code for?", "Private", "Friendly", "Protected", " Static", 3, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question10);
-        Question question11 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        Question question11 = new Question("<?php\n" +
+                "print_r \"Hello world\"\n" +
+                "?>", "Error", "Hello World", "Nothing", "Missing semicolon error", 1, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question11);
-        Question question12 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        Question question12 = new Question("<?php\n" +
+                " # echo \"Hello world\";\n" +
+                " echo \"# Hello world\"; \n" +
+                "?>", "# Hello world", " Hello world# Hello world", "Hello world", "Error", 1, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question12);
-        Question question13 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        Question question13 = new Question("<?php\n" +
+                "$color = red;\n" +
+                "echo \"$color\" . red ;\n" +
+                "?>", "red red", " red", "error", "nothing", 3, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question13);
-        Question question14 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        Question question14 = new Question("<?php\n" +
+                "$x = 3.3;\n" +
+                "$y = 2;\n" +
+                "echo $x % $y;\n" +
+                "?>", " 0", "1", "2", "Error", 2, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question14);
-        Question question15 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        Question question15 = new Question("<?php\n" +
+                "$x;\n" +
+                "echo \"$x\";\n" +
+                "?>", "0", "1", "Nothing", "Error", 3, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question15);
-        Question question16 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        Question question16 = new Question("<?php\n" +
+                "$a = \"$winner\";\n" +
+                "$b = \"\\$looser\";\n" +
+                "echo $a, $b;\n" +
+                "?>", " $winner\\$looser", "\\$looser", "\\", "$looser", 4, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question16);
-        Question question17 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        Question question17 = new Question("<?php\n" +
+                "echo \"This\".\"was\".\"a\".\"bad\".\"idea\";\n" +
+                "?>", "This, was, a, bad, idea", "This was a bad idea", "Thiswasabadidea", "Error", 3, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question17);
-        Question question18 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        Question question18 = new Question("<?php\n" +
+                "$one = 1;\n" +
+                "print($one);\n" +
+                "print $one;\n" +
+                "?>", "01", "11", "10", "Error", 2, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question18);
-        Question question19 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        Question question19 = new Question("<?php\n" +
+                "define('IF', 42); \n" +
+                "echo \"IF: \", IF;\n" +
+                "?>", " IF:42", "No output", "IF:", "ERROR", 4, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question19);
-        Question question20 = new Question("", "", "", "", "", , Languages.PHP, Categories.OBJECTS_AND_DATABASES3);
+        Question question20 = new Question("How many times can you define _________ autoload in a process?", "once", "twice", " thrice", "as many times as needed", 1, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question20);
-
     }
     
 
@@ -2527,7 +2552,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories9);
         Categories categories10 = new Categories("OBJECTS AND DATABASES 2", Languages.PHP);
         insertCategory(categories10);
-        Categories categories11 = new Categories("OBJECTS AND DATABASES 3", Languages.PHP);
+        Categories categories11 = new Categories("Object Tools, Design and Variables", Languages.PHP);
         insertCategory(categories11);
     }
 

@@ -67,7 +67,7 @@ public class Categories {
     public static final String FILE_AND_SESSION_HANDLING3 = "FILE AND SESSION HANDLING 3";
     public static final String OBJECTS_AND_DATABASES1 = "OBJECTS AND DATABASES 1";
     public static final String OBJECTS_AND_DATABASES2 = "OBJECTS AND DATABASES 2";
-    public static final String OBJECTS_AND_DATABASES3 = "OBJECTS AND DATABASES 3";
+    public static final String OBJECT_TOOLS_DESIGN_AND_VARIABLES = "Object Tools, Design and Variables";
 
 
     public Categories(String category, String language) {
@@ -130,7 +130,7 @@ public class Categories {
                     new Categories("FILE AND SESSION HANDLING 3", Languages.PHP),
                     new Categories("OBJECTS AND DATABASES 1", Languages.PHP),
                     new Categories("OBJECTS AND DATABASES 2", Languages.PHP),
-                    new Categories("OBJECTS AND DATABASES 3", Languages.PHP)
+                    new Categories("Object Tools, Design and Variables", Languages.PHP)
             };
 
 
@@ -156,5 +156,6 @@ public class Categories {
     public static Categories[] getData() {
         return data;
     }
+
 }
 
