@@ -71,6 +71,7 @@ public class Categories {
 
     //PYTHON
     public static final String PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN = "Precedence,Associativity AND\nBitwise & Boolean";
+    public static final String FOrMATTING_AND_DECORATORS = "Formatting And Decorators";
 
 
     public Categories(String category, String language) {
@@ -136,7 +137,8 @@ public class Categories {
                     new Categories("Object Tools, Design and Variables", Languages.PHP),
 
 
-                    new Categories("Precedence,Associativity AND\nBitwise & Boolean", Languages.PYTHON)
+                    new Categories("Precedence,Associativity AND\nBitwise & Boolean", Languages.PYTHON),
+                    new Categories("Formatting And Decorators", Languages.PYTHON)
             };
 
 
