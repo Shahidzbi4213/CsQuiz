@@ -106,6 +106,9 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         phpObjectsAndDatabases2();
         phpObjectToolDesignAndVariables();
 
+        //Python
+        pythonBasics();
+
     }
 
     private void addCategory() {
@@ -1754,8 +1757,8 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question3);
         Question question4 = new Question("<?php $num  = 1;\n" +
                 "  $num1 = 2;\n" +
-                "    print $num . \"+\". $num1;" +
-                "?>\n", "3", "1+2", "1.+.2", "Error", 2, Languages.PHP, Categories.BASICS);
+                "    print $num . \"+\". $num1;\n" +
+                "?>", "3", "1+2", "1.+.2", "Error", 2, Languages.PHP, Categories.BASICS);
         insertQuestion(question4);
         Question question5 = new Question("Which of the following is not true?", "PHP can be used to develop web applications.", "PHP makes a website dynamic", "PHP applications can not be compile.", "PHP can not be embedded into html.", 4, Languages.PHP, Categories.BASICS);
         insertQuestion(question5);
@@ -1779,14 +1782,14 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question14);
         Question question15 = new Question("<?php $a = \"clue\";\n" +
                 "      $a .= \"get\";\n" +
-                "     echo \"$a\"; " +
-                "?>\n", "get", "clueget", "True", "False", 2, Languages.PHP, Categories.BASICS);
+                "     echo \"$a\";\n " +
+                "?>", "get", "clueget", "True", "False", 2, Languages.PHP, Categories.BASICS);
         insertQuestion(question15);
         Question question16 = new Question(". <?php  $total = \"25 students\";\n" +
                 "    $more = 10;\n" +
                 "    $total = $total + $more;\n" +
-                "    echo \"$total\"; " +
-                "?>\n", "Error", "35 students", "35", "25 students", 3, Languages.PHP, Categories.BASICS);
+                "    echo \"$total\"; \n" +
+                "?>", "Error", "35 students", "35", "25 students", 3, Languages.PHP, Categories.BASICS);
         insertQuestion(question16);
         Question question17 = new Question("Which of the conditional statements is/are supported by PHP?", "if statements and if-else statements", "if-elseif statements", "switch statements", "All of the Above", 4, Languages.PHP, Categories.BASICS);
         insertQuestion(question17);
@@ -2289,51 +2292,100 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         Question question20 = new Question("How many times can you define _________ autoload in a process?", "once", "twice", " thrice", "as many times as needed", 1, Languages.PHP, Categories.OBJECT_TOOLS_DESIGN_AND_VARIABLES);
         insertQuestion(question20);
     }
-    
 
-    /*private void phpFileAndSessionHandling(){
-        Question question1 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+    /*===============================================================================================================================================*/
+    /*Python*/
+    /*===============================================================================================================================================*/
+
+    private void pythonBasics() {
+        Question question1 = new Question("How to add single-line comment in Python?", "/* This is comment */", "!! This is comment", "// This is comment", "# This is comment", 4, Languages.PYTHON, Categories.BASICS);
         insertQuestion(question1);
-        Question question2 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        Question question2 = new Question("Python is said to be easily", "readable language", "writable language", "bug-able language", "script-able language", 1, Languages.PYTHON, Categories.BASICS);
         insertQuestion(question2);
-        Question question3 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        Question question3 = new Question("Python was released publicly in", "1941", "1991", "1993", "1995", 2, Languages.PYTHON, Categories.BASICS);
         insertQuestion(question3);
-        Question question4 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        Question question4 = new Question("What is a correct syntax to output \"Hello World\" in Python?", "echo(\"Hello World\");", "p(\"Hello World\")", "print(\"Hello World\")", "echo \"Hello World\"", 3, Languages.PYTHON, Categories.BASICS);
         insertQuestion(question4);
-        Question question5 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        Question question5 = new Question("What is the correct file extension for Python files?", ".py  ", ".pyt", ".pyth", ".pt", 1, Languages.PYTHON, Categories.BASICS);
         insertQuestion(question5);
-        Question question6 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        Question question6 = new Question("Who created python ?", "James Gosling", "Guido Van Rossum", "Denis Ritchie", "Tom Cruise", 2, Languages.PYTHON, Categories.BASICS);
         insertQuestion(question6);
-        Question question7 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        Question question7 = new Question("Is Python case sensitive when dealing with identifiers?", "Yes", "No", "Machine dependent", "None of the Above", 1, Languages.PYTHON, Categories.BASICS);
         insertQuestion(question7);
-        Question question8 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        Question question8 = new Question("Which of the following is invalid?", "_a = 1", "__a = 1", "__str__ = 1", "None of the Above", 4, Languages.PYTHON, Categories.BASICS);
         insertQuestion(question8);
-        Question question9 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        Question question9 = new Question("All keywords in Python are in _________", "Lower case", "Upper Case", "Capitalized", "None of the Above", 4, Languages.PYTHON, Categories.BASICS);
         insertQuestion(question9);
-        Question question10 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        Question question10 = new Question("Which is the correct operator for power(xy)?", "X^y", "X**y", "X^^y", "None of the Above", 2, Languages.PYTHON, Categories.BASICS);
         insertQuestion(question10);
-        Question question11 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        Question question11 = new Question("Operators with the same precedence are evaluated in which manner?", " Right to Left", "Left to Right", "Can’t say", "None of the Above", 2, Languages.PYTHON, Categories.BASICS);
         insertQuestion(question11);
-        Question question12 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        Question question12 = new Question("Which one of the following has the highest precedence in the expression?", "Exponential", "Addition", "Parentheses", "Multiplication", 3, Languages.PYTHON, Categories.BASICS);
         insertQuestion(question12);
-        Question question13 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        Question question13 = new Question(" Which of these in not a core data type?", "Lists", "Dictionary", "Tuples", "Class", 4, Languages.PYTHON, Categories.BASICS);
         insertQuestion(question13);
-        Question question14 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        Question question14 = new Question("What is the output of this expression, 3*1**3?", "27", "9", "3", "1", 3, Languages.PYTHON, Categories.BASICS);
         insertQuestion(question14);
-        Question question15 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        Question question15 = new Question("What is the output of\n print 0.1 + 0.2 == 0.3?", "True", "False", "Machine dependent", "Error", 2, Languages.PYTHON, Categories.BASICS);
         insertQuestion(question15);
-        Question question16 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        Question question16 = new Question("What does ~4 evaluate to?", "-5", "-4", "-3", "+3", 1, Languages.PYTHON, Categories.BASICS);
         insertQuestion(question16);
-        Question question17 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        Question question17 = new Question("Which of the following will run without errors?", "round(45.8)", "round(6352.898,2,5)", "round()", "round(7463.123,2,1)", 1, Languages.PYTHON, Categories.BASICS);
         insertQuestion(question17);
-        Question question18 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        Question question18 = new Question(" What error occurs when you execute the following Python code snippet? \napple = mango", "SyntaxError", "NameError", "ValueError", "TypeError", 2, Languages.PYTHON, Categories.BASICS);
         insertQuestion(question18);
-        Question question19 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        Question question19 = new Question("Which of the following results in a SyntaxError?", "‘”Once upon a time…”, she said.’", " “He said, ‘Yes!'”", " ‘3\\’", "”’That’s okay”’", 3, Languages.PYTHON, Categories.BASICS);
         insertQuestion(question19);
-        Question question20 = new Question("","","","","",,Languages.PHP,Categories.BASICS);
+        Question question20 = new Question("What does 3 ^ 4 evaluate to?", "81", "12", "0.75", "7", 4, Languages.PYTHON, Categories.BASICS);
+        insertQuestion(question20);
+    }
+
+
+   /* private void pythonBasics(){
+        Question question1 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
+        insertQuestion(question1);
+        Question question2 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
+        insertQuestion(question2);
+        Question question3 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
+        insertQuestion(question3);
+        Question question4 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
+        insertQuestion(question4);
+        Question question5 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
+        insertQuestion(question5);
+        Question question6 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
+        insertQuestion(question6);
+        Question question7 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
+        insertQuestion(question7);
+        Question question8 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
+        insertQuestion(question8);
+        Question question9 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
+        insertQuestion(question9);
+        Question question10 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
+        insertQuestion(question10);
+        Question question11 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
+        insertQuestion(question11);
+        Question question12 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
+        insertQuestion(question12);
+        Question question13 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
+        insertQuestion(question13);
+        Question question14 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
+        insertQuestion(question14);
+        Question question15 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
+        insertQuestion(question15);
+        Question question16 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
+        insertQuestion(question16);
+        Question question17 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
+        insertQuestion(question17);
+        Question question18 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
+        insertQuestion(question18);
+        Question question19 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
+        insertQuestion(question19);
+        Question question20 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
         insertQuestion(question20);
 
     }*/
+
+
     /*===============================================================================================================================================*/
     /*Categories*/
     /*===============================================================================================================================================*/
