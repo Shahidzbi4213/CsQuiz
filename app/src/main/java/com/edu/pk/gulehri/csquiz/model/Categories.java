@@ -69,6 +69,9 @@ public class Categories {
     public static final String OBJECTS_AND_DATABASES2 = "OBJECTS AND DATABASES 2";
     public static final String OBJECT_TOOLS_DESIGN_AND_VARIABLES = "Object Tools, Design and Variables";
 
+    //PYTHON
+    public static final String PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN = "Precedence,Associativity AND\nBitwise & Boolean";
+
 
     public Categories(String category, String language) {
         this.category = category;
@@ -130,7 +133,10 @@ public class Categories {
                     new Categories("FILE AND SESSION HANDLING 3", Languages.PHP),
                     new Categories("OBJECTS AND DATABASES 1", Languages.PHP),
                     new Categories("OBJECTS AND DATABASES 2", Languages.PHP),
-                    new Categories("Object Tools, Design and Variables", Languages.PHP)
+                    new Categories("Object Tools, Design and Variables", Languages.PHP),
+
+
+                    new Categories("Precedence,Associativity AND\nBitwise & Boolean", Languages.PYTHON)
             };
 
 

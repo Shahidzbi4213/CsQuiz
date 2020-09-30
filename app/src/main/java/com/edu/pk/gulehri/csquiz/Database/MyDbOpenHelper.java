@@ -108,6 +108,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
 
         //Python
         pythonBasics();
+        pythonPrecedenceAndAssociativityAndBitwiseAndBoolean();
 
     }
 
@@ -2340,8 +2341,55 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
+    private void pythonPrecedenceAndAssociativityAndBitwiseAndBoolean() {
+        Question question1 = new Question("What will be the value of the following Python expression?\n4 + 3 % 5", "4", "7", "2", "0", 2, Languages.PYTHON, Categories.PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN);
+        insertQuestion(question1);
+        Question question2 = new Question("Evaluate the expression given below if A = 16 and B = 15.\nA % B // A", "0", "0.0", "1.0", "1", 1, Languages.PYTHON, Categories.PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN);
+        insertQuestion(question2);
+        Question question3 = new Question("What is the value of the following expression?\n2+4.00, 2**4.0", "(6.00, 16.00)", "(6, 16)", "(6.0, 16.0)", "(6.00, 16.0)", 3, Languages.PYTHON, Categories.PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN);
+        insertQuestion(question3);
+        Question question4 = new Question("What will be the value of x in the following Python expression?\nx = int(43.55+2/2)", "43", "44", "22", "23", 2, Languages.PYTHON, Categories.PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN);
+        insertQuestion(question4);
+        Question question5 = new Question("Which of the following is the truncation division operator?", "/", " %", "|", "//", 4, Languages.PYTHON, Categories.PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN);
+        insertQuestion(question5);
+        Question question6 = new Question("Which of the following expressions involves coercion when evaluated in Python?", "4.7 – 1.5", "7.9 * 6.3", " 1.7 % 2", "3.4 + 4.6", 3, Languages.PYTHON, Categories.PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN);
+        insertQuestion(question6);
+        Question question7 = new Question("What will be the output of the following Python expression?\n24//6%3, 24//4//2", "(1,3)", "(0,3)", " (1,0)", "(3,1)", 1, Languages.PYTHON, Categories.PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN);
+        insertQuestion(question7);
+        Question question8 = new Question("Which among the following list of operators has the highest precedence?\n +, -, **, %, /, <<, >>, |", "<<, >>", "%", "**", "|", 3, Languages.PYTHON, Categories.PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN);
+        insertQuestion(question8);
+        Question question9 = new Question("Which of the following expressions results in an error?", "float(‘10’)", " int(‘10’)", "float(’10.8’)", "int(’10.8’)", 4, Languages.PYTHON, Categories.PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN);
+        insertQuestion(question9);
+        Question question10 = new Question("What will be the output of the following Python expression?\nbin(29)", "‘0b10111’", "‘0b11101’", "‘0b11111’", " ‘0b11011’", 2, Languages.PYTHON, Categories.PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN);
+        insertQuestion(question10);
+        Question question11 = new Question("To find the decimal value of 1111, that is 15, we can use the function:", "int(1111,10)", " int(‘1111’,10)", "int(1111,2)", "int(‘1111’,2)", 4, Languages.PYTHON, Categories.PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN);
+        insertQuestion(question11);
+        Question question12 = new Question("What will be the output of the following Python expression?\n0x35 | 0x75", "115", "117", "116", "118", 2, Languages.PYTHON, Categories.PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN);
+        insertQuestion(question12);
+        Question question13 = new Question("The one’s complement of 110010101 is:", "001101010", "110010101", "001101011", "110010100", 1, Languages.PYTHON, Categories.PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN);
+        insertQuestion(question13);
+        Question question14 = new Question("Bitwise _________ gives 1 if either of the bits is 1 and 0 when both of the bits are 1.", "OR", "AND", "XOR", "NOT", 3, Languages.PYTHON, Categories.PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN);
+        insertQuestion(question14);
+        Question question15 = new Question("What is the two’s complement of -44?", "1011011", "11010100", "11101011", "10110011", 2, Languages.PYTHON, Categories.PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN);
+        insertQuestion(question15);
+        Question question16 = new Question("What will be the output of the following code ?\n['hello', 'morning'][bool('')]", "error", "no output", "hello", "morning", 3, Languages.PYTHON, Categories.PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN);
+        insertQuestion(question16);
+        Question question17 = new Question("What will be the output of the following code?\n['f', 't'][bool('spam')]", "t", "f", "No Output", "Error", 1, Languages.PYTHON, Categories.PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN);
+        insertQuestion(question17);
+        Question question18 = new Question("What will be the output of the following code?\nl=[1, 0, 2, 0, 'hello', '', []]\nlist(filter(bool, l))", "Error", "[1, 0, 2, 0, ‘hello’, ”, []]", "[1, 0, 2, ‘hello’, ”, []]", "[1, 2, ‘hello’]", 4, Languages.PYTHON, Categories.PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN);
+        insertQuestion(question18);
+        Question question19 = new Question("class Truth:\n" +
+                "\tpass\n" +
+                "x=Truth()\n" +
+                "bool(x)", "pass", " true", "false", "error", 2, Languages.PYTHON, Categories.PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN);
+        insertQuestion(question19);
+        Question question20 = new Question("What will be the output of the code below?\nnot(10<20) and not(10>30)", "True", "False", " Error", "No output", 2, Languages.PYTHON, Categories.PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN);
+        insertQuestion(question20);
 
-   /* private void pythonBasics(){
+    }
+
+
+    /*private void pythonBasics(){
         Question question1 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
         insertQuestion(question1);
         Question question2 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
@@ -2501,7 +2549,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
     private void python() {
         Categories categories1 = new Categories("Basics", Languages.PYTHON);
         insertCategory(categories1);
-        Categories categories2 = new Categories("Keywords", Languages.PYTHON);
+        Categories categories2 = new Categories("Precedence,Associativity AND\nBitwise & Boolean", Languages.PYTHON);
         insertCategory(categories2);
         Categories categories3 = new Categories("Classes and Objects", Languages.PYTHON);
         insertCategory(categories3);
