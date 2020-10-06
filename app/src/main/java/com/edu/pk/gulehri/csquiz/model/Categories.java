@@ -71,7 +71,7 @@ public class Categories {
 
     //PYTHON
     public static final String PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN = "Precedence,Associativity AND\nBitwise & Boolean";
-    public static final String FOrMATTING_AND_DECORATORS = "Formatting And Decorators";
+    public static final String FORMATTING_AND_DECORATORS = "Formatting And Decorators";
 
 
     public Categories(String category, String language) {

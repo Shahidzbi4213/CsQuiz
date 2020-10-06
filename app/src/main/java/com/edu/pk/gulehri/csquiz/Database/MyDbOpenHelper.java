@@ -109,6 +109,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         //Python
         pythonBasics();
         pythonPrecedenceAndAssociativityAndBitwiseAndBoolean();
+        pythonFormattingAndDecorators();
 
     }
 
@@ -2388,7 +2389,83 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
 
     }
 
-
+    private void pythonFormattingAndDecorators() {
+        Question question1 = new Question("X=”hi”\n" +
+                "print(“05d”%X)", "00000hi", "000hi", " hi000", "error", 4, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
+        insertQuestion(question1);
+        Question question2 = new Question("What will be the output of expression if x=456?\nprint(\"%-06d\"%x)", "000456", "456000", "456", "error", 3, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
+        insertQuestion(question2);
+        Question question3 = new Question("Which of the following formatting options can be used in order to add ‘n’ blank spaces after a given string ‘S’?", "print(“%-ns”%S)", " print(“-ns”%S)", "print(“-ns”%S)", "print(“%ns”%S)", 1, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
+        insertQuestion(question3);
+        Question question4 = new Question("What will be the output of code ?\n'%d %s %g you' %(1, 'hello', 4.0)", "1 4 hello you", "1 hello you 4.0", "1 hello 4 you", "Error", 3, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
+        insertQuestion(question4);
+        Question question5 = new Question("What will be the output of expression if x=22.19?", "22.1900", "22.19", "22.00000", "22.20", 2, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
+        insertQuestion(question5);
+        Question question6 = new Question("What will be the output of the code?\n'{a}{b}{a}'.format(a='hello', b='world')", "‘hello world’", "‘hello’ ‘world’ ‘hello’", "‘helloworldhello’", " ‘hello’ ‘hello’ ‘world’", 3, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
+        insertQuestion(question6);
+        Question question7 = new Question("def ordi():\n" +
+                "\tprint(\"Ordinary\")\n" +
+                "ordi\n" +
+                "ordi()", " Address\n" +
+                "    Ordinary", " Error\n" +
+                "    Address", "Ordinary\n" +
+                "    Ordinary", " Ordinary\n" +
+                "     Address", 1, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
+        insertQuestion(question7);
+        Question question8 = new Question("def f(p, q):\n" +
+                "\treturn p%q\n" +
+                "f(0, 2)\n" +
+                "f(2, 0)", " 0\n" +
+                "    0", "  Zero Division Error\n" +
+                "    Zero Division Error", " 0\n" +
+                "    Zero Division Error", "Zero Division Error\n" +
+                "    0", 3, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
+        insertQuestion(question8);
+        Question question9 = new Question("def sf():\n" +
+                "     pass\n" +
+                "sf = mk(sf)\n" +
+                "@f\n" +
+                "def sf():\n" +
+                "     return", "@f", "f", "sf()", " mk", 4, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
+        insertQuestion(question9);
+        Question question10 = new Question("class A:\n" +
+                "    @staticmethod\n" +
+                "    def a(x):\n" +
+                "        print(x)\n" +
+                "A.a(100)", "Error", "100", "Warning", "No output", 2, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
+        insertQuestion(question10);
+        Question question11 = new Question("What will be the output of two codes?\n" +
+                "i. '{0}'.format(4.56)\n" +
+                "ii. '{0}'.format([4.56,])", " ‘4.56’, ‘4.56,’", " ‘4.56’, ‘[4.56]’", "4.56, [4.56,]", "4.56, [4.56,]", 2, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
+        insertQuestion(question11);
+        Question question12 = new Question("What will be the output of code snippet?\n'%(qty)d more %(food)s' %{'qty':1, 'food': 'spam'}", "Error", "No output", "‘1 more foods’", " ‘1 more spam’", 4, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
+        insertQuestion(question12);
+        Question question13 = new Question("What will be the output of the expression if the value of x is 34?\nprint(“%f”%x)", "34.00", "34.0000", "34.000000", "34.00000000", 3, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
+        insertQuestion(question13);
+        Question question14 = new Question("What will be the output of the code?\ns='{0}, {1}, and {2}'\n" +
+                "s.format('hello', 'good', 'morning')", "‘hello good and morning’", " ‘hello, good, morning’", "‘hello, good, and morning’", "Error", 3, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
+        insertQuestion(question14);
+        Question question15 = new Question("What will be the output of the code?\n" +
+                "'{a}, {0}, {abc}'.format(10, a=2.5, abc=[1, 2])", "‘2.5, 10, [1, 2]’", "2.5, 10, 1, 2", "’10, 2.5, [1, 2]’", "Error", 1, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
+        insertQuestion(question15);
+        Question question16 = new Question("l=list('HELLO')\n" +
+                "p=l[0], l[-1], l[1:3]\n" +
+                "'a={0}, b={1}, c={2}'.format(*p)", "“a=’H’, b=’O’, c=(E, L)”", "“a=H, b=O, c=[‘E’, ‘L’]”", "Junk value", "Error", 2, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
+        insertQuestion(question16);
+        Question question17 = new Question("What will be the output of the code?\nhex(255), int('FF', 16), 0xFF", " [0xFF, 255, 16, 255]", "(‘0xff’, 155, 16, 255)", "(‘0xff’, 255, 255)", "Error", 3, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
+        insertQuestion(question17);
+        Question question18 = new Question("What will be the output of the code?\n'The {} side {1} {2}'.format('bright', 'of', 'life')", "‘The bright side of life’", "‘The {bright} side {of} {life}’", "No output", "Error", 4, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
+        insertQuestion(question18);
+        Question question19 = new Question("What will be the output of the code?\n'{0:f}, {1:2f}, {2:05.2f}'.format(1.23456, 1.23456, 1.23456)", "‘1.234560, 1.22345, 1.23’", "‘1.234560, 1.234560, 01.23’", "No output", "Error", 2, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
+        insertQuestion(question19);
+        Question question20 = new Question("x=1234\n" +
+                "res='integers:...%d...%-6d...%06d' %(x, x, x)\n" +
+                "res", " ‘integers:…1234…1234  …001234’", "‘integers…1234…1234…123400’", "‘integers:… 1234…1234…001234’", "‘integers:…1234…1234…001234’", 1, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
+        insertQuestion(question20);
+    }
+    
+    
+    
     /*private void pythonBasics(){
         Question question1 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
         insertQuestion(question1);
