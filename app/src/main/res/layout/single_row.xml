@@ -33,9 +33,6 @@
                 android:textSize="@dimen/_13sdp"/>
 
         </LinearLayout>
-
-
-
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>
