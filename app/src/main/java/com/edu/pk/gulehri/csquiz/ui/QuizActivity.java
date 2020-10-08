@@ -38,7 +38,6 @@ public class QuizActivity extends AppCompatActivity {
 
     public static final String SHARED_PREFRENCE = "shared_Prefrence";
     public static final String SHARED_PREFRENCE_HIGH_SCORE = "shared_prefrence_high_score";
-    public static final String LANG = "Language";
 
     //tag for debugging logcat
     private static final String TAG = "myTag";
