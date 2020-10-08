@@ -5,11 +5,13 @@
     android:layout_height="match_parent"
     android:background="#1f1f1f"
     android:orientation="vertical"
-    tools:context=".ShowAnswer">
+    tools:context=".ui.ShowAnswer">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/showAnswerRecycle"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/_10sdp" />
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_10sdp" />
 </LinearLayout>

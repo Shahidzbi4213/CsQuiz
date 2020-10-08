@@ -36,67 +36,53 @@ import ticker.views.com.ticker.widgets.circular.timer.view.CircularView;
 public class QuizActivity extends AppCompatActivity {
 
 
+    public static final String SHARED_PREFRENCE = "shared_Prefrence";
+    public static final String SHARED_PREFRENCE_HIGH_SCORE = "shared_prefrence_high_score";
+    public static final String LANG = "Language";
+
     //tag for debugging logcat
     private static final String TAG = "myTag";
-
+    //For Storing question
+    public static List<Question> questionList;
+    public static Question currentQuestion;
+    public static boolean check;
+    public static String category, language;
+    private static long backPressedTime;
+    //flag used here to check of back button is pressed and activity in the background
+    private static boolean flag = false;
+    public TextView textViewQuestionCount, textViewQuestion, textViewScore;
+    //Handler object that will used to call intent
+    Handler handler = new Handler();
 
     //Used for saving high score
     private int HighScore;
-    private static long backPressedTime;
-    public static final String SHARED_PREFRENCE = "shared_Prefrence";
-    public static final String SHARED_PREFRENCE_HIGH_SCORE = "shared_prefrence_high_score";
-
 
     //User interface
-    private RadioGroup mradioGroup;
+    private RadioGroup mRadioGroup;
     private RadioButton rb1, rb2, rb3, rb4;
-    private Button confirmbutton;
-    private TextView textViewQuestionCount, textViewQuestion,
-            textViewScore;
-
+    private Button confirmButton;
 
     //Timer Variable
     private CircularView circularViewWithTimer;
 
-
     //Helper Class Variable to get reference
     private MyDbOpenHelper helper;
-
-    //For Storing question
-    private List<Question> questionList;
 
     //Variables for counting questions
     private int questionCounter;
     private int questionTotal;
-    private Question currentQuestion;
-
-
     //For Checking Answer
     private boolean answer;
-
-    //Handler object that will used to call intent
-    Handler handler = new Handler();
 
     //For Saving Current color of view
     private ColorStateList buttonLabel;
 
     private int correctAnswer = 0, wrongAnswer = 0, mScore = 0;
 
-    //flag used here to check of back button is pressed and activity in the background
-    private static boolean flag = false;
-
-    public static boolean check;
-
-
     //Variable used in Dialog UI
     private Dialog myDialog;
-    private Button mainMenu, playAgain;
+    private Button mainMenu, playAgain, showAnswers;
     private TextView questionSize, correctQuestion, wrongQuestion, myScore, highScore, txtClose;
-
-    public static String category, language;
-
-    public static final String LANG = "Language";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,19 +118,18 @@ public class QuizActivity extends AppCompatActivity {
         //this method is gives Call here to give us next question and shows what option is selected
         startQuiz();
 
-
         Log.d(TAG, "onCreate: QuizActivity ");
     }
 
 
     //Here we take reference of all the views
     private void setReferences() {
-        mradioGroup = findViewById(R.id.radio_group);
+        mRadioGroup = findViewById(R.id.radio_group);
         rb1 = findViewById(R.id.radio_button1);
         rb2 = findViewById(R.id.radio_button2);
         rb3 = findViewById(R.id.radio_button3);
         rb4 = findViewById(R.id.radio_button4);
-        confirmbutton = findViewById(R.id.btn_confirm_next);
+        confirmButton = findViewById(R.id.btn_confirm_next);
         textViewQuestion = findViewById(R.id.question);
         textViewQuestionCount = findViewById(R.id.textViewQuestionCount);
         textViewScore = findViewById(R.id.score);
@@ -152,6 +137,7 @@ public class QuizActivity extends AppCompatActivity {
 
         mainMenu = myDialog.findViewById(R.id.mainmenu);
         playAgain = myDialog.findViewById(R.id.playagain);
+        showAnswers = myDialog.findViewById(R.id.viewAnswer);
 
         questionSize = myDialog.findViewById(R.id.questionSize);
         correctQuestion = myDialog.findViewById(R.id.correctQuestion);
@@ -162,12 +148,11 @@ public class QuizActivity extends AppCompatActivity {
 
     }
 
-
     //This method gives us next question
     private void showNextQuestion() {
 
         //this line make sure that all the radio button is unchecked when next question appears
-        mradioGroup.clearCheck();
+        mRadioGroup.clearCheck();
 
         // setting the background of radio buttons
         rb1.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.button_background));
@@ -209,7 +194,7 @@ public class QuizActivity extends AppCompatActivity {
             answer = false;
 
             //Here the text of button will be Confirm for verify the answer
-            confirmbutton.setText(R.string.changeToConfirm);
+            confirmButton.setText(R.string.changeToConfirm);
 
             //timer will start as soon the question appear
             setCountDownTimer();
@@ -231,7 +216,7 @@ public class QuizActivity extends AppCompatActivity {
             rb2.setClickable(false);
             rb3.setClickable(false);
             rb4.setClickable(false);
-            confirmbutton.setClickable(false);
+            confirmButton.setClickable(false);
 
             //Handler will pop the dialog after 1 second
             handler.postDelayed(new Runnable() {
@@ -246,7 +231,6 @@ public class QuizActivity extends AppCompatActivity {
         }
 
     }
-
 
     //This method set Timer for question
     private void setCountDownTimer() {
@@ -295,7 +279,7 @@ public class QuizActivity extends AppCompatActivity {
         Collections.shuffle(questionList);
         showNextQuestion();
 
-        mradioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        mRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch (checkedId) {
@@ -352,7 +336,7 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
-        confirmbutton.setOnClickListener(new View.OnClickListener() {
+        confirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (!answer) {
@@ -379,10 +363,10 @@ public class QuizActivity extends AppCompatActivity {
         circularViewWithTimer.stopTimer();
 
         //it gives the id of selected radio button
-        RadioButton rbSelected = mradioGroup.findViewById(mradioGroup.getCheckedRadioButtonId());
+        RadioButton rbSelected = mRadioGroup.findViewById(mRadioGroup.getCheckedRadioButtonId());
 
         //it gives the id of selected answer we add 1 to it cuz our answer start from 1 and at first it gives 0.
-        int answerCompare = mradioGroup.indexOfChild(rbSelected) + 1;
+        int answerCompare = mRadioGroup.indexOfChild(rbSelected) + 1;
 
         //this method check if the selected answer is tru or not
         checkSolution(answerCompare, rbSelected);
@@ -399,21 +383,15 @@ public class QuizActivity extends AppCompatActivity {
                     // textViewCorrect.setText("Correct: " + String.valueOf(correctAnswer));
                     mScore = mScore + 5;
                     textViewScore.setText(String.valueOf(mScore));
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            showNextQuestion();
-                        }
-                    }, 100);
                 } else {
                     changeToWrong(rbSelected);
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            showNextQuestion();
-                        }
-                    }, 100);
                 }
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        showNextQuestion();
+                    }
+                }, 100);
                 break;
 
             case 2:
@@ -424,21 +402,15 @@ public class QuizActivity extends AppCompatActivity {
                     // textViewCorrect.setText("Correct: " + String.valueOf(correctAnswer));
                     mScore = mScore + 5;
                     textViewScore.setText(String.valueOf(mScore));
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            showNextQuestion();
-                        }
-                    }, 100);
                 } else {
                     changeToWrong(rbSelected);
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            showNextQuestion();
-                        }
-                    }, 100);
                 }
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        showNextQuestion();
+                    }
+                }, 100);
                 break;
 
             case 3:
@@ -449,21 +421,15 @@ public class QuizActivity extends AppCompatActivity {
                     //textViewCorrect.setText("Correct: " + String.valueOf(correctAnswer));
                     mScore = mScore + 5;
                     textViewScore.setText(String.valueOf(mScore));
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            showNextQuestion();
-                        }
-                    }, 100);
                 } else {
                     changeToWrong(rbSelected);
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            showNextQuestion();
-                        }
-                    }, 100);
                 }
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        showNextQuestion();
+                    }
+                }, 100);
                 break;
 
             case 4:
@@ -474,28 +440,22 @@ public class QuizActivity extends AppCompatActivity {
 
                     mScore = mScore + 5;
                     textViewScore.setText(String.valueOf(mScore));
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            showNextQuestion();
-                        }
-                    }, 100);
                 } else {
                     changeToWrong(rbSelected);
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            showNextQuestion();
-                        }
-                    }, 100);
                 }
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        showNextQuestion();
+                    }
+                }, 100);
                 break;
         }
 
         if (questionCounter < questionTotal) {
-            confirmbutton.setText(R.string.changeToNext);
+            confirmButton.setText(R.string.changeToNext);
         } else {
-            confirmbutton.setText(R.string.changeToFinish);
+            confirmButton.setText(R.string.changeToFinish);
         }
     }
 
@@ -558,7 +518,6 @@ public class QuizActivity extends AppCompatActivity {
         }
     }
 
-
     public void setupDialogue() {
         myDialog.setCancelable(false);
         myDialog.setCanceledOnTouchOutside(false);
@@ -603,6 +562,16 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
+        showAnswers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(QuizActivity.this, ShowAnswer.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+
         myDialog.show();
         loadHighScore();
 
@@ -610,7 +579,6 @@ public class QuizActivity extends AppCompatActivity {
             updateHighScore(mScore);
         }
     }
-
 
     private void updateHighScore(int newHighScore) {
         HighScore = newHighScore;

@@ -1,10 +1,13 @@
-package com.edu.pk.gulehri.csquiz;
+package com.edu.pk.gulehri.csquiz.ui;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.edu.pk.gulehri.csquiz.R;
+import com.edu.pk.gulehri.csquiz.adaptor.AnswerAdaptor;
 
 public class ShowAnswer extends AppCompatActivity {
 
@@ -17,6 +20,6 @@ public class ShowAnswer extends AppCompatActivity {
         mRecyclerView = findViewById(R.id.showAnswerRecycle);
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        //mRecyclerView.setAdapter();
+        mRecyclerView.setAdapter(new AnswerAdaptor());
     }
 }
