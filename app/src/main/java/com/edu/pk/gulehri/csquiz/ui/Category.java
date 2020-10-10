@@ -37,7 +37,7 @@ public class Category extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_category);
-        toolbar = findViewById(R.id.mtoolbar);
+        toolbar = findViewById(R.id.mToolbar);
         mTitle = toolbar.findViewById(R.id.toolBarTitle);
         mRecyclerView = findViewById(R.id.category);
         helper = new MyDbOpenHelper(this);

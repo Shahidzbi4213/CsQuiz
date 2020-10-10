@@ -43,9 +43,7 @@ public class AnswerAdaptor extends RecyclerView.Adapter<AnswerAdaptor.MyViewHold
                 holder.textView2.setText("Answer: ");
         }
 
-
     }
-
 
     @Override
     public int getItemCount() {

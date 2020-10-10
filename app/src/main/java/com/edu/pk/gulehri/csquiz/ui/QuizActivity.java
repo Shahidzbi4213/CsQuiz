@@ -120,7 +120,6 @@ public class QuizActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate: QuizActivity ");
     }
 
-
     //Here we take reference of all the views
     private void setReferences() {
         mRadioGroup = findViewById(R.id.radio_group);

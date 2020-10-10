@@ -2,54 +2,63 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_150sdp"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginBottom="@dimen/_10sdp"
-        android:layout_marginEnd="@dimen/_10sdp"
-        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
         app:cardElevation="@dimen/_10sdp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/answer_card_background"
             android:elevation="@dimen/_10sdp"
+            android:gravity="center"
             android:orientation="vertical"
-            android:weightSum="4">
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_5sdp">
 
             <TextView
                 android:id="@+id/myQuestion"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="3"
-                android:padding="@dimen/_5sdp"
-                android:text="blah blah blah"
-                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/_5sdp"
+                android:fontFamily="@font/abeezee_italic"
+                android:gravity="center"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/demoQuestion"
+                android:textColor="@android:color/white"
                 android:textSize="@dimen/_15sdp" />
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginStart="@dimen/_5sdp"
-                android:layout_marginEnd="@dimen/_5sdp"
-                android:layout_weight="0.02"
-                android:background="#000" />
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@android:color/black"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp" />
 
             <TextView
                 android:id="@+id/myAnswer"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.9"
-                android:padding="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|start"
+                android:elevation="@dimen/_5sdp"
+                android:fontFamily="@font/abeezee_italic"
+                android:padding="@dimen/_10sdp"
                 android:text="Answer: Java"
-                android:textColor="#fff"
+                android:textColor="@android:color/holo_orange_light"
                 android:textSize="@dimen/_15sdp"
-                android:textStyle="bold|italic" />
-
+                android:textStyle="bold" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
