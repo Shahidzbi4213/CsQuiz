@@ -119,7 +119,6 @@ public class QuizActivity extends AppCompatActivity {
 
         Log.d(TAG, "onCreate: QuizActivity ");
     }
-
     //Here we take reference of all the views
     private void setReferences() {
         mRadioGroup = findViewById(R.id.radio_group);
@@ -563,7 +562,9 @@ public class QuizActivity extends AppCompatActivity {
         showAnswers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                check = true;
                 Intent intent = new Intent(QuizActivity.this, ShowAnswer.class);
+                intent.putExtra("LANG_NAME", language);
                 startActivity(intent);
                 finish();
             }

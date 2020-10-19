@@ -7,13 +7,13 @@
     android:orientation="vertical"
     tools:context=".ui.ShowAnswer">
 
-    <include layout="@layout/tool_bar" />
+    <include layout="@layout/language_toolbar" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/showAnswerRecycle"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_5sdp"
         android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginEnd="@dimen/_10sdp" />
+        android:layout_marginEnd="@dimen/_5sdp" />
 </LinearLayout>

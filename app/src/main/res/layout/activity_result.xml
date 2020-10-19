@@ -277,7 +277,7 @@
                 android:layout_gravity="start"
                 android:layout_marginStart="@dimen/_5sdp"
                 android:layout_marginEnd="@dimen/_5sdp"
-                android:background="@drawable/button_play_again"
+                android:background="@drawable/answer_button"
                 android:elevation="@dimen/_10sdp"
                 android:fontFamily="@font/asap_medium_italic"
                 android:text="@string/view_answer"

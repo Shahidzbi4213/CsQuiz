@@ -20,17 +20,14 @@ import com.edu.pk.gulehri.csquiz.adaptor.MyAdaptor;
 public class Category extends AppCompatActivity {
 
     private static final String TAG = "myTag";
+    public static RecyclerView mRecyclerView;
+    //flag to check if back button is pressed to finish the activity
+    private static boolean flag;
     private Toolbar toolbar;
     private String Language;
     private TextView mTitle;
-    public static RecyclerView mRecyclerView;
-
     //Helper Class Variable to get reference
     private MyDbOpenHelper helper;
-
-    //flag to check if back button is pressed to finish the activity
-    private static boolean flag;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +61,11 @@ public class Category extends AppCompatActivity {
             mTitle.setText(Language);
             mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
             mRecyclerView.setAdapter(new MyAdaptor(this, helper.getCategory(Language)));
+        } else if (!ShowAnswer.check) {
+            //Storing value of Language name and passing it it getCategory method
+            String langName = intent.getStringExtra("langName");
+            mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+            mRecyclerView.setAdapter(new MyAdaptor(this, helper.getCategory(langName)));
         } else {
             String lang = intent.getStringExtra("LANG_NAME");
             mTitle.setText(lang);

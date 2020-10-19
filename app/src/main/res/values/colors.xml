@@ -9,6 +9,8 @@
     <color name="toolBarGreen">#008080</color>
     <color name="background">#1f1f1f</color>
     <color name="skyBlue">#33B8F8</color>
+    <color name="toolBarAnswer">#FF7813</color>
+
 
     <!--Result Activity Colors-->
     <color name="orange">#eaad43</color>

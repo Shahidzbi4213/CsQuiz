@@ -12,8 +12,10 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".ui.ShowAnswer"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.MyTheme"
             tools:ignore="LockedOrientationActivity" />
+
         <activity android:name=".ui.AboutUs" />
         <activity
             android:name=".ui.LanguagesActivity"

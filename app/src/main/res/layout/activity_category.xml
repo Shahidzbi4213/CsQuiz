@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical"
-    android:weightSum="3"
     tools:context=".ui.Category">
 
 

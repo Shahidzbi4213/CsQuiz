@@ -17,6 +17,7 @@ import com.edu.pk.gulehri.csquiz.R;
 import com.edu.pk.gulehri.csquiz.model.Languages;
 import com.edu.pk.gulehri.csquiz.ui.Category;
 import com.edu.pk.gulehri.csquiz.ui.QuizActivity;
+import com.edu.pk.gulehri.csquiz.ui.ShowAnswer;
 
 public class LanguageAdaptor extends RecyclerView.Adapter<LanguageAdaptor.MyViewHolder> {
 
@@ -56,6 +57,7 @@ public class LanguageAdaptor extends RecyclerView.Adapter<LanguageAdaptor.MyView
                 Intent intent = new Intent(context, Category.class);
                 intent.putExtra(LANGUAGE_POSITION, LANGUAGE_NAME);
                 QuizActivity.check = false;
+                ShowAnswer.check = false;
                 context.startActivity(intent);
                 ((Activity)context).finish();
 
