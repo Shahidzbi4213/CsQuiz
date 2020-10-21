@@ -19,6 +19,8 @@ public class ShowAnswer extends AppCompatActivity {
 
     public static boolean check;
     private static long backPressedTime;
+    //flag to check if back button is pressed to finish the activity
+    private static boolean flag;
     private RecyclerView mRecyclerView;
     private Toolbar toolbar;
     private String languageName;
@@ -54,7 +56,8 @@ public class ShowAnswer extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-
+        flag = true;
+        check = true;
         //The Condition says when back button is pressed twice with in 2 seconds only thn it will send intent Category Activity
         if (backPressedTime + 2000 > System.currentTimeMillis()) {
             /*When Back Button is pressed flag value become true*/
@@ -62,9 +65,6 @@ public class ShowAnswer extends AppCompatActivity {
             Intent intent = new Intent(ShowAnswer.this, Category.class);
             intent.putExtra("langName", languageName);
             startActivity(intent);
-            //When intent is send the object of current Activity will destroy
-            finish();
-
         }
         /*if back button is not pressed twice with in the 2 second the toast will appear*/
         else {
@@ -82,9 +82,16 @@ public class ShowAnswer extends AppCompatActivity {
                 Intent intent = new Intent(this, Category.class);
                 intent.putExtra("langName", languageName);
                 startActivity(intent);
-                finish();
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if (flag) {
+            finish();
+        }
     }
 }

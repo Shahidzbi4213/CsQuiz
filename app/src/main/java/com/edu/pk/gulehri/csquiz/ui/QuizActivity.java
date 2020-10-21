@@ -18,6 +18,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
@@ -48,7 +49,7 @@ public class QuizActivity extends AppCompatActivity {
     public static String category, language;
     private static long backPressedTime;
     //flag used here to check of back button is pressed and activity in the background
-    private static boolean flag = false;
+    private static boolean flag;
     public TextView textViewQuestionCount, textViewQuestion, textViewScore;
     //Handler object that will used to call intent
     Handler handler = new Handler();
@@ -63,6 +64,7 @@ public class QuizActivity extends AppCompatActivity {
 
     //Timer Variable
     private CircularView circularViewWithTimer;
+    private int seconds = 15;
 
     //Helper Class Variable to get reference
     private MyDbOpenHelper helper;
@@ -118,7 +120,9 @@ public class QuizActivity extends AppCompatActivity {
         startQuiz();
 
         Log.d(TAG, "onCreate: QuizActivity ");
+
     }
+
     //Here we take reference of all the views
     private void setReferences() {
         mRadioGroup = findViewById(R.id.radio_group);
@@ -148,6 +152,7 @@ public class QuizActivity extends AppCompatActivity {
     //This method gives us next question
     private void showNextQuestion() {
 
+        seconds = 15;
         //this line make sure that all the radio button is unchecked when next question appears
         mRadioGroup.clearCheck();
 
@@ -238,7 +243,7 @@ public class QuizActivity extends AppCompatActivity {
                         .shouldDisplayText(true)
 
                         //Duration for one question
-                        .setCounterInSeconds(15)
+                        .setCounterInSeconds(seconds)
 
                         //for showing second/minutes unit down the timer
                         .shouldDisplayTimeUnit(false)
@@ -456,7 +461,6 @@ public class QuizActivity extends AppCompatActivity {
         }
     }
 
-
     private void changeToWrong(RadioButton rbSelected) {
         rbSelected.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.when_option_wrong));
         rbSelected.setTextColor(Color.WHITE);
@@ -466,11 +470,9 @@ public class QuizActivity extends AppCompatActivity {
 
     }
 
-
     @Override
     protected void onPause() {
         super.onPause();
-        circularViewWithTimer.pauseTimer();
         Log.d(TAG, "onPause: QuizActivity ");
 
     }
@@ -497,8 +499,6 @@ public class QuizActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.d(TAG, "onDestroy: QuizActivity");
-        circularViewWithTimer.stopTimer();
-
     }
 
     private void noOptionSelected() {
@@ -616,6 +616,22 @@ public class QuizActivity extends AppCompatActivity {
         }
         //this gives the current time in milliseconds.
         backPressedTime = System.currentTimeMillis();
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        //Saving seconds before activity destroyed
+        seconds = Integer.parseInt(circularViewWithTimer.getText().toString());
+        outState.putInt("myKey", seconds);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        //Getting seconds after activity is created
+        seconds = (int) savedInstanceState.get("myKey");
     }
 
 }
