@@ -70,8 +70,8 @@ public class QuizActivity extends AppCompatActivity {
 
     //Variables for counting questions
     private int questionCounter;
-    private int questionCountAfter;
     private int questionTotal;
+    private int questionsCounterState;
     //For Checking Answer
     private boolean answer;
 
@@ -621,6 +621,7 @@ public class QuizActivity extends AppCompatActivity {
         //Saving seconds before activity destroyed
         seconds = Integer.parseInt(circularViewWithTimer.getText().toString());
         outState.putInt("myKey", seconds);
+        outState.putInt("myKey", questionCounter);
     }
 
     @Override
@@ -628,6 +629,8 @@ public class QuizActivity extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
         //Getting seconds after activity is created
         seconds = savedInstanceState.getInt("myKey");
+        questionCounter = savedInstanceState.getInt("myKey");
+
     }
 
 }
