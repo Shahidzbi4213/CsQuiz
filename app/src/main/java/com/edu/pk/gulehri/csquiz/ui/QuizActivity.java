@@ -45,7 +45,6 @@ public class QuizActivity extends AppCompatActivity {
     //For Storing question
     public static List<Question> questionList;
     public static Question currentQuestion;
-    public static boolean check;
     public static String category, language;
     private static long backPressedTime;
     //flag used here to check of back button is pressed and activity in the background
@@ -71,6 +70,7 @@ public class QuizActivity extends AppCompatActivity {
 
     //Variables for counting questions
     private int questionCounter;
+    private int questionCountAfter;
     private int questionTotal;
     //For Checking Answer
     private boolean answer;
@@ -472,6 +472,7 @@ public class QuizActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
+        myDialog.dismiss();
         super.onPause();
         Log.d(TAG, "onPause: QuizActivity ");
 
@@ -551,9 +552,7 @@ public class QuizActivity extends AppCompatActivity {
         playAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                check = true;
                 Intent myIntent = new Intent(QuizActivity.this, Category.class);
-                myIntent.putExtra("LANG_NAME", language);
                 startActivity(myIntent);
                 finish();
             }
@@ -562,9 +561,7 @@ public class QuizActivity extends AppCompatActivity {
         showAnswers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                check = true;
                 Intent intent = new Intent(QuizActivity.this, ShowAnswer.class);
-                intent.putExtra("LANG_NAME", language);
                 startActivity(intent);
                 finish();
             }
@@ -602,12 +599,11 @@ public class QuizActivity extends AppCompatActivity {
         if (backPressedTime + 2000 > System.currentTimeMillis()) {
             /*When Back Button is pressed flag value become true*/
             flag = true;
-
-            check = true;
             Intent intent = new Intent(this, Category.class);
             intent.putExtra("LANG_NAME", language);
             startActivity(intent);
             //When intent is send the object of current Activity will destroy
+            finish();
 
         }
         /*if back button is not pressed twice with in the 2 second the toast will appear*/
@@ -631,7 +627,7 @@ public class QuizActivity extends AppCompatActivity {
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         //Getting seconds after activity is created
-        seconds = (int) savedInstanceState.get("myKey");
+        seconds = savedInstanceState.getInt("myKey");
     }
 
 }

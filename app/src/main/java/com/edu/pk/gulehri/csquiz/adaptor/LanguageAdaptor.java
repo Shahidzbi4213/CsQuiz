@@ -16,15 +16,12 @@ import com.edu.pk.gulehri.csquiz.Database.MyDbOpenHelper;
 import com.edu.pk.gulehri.csquiz.R;
 import com.edu.pk.gulehri.csquiz.model.Languages;
 import com.edu.pk.gulehri.csquiz.ui.Category;
-import com.edu.pk.gulehri.csquiz.ui.QuizActivity;
-import com.edu.pk.gulehri.csquiz.ui.ShowAnswer;
 
 public class LanguageAdaptor extends RecyclerView.Adapter<LanguageAdaptor.MyViewHolder> {
 
     public static final String LANGUAGE_POSITION = "POSITION";
-    private Context context;
     public static String LANGUAGE_NAME;
-
+    private Context context;
     //Helper Class Variable to get reference
     private MyDbOpenHelper helper;
 
@@ -46,7 +43,7 @@ public class LanguageAdaptor extends RecyclerView.Adapter<LanguageAdaptor.MyView
         holder.textView.setText(Languages.CsLanguages[position].getNames());
         holder.imageView.setImageResource(Languages.CsLanguages[position].getImgID());
         LANGUAGE_NAME = String.valueOf(Languages.CsLanguages[position].Names);
-        helper= new MyDbOpenHelper(context);
+        helper = new MyDbOpenHelper(context);
         int count = helper.getCategory(LANGUAGE_NAME).getCount();
         holder.textView1.setText("Categories " + count);
 
@@ -56,10 +53,8 @@ public class LanguageAdaptor extends RecyclerView.Adapter<LanguageAdaptor.MyView
                 LANGUAGE_NAME = String.valueOf(Languages.CsLanguages[position].Names);
                 Intent intent = new Intent(context, Category.class);
                 intent.putExtra(LANGUAGE_POSITION, LANGUAGE_NAME);
-                QuizActivity.check = false;
-                ShowAnswer.check = false;
                 context.startActivity(intent);
-                ((Activity)context).finish();
+                ((Activity) context).finish();
 
             }
         });

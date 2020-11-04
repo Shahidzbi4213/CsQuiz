@@ -17,7 +17,6 @@ import com.edu.pk.gulehri.csquiz.adaptor.AnswerAdaptor;
 
 public class ShowAnswer extends AppCompatActivity {
 
-    public static boolean check;
     private static long backPressedTime;
     //flag to check if back button is pressed to finish the activity
     private static boolean flag;
@@ -56,14 +55,11 @@ public class ShowAnswer extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        flag = true;
-        check = true;
         //The Condition says when back button is pressed twice with in 2 seconds only thn it will send intent Category Activity
         if (backPressedTime + 2000 > System.currentTimeMillis()) {
             /*When Back Button is pressed flag value become true*/
-
+            flag = true;
             Intent intent = new Intent(ShowAnswer.this, Category.class);
-            intent.putExtra("langName", languageName);
             startActivity(intent);
         }
         /*if back button is not pressed twice with in the 2 second the toast will appear*/
@@ -80,8 +76,8 @@ public class ShowAnswer extends AppCompatActivity {
             // Respond to the action bar's Up/Home/back button
             case android.R.id.home:
                 Intent intent = new Intent(this, Category.class);
-                intent.putExtra("langName", languageName);
                 startActivity(intent);
+                finish();
                 break;
         }
         return super.onOptionsItemSelected(item);

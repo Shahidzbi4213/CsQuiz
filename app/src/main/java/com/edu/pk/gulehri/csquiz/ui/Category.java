@@ -53,25 +53,8 @@ public class Category extends AppCompatActivity {
         } catch (NullPointerException e) {
         }
 
-        //getting the intent from adaptor
-        Intent intent = getIntent();
-        if (!QuizActivity.check) {
-            //Storing value of Language name and passing it it getCategory method
-            Language = intent.getStringExtra(LanguageAdaptor.LANGUAGE_POSITION);
-            mTitle.setText(Language);
-            mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-            mRecyclerView.setAdapter(new MyAdaptor(this, helper.getCategory(Language)));
-        } else if (!ShowAnswer.check) {
-            //Storing value of Language name and passing it it getCategory method
-            String langName = intent.getStringExtra("langName");
-            mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-            mRecyclerView.setAdapter(new MyAdaptor(this, helper.getCategory(langName)));
-        } else {
-            String lang = intent.getStringExtra("LANG_NAME");
-            mTitle.setText(lang);
-            mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-            mRecyclerView.setAdapter(new MyAdaptor(this, helper.getCategory(lang)));
-        }
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mRecyclerView.setAdapter(new MyAdaptor(this, helper.getCategory(LanguageAdaptor.LANGUAGE_NAME)));
         Log.d(TAG, "onCreate: Category Activity");
     }
 
@@ -114,8 +97,6 @@ public class Category extends AppCompatActivity {
         if (flag) {
             finish();
         }
-
-
     }
 
     @Override

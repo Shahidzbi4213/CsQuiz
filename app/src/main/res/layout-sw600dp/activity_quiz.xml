@@ -143,6 +143,8 @@
             android:fontFamily="@font/abeezee_italic"
             android:freezesText="true"
             android:gravity="center"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
             android:text="@string/radiobutton"
             android:textSize="@dimen/_15sdp" />
 
@@ -157,6 +159,8 @@
             android:fontFamily="@font/abeezee_italic"
             android:freezesText="true"
             android:gravity="center"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
             android:text="@string/radiobutton"
             android:textSize="@dimen/_15sdp" />
 
@@ -171,6 +175,8 @@
             android:fontFamily="@font/abeezee_italic"
             android:freezesText="true"
             android:gravity="center"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
             android:text="@string/radiobutton"
             android:textSize="@dimen/_15sdp" />
 
@@ -185,6 +191,8 @@
             android:fontFamily="@font/abeezee_italic"
             android:freezesText="true"
             android:gravity="center"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
             android:text="@string/radiobutton"
             android:textSize="@dimen/_15sdp" />
 
