@@ -110,6 +110,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         pythonBasics();
         pythonPrecedenceAndAssociativityAndBitwiseAndBoolean();
         pythonFormattingAndDecorators();
+        pythonLoops();
 
     }
 
@@ -1570,96 +1571,92 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
     /*===============================================================================================================================================*/
     /* Android */
     /*===============================================================================================================================================*/
-
-    //Adding Basics
     private void androidBasics() {
-        Question question1 = new Question("In android application Which file holds to use the internet_____.", " create file", "Manifest file", "system file", "None of these", 2, Categories.BASICS, Languages.ANDROID);
+        Question question1 = new Question("In android application Which file holds to use the internet_____.", " create file", "Manifest file", "system file", "None of these", 2, Languages.ANDROID, Categories.BASICS);
         insertQuestion(question1);
-        Question question2 = new Question("Android is", "Web server", " web browser", "operating system", "None of these", 3, Categories.BASICS, Languages.ANDROID);
+        Question question2 = new Question("Android is", "Web server", " web browser", "operating system", "None of these", 3, Languages.ANDROID, Categories.BASICS);
         insertQuestion(question2);
-        Question question3 = new Question("Which one is not a nickname of a version of Android? ", "cupcake", "Gingerbread", "Honeycomb", "Muffin", 4, Categories.BASICS, Languages.ANDROID);
+        Question question3 = new Question("Which one is not a nickname of a version of Android? ", "cupcake", "Gingerbread", "Honeycomb", "Muffin", 4, Languages.ANDROID, Categories.BASICS);
         insertQuestion(question3);
-        Question question4 = new Question("_____method is used to close an activity.", "Finish", "Stop", "Destroy", "Close", 1, Categories.BASICS, Languages.ANDROID);
+        Question question4 = new Question("_____method is used to close an activity.", "Finish", "Stop", "Destroy", "Close", 1, Languages.ANDROID, Categories.BASICS);
         insertQuestion(question4);
-        Question question5 = new Question("Src folder contain____files", " Java source code", "XML", "Manifest", "None of these", 1, Categories.BASICS, Languages.ANDROID);
+        Question question5 = new Question("Src folder contain____files", " Java source code", "XML", "Manifest", "None of these", 1, Languages.ANDROID, Categories.BASICS);
         insertQuestion(question5);
-        Question question6 = new Question("When did Google purchase Android?", "2007", "2005", "2008", "2010", 2, Categories.BASICS, Languages.ANDROID);
+        Question question6 = new Question("When did Google purchase Android?", "2007", "2005", "2008", "2010", 2, Languages.ANDROID, Categories.BASICS);
         insertQuestion(question6);
-        Question question7 = new Question(" _____is the first callback method invoked by the system during an Activity life-cycle?", "on Start()", "on Stop()", "onResume()", "onCreate()", 4, Categories.BASICS, Languages.ANDROID);
+        Question question7 = new Question(" _____is the first callback method invoked by the system during an Activity life-cycle?", "on Start()", "on Stop()", "onResume()", "onCreate()", 4, Languages.ANDROID, Categories.BASICS);
         insertQuestion(question7);
-        Question question8 = new Question("The Android project folder “res/” contain_____?", "Resource files", "Java Activity classes", "Libraries", "None of these", 1, Categories.BASICS, Languages.ANDROID);
+        Question question8 = new Question("The Android project folder “res/” contain_____?", "Resource files", "Java Activity classes", "Libraries", "None of these", 1, Languages.ANDROID, Categories.BASICS);
         insertQuestion(question8);
-        Question question9 = new Question("Android is developed by the", "Apple", "Google", "Microsoft", "Android Inc", 4, Categories.BASICS, Languages.ANDROID);
+        Question question9 = new Question("Android is developed by the", "Apple", "Google", "Microsoft", "Android Inc", 4, Languages.ANDROID, Categories.BASICS);
         insertQuestion(question9);
-        Question question10 = new Question("APK stands for ?", "Android power key", "Android packaging kit", "Android packaging key", "Android pin key", 3, Categories.BASICS, Languages.ANDROID);
+        Question question10 = new Question("APK stands for ?", "Android power key", "Android packaging kit", "Android packaging key", "Android pin key", 3, Languages.ANDROID, Categories.BASICS);
         insertQuestion(question10);
-        Question question11 = new Question("How can pass the data between the activities", "Content provider", "Intent", "Service", "All of the above", 2, Categories.BASICS, Languages.ANDROID);
+        Question question11 = new Question("How can pass the data between the activities", "Content provider", "Intent", "Service", "All of the above", 2, Languages.ANDROID, Categories.BASICS);
         insertQuestion(question11);
-        Question question12 = new Question("AVD stands for ", "Android virtual device", "Application virtual device", "Android virtual display", "None of these", 1, Categories.BASICS, Languages.ANDROID);
+        Question question12 = new Question("AVD stands for ", "Android virtual device", "Application virtual device", "Android virtual display", "None of these", 1, Languages.ANDROID, Categories.BASICS);
         insertQuestion(question12);
-        Question question13 = new Question("What Activity method is used to get reference to view using id of a resource XML?", "findViewByReference(int id);", "findViewById(int id)", "retrieveResourceById(int id)", "findViewById(String id)", 2, Categories.BASICS, Languages.ANDROID);
+        Question question13 = new Question("What Activity method is used to get reference to view using id of a resource XML?", "findViewByReference(int id);", "findViewById(int id)", "retrieveResourceById(int id)", "findViewById(String id)", 2, Languages.ANDROID, Categories.BASICS);
         insertQuestion(question13);
-        Question question14 = new Question("What is the name of the folder that contains the R.java file?", "src", "res", "bin", "gen", 4, Categories.BASICS, Languages.ANDROID);
+        Question question14 = new Question("What is the name of the folder that contains the R.java file?", "src", "res", "bin", "gen", 4, Languages.ANDROID, Categories.BASICS);
         insertQuestion(question14);
-        Question question15 = new Question("Which of these files contains text values that you can use in your application?", "AndroidManifest.xml", "res/Text.xml", "res/values/strings.xml", "res/layout/Main.xml", 3, Categories.BASICS, Languages.ANDROID);
+        Question question15 = new Question("Which of these files contains text values that you can use in your application?", "AndroidManifest.xml", "res/Text.xml", "res/values/strings.xml", "res/layout/Main.xml", 3, Languages.ANDROID, Categories.BASICS);
         insertQuestion(question15);
-        Question question16 = new Question("Which of the following is not an Activity lifecycle call-back method?", "onStart", "onBackPressed", "onCreate", "onPause", 2, Categories.BASICS, Languages.ANDROID);
+        Question question16 = new Question("Which of the following is not an Activity lifecycle call-back method?", "onStart", "onBackPressed", "onCreate", "onPause", 2, Languages.ANDROID, Categories.BASICS);
         insertQuestion(question16);
-        Question question17 = new Question("Which of the following methods is called in an Activity when another activity gets into the foreground?", "onStop()", "onPause()", "onDestroy()", "onResume()", 2, Categories.BASICS, Languages.ANDROID);
+        Question question17 = new Question("Which of the following methods is called in an Activity when another activity gets into the foreground?", "onStop()", "onPause()", "onDestroy()", "onResume()", 2, Languages.ANDROID, Categories.BASICS);
         insertQuestion(question17);
-        Question question18 = new Question("Which of the following attributes is used to set an activity screen to landscape orientation?", "screenorientation = landscape", "screenOrientation=”landscape”", "android:ScreenOrientation=“landscape”", "android:ScreenOrientation=“landscape”", 4, Categories.BASICS, Languages.ANDROID);
+        Question question18 = new Question("Which of the following attributes is used to set an activity screen to landscape orientation?", "screenorientation = landscape", "screenOrientation=”landscape”", "android:ScreenOrientation=“landscape”", "android:ScreenOrientation=“landscape”", 4, Languages.ANDROID, Categories.BASICS);
         insertQuestion(question18);
-        Question question19 = new Question("What is the is count of android life cycle methods?", "4", "7", "5", "8", 2, Categories.BASICS, Languages.ANDROID);
+        Question question19 = new Question("What is the is count of android life cycle methods?", "4", "7", "5", "8", 2, Languages.ANDROID, Categories.BASICS);
         insertQuestion(question19);
-        Question question20 = new Question("Which are the screen sizes in Android?", "Small", "Normal", "Large", "All of the Above", 4, Categories.BASICS, Languages.ANDROID);
+        Question question20 = new Question("Which are the screen sizes in Android?", "Small", "Normal", "Large", "All of the Above", 4, Languages.ANDROID, Categories.BASICS);
         insertQuestion(question20);
     }
 
-    //Adding Activity and Intents in android
     private void androidActivityAndIntents() {
-        Question question1 = new Question("Intent intent = new Intent(First.this, Second.class );", "Creates an hidden Intent", "Creates an implicit Intent", "Create an explicit Intent", "Starts an activity", 4, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
+        Question question1 = new Question("Intent intent = new Intent(First.this, Second.class );", "Creates an hidden Intent", "Creates an implicit Intent", "Create an explicit Intent", "Starts an activity", 4, Languages.ANDROID, Categories.ACTIVITY_AND_INTENTS);
         insertQuestion(question1);
-        Question question2 = new Question("Which type of intent, specify the component to start by name (the fully-qualified class name).", "Explicit", "Implicit", "Depends upon the application", "None of these", 1, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
+        Question question2 = new Question("Which type of intent, specify the component to start by name (the fully-qualified class name).", "Explicit", "Implicit", "Depends upon the application", "None of these", 1, Languages.ANDROID, Categories.ACTIVITY_AND_INTENTS);
         insertQuestion(question2);
-        Question question3 = new Question("To retrieve the bundle object, _____________ is used.", "getExtra()", "getExtras()", "gets()", "putExtras()", 2, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
+        Question question3 = new Question("To retrieve the bundle object, _____________ is used.", "getExtra()", "getExtras()", "gets()", "putExtras()", 2, Languages.ANDROID, Categories.ACTIVITY_AND_INTENTS);
         insertQuestion(question3);
-        Question question4 = new Question("The 'type' part of intent object-based messages stores", "Intent type", "Parameter type", "Data type in MIME", "Intent action", 3, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
+        Question question4 = new Question("The 'type' part of intent object-based messages stores", "Intent type", "Parameter type", "Data type in MIME", "Intent action", 3, Languages.ANDROID, Categories.ACTIVITY_AND_INTENTS);
         insertQuestion(question4);
-        Question question5 = new Question(" _____________ is called when the activity is no more visible to the user.", "onDestroy()", "onDestroyed()", "onStopped()", "onStop()", 4, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
+        Question question5 = new Question(" _____________ is called when the activity is no more visible to the user.", "onDestroy()", "onDestroyed()", "onStopped()", "onStop()", 4, Languages.ANDROID, Categories.ACTIVITY_AND_INTENTS);
         insertQuestion(question5);
-        Question question6 = new Question("The main purpose of the activity is ___________.", "Interaction with user", "Send messages", "POP up notifications", "Data sharing", 1, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
+        Question question6 = new Question("The main purpose of the activity is ___________.", "Interaction with user", "Send messages", "POP up notifications", "Data sharing", 1, Languages.ANDROID, Categories.ACTIVITY_AND_INTENTS);
         insertQuestion(question6);
-        Question question7 = new Question("When multiple activities match the intents, it is handled by _____________.", "chooser()", "createChooser()", "getChooser()", "makeChooser()", 2, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
+        Question question7 = new Question("When multiple activities match the intents, it is handled by _____________.", "chooser()", "createChooser()", "getChooser()", "makeChooser()", 2, Languages.ANDROID, Categories.ACTIVITY_AND_INTENTS);
         insertQuestion(question7);
-        Question question8 = new Question("An integer value to recognise the calling activity is _____________.", "resultcode", "code", "requestcode", "All of the Above", 3, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
+        Question question8 = new Question("An integer value to recognise the calling activity is _____________.", "resultcode", "code", "requestcode", "All of the Above", 3, Languages.ANDROID, Categories.ACTIVITY_AND_INTENTS);
         insertQuestion(question8);
-        Question question9 = new Question("To free up the resources before getting destroyed,_____________ is called", "onDestroy()", "onFree()", "onStop()", "onDetach()", 1, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
+        Question question9 = new Question("To free up the resources before getting destroyed,_____________ is called", "onDestroy()", "onFree()", "onStop()", "onDetach()", 1, Languages.ANDROID, Categories.ACTIVITY_AND_INTENTS);
         insertQuestion(question9);
-        Question question10 = new Question("_____________ method explicitly specifies the MIME data type to indicate the type of data.", "setDataType()", "setType()", "Type", "None of the Above", 2, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
+        Question question10 = new Question("_____________ method explicitly specifies the MIME data type to indicate the type of data.", "setDataType()", "setType()", "Type", "None of the Above", 2, Languages.ANDROID, Categories.ACTIVITY_AND_INTENTS);
         insertQuestion(question10);
-        Question question11 = new Question("_____________ is called when the activity becomes visible to the user.", "onStart()", "onResume()", "onAttach()", "onCreate()", 1, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
+        Question question11 = new Question("_____________ is called when the activity becomes visible to the user.", "onStart()", "onResume()", "onAttach()", "onCreate()", 1, Languages.ANDROID, Categories.ACTIVITY_AND_INTENTS);
         insertQuestion(question11);
-        Question question12 = new Question("_____________ is used to send back data to the activity.", "startActivity()", "startActivityForResult()", "startActivities()", "startIntent()", 2, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
+        Question question12 = new Question("_____________ is used to send back data to the activity.", "startActivity()", "startActivityForResult()", "startActivities()", "startIntent()", 2, Languages.ANDROID, Categories.ACTIVITY_AND_INTENTS);
         insertQuestion(question12);
-        Question question13 = new Question("For creating an activity like WhatsApp, _____________ activity is used.", "Basic", "Blank", "navigation drawer", "tabbed", 4, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
+        Question question13 = new Question("For creating an activity like WhatsApp, _____________ activity is used.", "Basic", "Blank", "navigation drawer", "tabbed", 4, Languages.ANDROID, Categories.ACTIVITY_AND_INTENTS);
         insertQuestion(question13);
-        Question question14 = new Question("Intents are mainly used to _____________.", "Display a Webpage", "Launch an activity", "Open another App", "All of the Above", 4, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
+        Question question14 = new Question("Intents are mainly used to _____________.", "Display a Webpage", "Launch an activity", "Open another App", "All of the Above", 4, Languages.ANDROID, Categories.ACTIVITY_AND_INTENTS);
         insertQuestion(question14);
-        Question question15 = new Question("For creating an activity, java class has to extend _____________.", "Activitymain", "Activity base class", "ShowActivity class", "None of the Above", 2, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
+        Question question15 = new Question("For creating an activity, java class has to extend _____________.", "Activitymain", "Activity base class", "ShowActivity class", "None of the Above", 2, Languages.ANDROID, Categories.ACTIVITY_AND_INTENTS);
         insertQuestion(question15);
-        Question question16 = new Question("The activity available for working with fragments is _____________.", "Fragments", "Blank activity", "Blank activity with fragment", "None of the Above", 3, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
+        Question question16 = new Question("The activity available for working with fragments is _____________.", "Fragments", "Blank activity", "Blank activity with fragment", "None of the Above", 3, Languages.ANDROID, Categories.ACTIVITY_AND_INTENTS);
         insertQuestion(question16);
-        Question question17 = new Question("Which of the following is used to set the data back ?", "Both uri.parse() and setData()", "uri.parse()", "setData()", "None of the Above", 1, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
+        Question question17 = new Question("Which of the following is used to set the data back ?", "Both uri.parse() and setData()", "uri.parse()", "setData()", "None of the Above", 1, Languages.ANDROID, Categories.ACTIVITY_AND_INTENTS);
         insertQuestion(question17);
-        Question question18 = new Question("The types of intents in android is/are ", "Explicit intents", "Implicit intents", "Above Both", "Start intents", 3, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
+        Question question18 = new Question("The types of intents in android is/are ", "Explicit intents", "Implicit intents", "Above Both", "Start intents", 3, Languages.ANDROID, Categories.ACTIVITY_AND_INTENTS);
         insertQuestion(question18);
-        Question question19 = new Question("The activity life cycle doesn’t contain _____________.", " onCreate()", "onPause()", "onAttach()", "onStart()", 3, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
+        Question question19 = new Question("The activity life cycle doesn’t contain _____________.", " onCreate()", "onPause()", "onAttach()", "onStart()", 3, Languages.ANDROID, Categories.ACTIVITY_AND_INTENTS);
         insertQuestion(question19);
-        Question question20 = new Question("What is not specified by implicit intent ", "Components within the intent object", "Parameters of the intent object", "Return value of the intent object", "None of the Above", 1, Categories.ACTIVITY_AND_INTENTS, Languages.ANDROID);
+        Question question20 = new Question("What is not specified by implicit intent ", "Components within the intent object", "Parameters of the intent object", "Return value of the intent object", "None of the Above", 1, Languages.ANDROID, Categories.ACTIVITY_AND_INTENTS);
         insertQuestion(question20);
     }
 
-    //Adding Fragments
     private void androidFragments() {
         Question question1 = new Question("Fragment in Android can be found through ?", "findByID", "findFragmentByID", "getContext.findFragmentByID", "FragmentManager.findFragmentByID", 4, Languages.ANDROID, Categories.FRAGMENTS);
         insertQuestion(question1);
@@ -1703,7 +1700,6 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
     }
 
-    //Adding Content Providers
     private void androidContentProvider() {
         Question question1 = new Question("What is the use of content provider in android?", "To send the data from an application to another application", "To store the data in a database", "To share the data between applications", "None of the above", 3, Languages.ANDROID, Categories.CONTENT_PROVIDER);
         insertQuestion(question1);
@@ -2463,6 +2459,113 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
                 "res", " ‘integers:…1234…1234  …001234’", "‘integers…1234…1234…123400’", "‘integers:… 1234…1234…001234’", "‘integers:…1234…1234…001234’", 1, Languages.PYTHON, Categories.FORMATTING_AND_DECORATORS);
         insertQuestion(question20);
     }
+
+    private void pythonLoops() {
+        Question question1 = new Question("x = ['ab', 'cd']\n" +
+                "for i in x:\n" +
+                "    i.upper()\n" +
+                "print(x)", "[‘ab’, ‘cd’]", "[‘AB’, ‘CD’]", "[None, None]", "None of the Above", 1, Languages.PYTHON, Categories.LOOPS);
+        insertQuestion(question1);
+        Question question2 = new Question("i = 1\n" +
+                "while True:\n" +
+                "    if i%3 == 0:\n" +
+                "        break\n" +
+                "    print(i)\n" +
+                " \n" +
+                "    i + = 1", "1 2", " 1 2 3", "Error", "None of the Above", 3, Languages.PYTHON, Categories.LOOPS);
+        insertQuestion(question2);
+        Question question3 = new Question("i = 5\n" +
+                "while True:\n" +
+                "    if i%0O9 == 0:\n" +
+                "        break\n" +
+                "    print(i)\n" +
+                "    i += 1", "5 6 7 8", "5 6 7 8 9", "5 6 7 8 9 10 11 12 13 14 15 ….", "Error", 4, Languages.PYTHON, Categories.LOOPS);
+        insertQuestion(question3);
+        Question question4 = new Question("x = ['ab', 'cd']\n" +
+                "for i in x:\n" +
+                "    x.append(i.upper())\n" +
+                "print(x)", "[‘AB’, ‘CD’]", "[‘ab’, ‘cd’, ‘AB’, ‘CD’]", " [‘ab’, ‘cd’]", "None of the Above", 4, Languages.PYTHON, Categories.LOOPS);
+        insertQuestion(question4);
+        Question question5 = new Question("True = False\n" +
+                "while True:\n" +
+                "    print(True)\n" +
+                "    break", "True", "False", "Error", "None of the Above", 4, Languages.PYTHON, Categories.LOOPS);
+        insertQuestion(question5);
+        Question question6 = new Question("x = 'abcd'\n" +
+                "for i in range(len(x)):\n" +
+                "    print(i)", "a b c d", "0 1 2 3", "1 2 3 4", "Error", 2, Languages.PYTHON, Categories.LOOPS);
+        insertQuestion(question6);
+        Question question7 = new Question("for i in range(int(float('inf'))):\n" +
+                "    print (i)", "0.0 0.1 0.2 0.3 …", "0 1 2 3 …", "0.0 1.0 2.0 3.0 …", "None of the Above", 4, Languages.PYTHON, Categories.LOOPS);
+        insertQuestion(question7);
+        Question question8 = new Question("i = 2\n" +
+                "while True:\n" +
+                "    if i%3 == 0:\n" +
+                "        break\n" +
+                "    print(i)\n" +
+                "    i += 2", "2 4 6 8 10 …", "2 4", "2 3", "Error", 2, Languages.PYTHON, Categories.LOOPS);
+        insertQuestion(question8);
+        Question question9 = new Question("i = 5\n" +
+                "while True:\n" +
+                "    if i%0O11 == 0:\n" +
+                "        break\n" +
+                "    print(i)\n" +
+                "    i += 1", "5 6 7 8 9 10", "5 6 7 8", "5 6", "Error", 2, Languages.PYTHON, Categories.LOOPS);
+        insertQuestion(question9);
+        Question question10 = new Question("d = {0: 'a', 1: 'b', 2: 'c'}\n" +
+                "for x, y in d.items():\n" +
+                "    print(x, y)", "0 1 2", "a b c", "0 a 1 b 2 c", "None of the Above", 3, Languages.PYTHON, Categories.LOOPS);
+        insertQuestion(question10);
+        Question question11 = new Question("string = \"my name is x\"\n" +
+                "for i in ' '.join(string.split()):\n" +
+                "    print (i, end=\", \")", "m, y, , n, a, m, e, , i, s, , x,", "m, y, , n, a, m, e, , i, s, , x", "my, name, is, x,", "Error", 1, Languages.PYTHON, Categories.LOOPS);
+        insertQuestion(question11);
+        Question question12 = new Question("a = [0, 1, 2, 3]\n" +
+                "i = -2\n" +
+                "for i not in a:\n" +
+                "    print(i)\n" +
+                "    i += 1", "-2 -1", "0", "Error", "None of the Above", 3, Languages.PYTHON, Categories.LOOPS);
+        insertQuestion(question12);
+        Question question13 = new Question("x = \"abcdef\"\n" +
+                "while i in x:\n" +
+                "    print(i, end=\" \")", "a b c d e f", " abcdef", "i i i i i i …", "Error", 4, Languages.PYTHON, Categories.LOOPS);
+        insertQuestion(question13);
+        Question question14 = new Question("x = \"abcdef\"\n" +
+                "i = \"a\"\n" +
+                "while i in x[1:]:\n" +
+                "    print(i, end = \" \")", " a a a a a a", "a", "No Output", "Error", 3, Languages.PYTHON, Categories.LOOPS);
+        insertQuestion(question14);
+        Question question15 = new Question("x = 'abcd'\n" +
+                "for i in range(len(x)):\n" +
+                "    x = 'a'\n" +
+                "    print(x)", "a", "abcd abcd abcd", "a a a a", "None of the Above", 3, Languages.PYTHON, Categories.LOOPS);
+        insertQuestion(question15);
+        Question question16 = new Question("d = {0: 'a', 1: 'b', 2: 'c'}\n" +
+                "for x in d.values():\n" +
+                "    print(x)", "0 1 2", " a b c", "0 a 1 b 2 c", "None of the Above", 2, Languages.PYTHON, Categories.LOOPS);
+        insertQuestion(question16);
+        Question question17 = new Question("a = [0, 1, 2, 3]\n" +
+                "for a[-1] in a:\n" +
+                "    print(a[-1])", "0 1 2 3", "0 1 2 2", "3 3 3 3", "4 3 2 1", 2, Languages.PYTHON, Categories.LOOPS);
+        insertQuestion(question17);
+        Question question18 = new Question("x = \"abcdef\"\n" +
+                "i = \"a\"\n" +
+                "while i in x:\n" +
+                "    x = x[:-1]\n" +
+                "    print(i, end = \" \")", "i i i i i i", "a a a a a a", "a a a a a", "None of the Above", 2, Languages.PYTHON, Categories.LOOPS);
+        insertQuestion(question18);
+        Question question19 = new Question("i = 0\n" +
+                "while i < 3:\n" +
+                "    print(i)\n" +
+                "    i += 1\n" +
+                "else:\n" +
+                "    print(0)", "0 1 2 3 0", "0 1 2 0", "0 1 2", "Error", 2, Languages.PYTHON, Categories.LOOPS);
+        insertQuestion(question19);
+        Question question20 = new Question("for i in range(2.0):\n" +
+                "    print(i)", "0.0 1.0", "0 1", "Error", "None of the Above", 3, Languages.PYTHON, Categories.LOOPS);
+        insertQuestion(question20);
+
+    }
     
     
     
@@ -2628,9 +2731,9 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories1);
         Categories categories2 = new Categories("Precedence,Associativity AND\nBitwise & Boolean", Languages.PYTHON);
         insertCategory(categories2);
-        Categories categories3 = new Categories("Classes and Objects", Languages.PYTHON);
+        Categories categories3 = new Categories("Formatting And Decorators", Languages.PYTHON);
         insertCategory(categories3);
-        Categories categories13 = new Categories("Function", Languages.PYTHON);
+        Categories categories13 = new Categories("Loops", Languages.PYTHON);
         insertCategory(categories13);
         Categories categories4 = new Categories("Multi Threading", Languages.PYTHON);
         insertCategory(categories4);
@@ -2664,11 +2767,11 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories4);
         Categories categories5 = new Categories("Text, Input & Selection", Languages.ANDROID);
         insertCategory(categories5);
-        Categories categories6 = new Categories("ACTIVITY And INTENTS", Languages.ANDROID);
+        Categories categories6 = new Categories("ACTIVITY AND INTENT", Languages.ANDROID);
         insertCategory(categories6);
         Categories categories7 = new Categories("Usability & Styling", Languages.ANDROID);
         insertCategory(categories7);
-        Categories categories8 = new Categories("Fragments", Languages.ANDROID);
+        Categories categories8 = new Categories("FRAGMENTS", Languages.ANDROID);
         insertCategory(categories8);
         Categories categories9 = new Categories("Storage", Languages.ANDROID);
         insertCategory(categories9);
@@ -2680,7 +2783,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories12);
         Categories categories13 = new Categories("Notifications & Messages", Languages.ANDROID);
         insertCategory(categories13);
-        Categories categories14 = new Categories("Content Provider", Languages.ANDROID);
+        Categories categories14 = new Categories("CONTENT PROVIDER", Languages.ANDROID);
         insertCategory(categories14);
 
     }
@@ -2763,10 +2866,9 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         List<Question> questionsList = new ArrayList<>();
         db = getReadableDatabase();
 
+
         String selection = Constants.COLUMN_CATEGORY + " = ? " + "AND " + Constants.COLUMN_LANGUAGE + " = ? ";
         String[] selectionArgs = {Category, Language};
-
-        //String orderBy = " RANDOM() LIMIT " + number;
 
 
         Cursor c = db.query(Constants.TABLE_FIRST, Constants.ALL_COLUMNS, selection, selectionArgs, null, null, null);

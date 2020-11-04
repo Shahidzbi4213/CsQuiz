@@ -4,12 +4,6 @@ package com.edu.pk.gulehri.csquiz.model;
 public class Categories {
 
 
-    public String category;
-    public String language;
-
-    public int id;
-
-
     //java + Common in All
     public static final String BASICS = "Basics";
     public static final String DATA_TYPES = "Data Types";
@@ -24,7 +18,6 @@ public class Categories {
     public static final String DATA_STRUCTURE = "Data Structure";
     public static final String COLLECTION_FRAME_WORK = "Collection FrameWork";
     public static final String JDBC = "JDBC";
-
     //html
     public static final String TAGS1 = "Tags-1";
     public static final String TAGS2 = "Tags-2";
@@ -34,16 +27,12 @@ public class Categories {
     public static final String GRAPHICS = "Graphics";
     public static final String FORMS = "FORMS";
     public static final String API = "API";
-
-
     //C++
     public static final String ENUMS = "ENUMS";
     public static final String CLASSES_AND_OBJECTS = "Classes and Objects";
     public static final String MODULARIZATION_AND_INTERFACES_NAMESPACE = "Modularization,Interfaces And \nNamespace";
     public static final String KEYWORDS_POINTERS = "Keywords and Pointers";
     public static final String STANDARD_TEMPLATE_LIBRARY = "Standard Template Library";
-
-
     //Js
     public static final String DOM = "DOM";
     public static final String ERROR_HANDLING = "ERROR Handling";
@@ -52,12 +41,10 @@ public class Categories {
     public static final String TYPES_VALUES_AND_VARIABLES = "Types, Values and Variable";
     public static final String AJAX = "AJAX";
     public static final String JSON = "JSON";
-
     //Android
-    public static final String ACTIVITY_AND_INTENTS = "ACTIVITY And INTENTS";
-    public static final String CONTENT_PROVIDER = "Content Provider";
-    public static final String FRAGMENTS = "Fragments";
-
+    public static final String ACTIVITY_AND_INTENTS = "ACTIVITY AND INTENT";
+    public static final String CONTENT_PROVIDER = "CONTENT PROVIDER";
+    public static final String FRAGMENTS = "FRAGMENTS";
     //PHP
     public static final String ARRAYS_AND_FUNCTIONS = "ARRAYS AND FUNCTIONS";
     public static final String ERROR_AND_EXCEPTION_HANDLING = "ERROR AND EXCEPTION HANDLING";
@@ -68,16 +55,10 @@ public class Categories {
     public static final String OBJECTS_AND_DATABASES1 = "OBJECTS AND DATABASES 1";
     public static final String OBJECTS_AND_DATABASES2 = "OBJECTS AND DATABASES 2";
     public static final String OBJECT_TOOLS_DESIGN_AND_VARIABLES = "Object Tools, Design and Variables";
-
     //PYTHON
     public static final String PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN = "Precedence,Associativity AND\nBitwise & Boolean";
     public static final String FORMATTING_AND_DECORATORS = "Formatting And Decorators";
-
-
-    public Categories(String category, String language) {
-        this.category = category;
-        this.language = language;
-    }
+    public static final String LOOPS = "Loops";
 
 
     public static final Categories[] data =
@@ -121,9 +102,9 @@ public class Categories {
                     new Categories("JSON", Languages.JAVA_SCRIPT),
 
 
-                    new Categories("ACTIVITY And INTENTS", Languages.ANDROID),
-                    new Categories("Content Provider", Languages.ANDROID),
-                    new Categories("Fragments", Languages.ANDROID),
+                    new Categories("ACTIVITY AND INTENT", Languages.ANDROID),
+                    new Categories("CONTENT PROVIDER", Languages.ANDROID),
+                    new Categories("FRAGMENTS", Languages.ANDROID),
 
 
                     new Categories("ARRAYS AND FUNCTIONS", Languages.PHP),
@@ -138,11 +119,25 @@ public class Categories {
 
 
                     new Categories("Precedence,Associativity AND\nBitwise & Boolean", Languages.PYTHON),
-                    new Categories("Formatting And Decorators", Languages.PYTHON)
+                    new Categories("Formatting And Decorators", Languages.PYTHON),
+                    new Categories("Loops", Languages.PYTHON)
             };
+    public String category;
+    public String language;
+    public int id;
+
+
+    public Categories(String category, String language) {
+        this.category = category;
+        this.language = language;
+    }
 
 
     public Categories() {
+    }
+
+    public static Categories[] getData() {
+        return data;
     }
 
     public String getCategory() {
@@ -159,10 +154,6 @@ public class Categories {
 
     public void setLanguage(String language) {
         this.language = language;
-    }
-
-    public static Categories[] getData() {
-        return data;
     }
 
 }

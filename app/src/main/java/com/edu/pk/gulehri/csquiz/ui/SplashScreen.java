@@ -16,18 +16,16 @@ import com.edu.pk.gulehri.csquiz.R;
 
 public class SplashScreen extends AppCompatActivity {
 
+    public static final String SHARED_PREFRENCE = "shared_Prefrence";
+    public static final String SHARED_PREFRENCE_VALUE = "shared_prefrence_value_compare";
     private static final String TAG = "myTag";
+    public static int flag = 0;
     private static int SPLASH_TIME_OUT = 5000;
     //Hooks
     View first, second, third, fourth, fifth, sixth;
     TextView a, slogan;
     //Animations
     Animation topAnimantion, bottomAnimation, middleAnimation;
-
-
-    public static int flag = 0;
-    public static final String SHARED_PREFRENCE = "shared_Prefrence";
-    public static final String SHARED_PREFRENCE_VALUE = "shared_prefrence_value_compare";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,14 +77,6 @@ public class SplashScreen extends AppCompatActivity {
 
             }
         }, SPLASH_TIME_OUT);
-
-
-       /* if (flag == QuizActivity.Flag){
-
-            startActivity(new Intent(SplashScreen.this, QuizActivity.class));
-        }*/
-
-
     }
 
 

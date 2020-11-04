@@ -258,6 +258,7 @@ public class QuizActivity extends AppCompatActivity {
                                     mScore = mScore - 3;
                                     wrongAnswer++;
                                     textViewScore.setText(String.valueOf(mScore));
+                                    seconds = 15;
                                     showNextQuestion();
                                 } else {
                                     showNextQuestion();
@@ -621,7 +622,7 @@ public class QuizActivity extends AppCompatActivity {
         //Saving seconds before activity destroyed
         seconds = Integer.parseInt(circularViewWithTimer.getText().toString());
         outState.putInt("myKey", seconds);
-        outState.putInt("myKey", questionCounter);
+        outState.putInt("myKeySecond", questionCounter);
     }
 
     @Override
@@ -629,7 +630,7 @@ public class QuizActivity extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
         //Getting seconds after activity is created
         seconds = savedInstanceState.getInt("myKey");
-        questionCounter = savedInstanceState.getInt("myKey");
+        questionCounter = savedInstanceState.getInt("myKeySecond");
 
     }
 
