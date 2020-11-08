@@ -111,6 +111,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         pythonPrecedenceAndAssociativityAndBitwiseAndBoolean();
         pythonFormattingAndDecorators();
         pythonLoops();
+        pythonStrings();
 
     }
 
@@ -2566,8 +2567,50 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertQuestion(question20);
 
     }
-    
-    
+
+    private void pythonStrings() {
+        Question question1 = new Question("What will be the output of the statement?\n\n>>>\"a\"+\"bc\"", " a", "bc", "bca", "abc", 4, Languages.PYTHON, Categories.STRINGS);
+        insertQuestion(question1);
+        Question question2 = new Question("What arithmetic operators cannot be used with strings?", "+", "*", "–", "All of the mentioned", 3, Languages.PYTHON, Categories.STRINGS);
+        insertQuestion(question2);
+        Question question3 = new Question("What will be the output of the statement?\n\n>>> print('x\\97\\x98')", "Error", "x\\97", "97\n98", "\\x97\\x98", 2, Languages.PYTHON, Categories.STRINGS);
+        insertQuestion(question3);
+        Question question4 = new Question(" What will be the output of the code?\n\nprint(0xA + 0xB + 0xC)", " 0xA0xB0xC", "0x22", "Error", "33", 4, Languages.PYTHON, Categories.STRINGS);
+        insertQuestion(question4);
+        Question question5 = new Question("What will be the output of the statement?\n\n>>>print(chr(ord('b')+1))", "a", "b", "c", "A", 3, Languages.PYTHON, Categories.STRINGS);
+        insertQuestion(question5);
+        Question question6 = new Question("The format function, when applied on a string returns ___________", "Error", " int", "bool", "str", 4, Languages.PYTHON, Categories.STRINGS);
+        insertQuestion(question6);
+        Question question7 = new Question("To return the length of string s what command do we execute?", "s.__len__()", "len(s)", "size(s)", "s.size()", 1, Languages.PYTHON, Categories.STRINGS);
+        insertQuestion(question7);
+        Question question8 = new Question("Suppose i is 5 and j is 4, i + j is same as ________", "i.__add(j)", " i.__add__(j)", "i.__Add(j)", "i.__ADD(j)", 2, Languages.PYTHON, Categories.STRINGS);
+        insertQuestion(question8);
+        Question question9 = new Question("What function do you use to read a string?", "input(“Enter a string”)", "eval(input(“Enter a string”))", "enter(“Enter a string”)", "eval(enter(“Enter a string”))", 1, Languages.PYTHON, Categories.STRINGS);
+        insertQuestion(question9);
+        Question question10 = new Question("What will be the output of the code?\n\nprint(\"abc. DEF\".capitalize())", "abc. def", "ABC. DEF", "Abc. def", " Abc. Def", 3, Languages.PYTHON, Categories.STRINGS);
+        insertQuestion(question10);
+        Question question11 = new Question("What will be the output of the code?\n\nprint(\"abcdef\".center(0))", "cd", "abcdef", "error", "None of the mentioned", 2, Languages.PYTHON, Categories.STRINGS);
+        insertQuestion(question11);
+        Question question12 = new Question("What will be the output of the code?\n\nprint(\"xyyzxyzxzxyy\".count('yy'))", "2", "0", "error", " None of the mentioned", 1, Languages.PYTHON, Categories.STRINGS);
+        insertQuestion(question12);
+        Question question13 = new Question("What will be the output of the code?\n\nprint(\"xyyzxyzxzxyy\".endswith(\"xyy\"))", "1", "True", "3", "2", 2, Languages.PYTHON, Categories.STRINGS);
+        insertQuestion(question13);
+        Question question14 = new Question("What will be the output of the code?\n\nprint(\"ccdcddcd\".find(\"c\"))", "4", "0", "Error", "True", 2, Languages.PYTHON, Categories.STRINGS);
+        insertQuestion(question14);
+        Question question15 = new Question("What will be the output of the code?\n\nprint('{0:.2}'.format(1/3))", "0.333333", "0.333333:.2", "0.33", "Error", 3, Languages.PYTHON, Categories.STRINGS);
+        insertQuestion(question15);
+        Question question16 = new Question("What will be the output of the code?\n\nprint('ab'.isalpha())", "True", "False", "None", "Error", 1, Languages.PYTHON, Categories.STRINGS);
+        insertQuestion(question16);
+        Question question17 = new Question("What will be the output of the code?\n\nprint('abc'.islower())", "True", "False", "None", "Error", 1, Languages.PYTHON, Categories.STRINGS);
+        insertQuestion(question17);
+        Question question18 = new Question("What will be the output of the code?\n\nprint('cba'.maketrans('abc', '123'))", "{65: 49, 66: 50, 67: 51}", "321", "123", "{97: 49, 98: 50, 99: 51}", 4, Languages.PYTHON, Categories.STRINGS);
+        insertQuestion(question18);
+        Question question19 = new Question("What will be the output of the code?\n\nprint('abcdefcdghcd'.split('cd'))", "[‘ab’, ‘ef’, ‘gh’]", "(‘ab’, ‘ef’, ‘gh’)", "[‘ab’, ‘ef’, ‘gh’, ”]", "(‘ab’, ‘ef’, ‘gh’, ”)", 3, Languages.PYTHON, Categories.STRINGS);
+        insertQuestion(question19);
+        Question question20 = new Question("What will be the output of the code?\n\nprint('Ab!2'.swapcase())", "AB!@", "ab12", "aB!2", " aB1@", 3, Languages.PYTHON, Categories.STRINGS);
+        insertQuestion(question20);
+
+    }
     
     /*private void pythonBasics(){
         Question question1 = new Question("","","","","",,Languages.PYTHON,Categories.BASICS);
@@ -2735,7 +2778,7 @@ public class MyDbOpenHelper extends SQLiteOpenHelper {
         insertCategory(categories3);
         Categories categories13 = new Categories("Loops", Languages.PYTHON);
         insertCategory(categories13);
-        Categories categories4 = new Categories("Multi Threading", Languages.PYTHON);
+        Categories categories4 = new Categories("STRINGS", Languages.PYTHON);
         insertCategory(categories4);
         Categories categories5 = new Categories("Exception Handling", Languages.PYTHON);
         insertCategory(categories5);

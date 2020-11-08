@@ -59,6 +59,7 @@ public class Categories {
     public static final String PRECEDENCE_ASSOCIATIVITY_AND_BITWISE_AND_BOOLEAN = "Precedence,Associativity AND\nBitwise & Boolean";
     public static final String FORMATTING_AND_DECORATORS = "Formatting And Decorators";
     public static final String LOOPS = "Loops";
+    public static final String STRINGS = "STRINGS";
 
 
     public static final Categories[] data =
@@ -120,7 +121,8 @@ public class Categories {
 
                     new Categories("Precedence,Associativity AND\nBitwise & Boolean", Languages.PYTHON),
                     new Categories("Formatting And Decorators", Languages.PYTHON),
-                    new Categories("Loops", Languages.PYTHON)
+                    new Categories("Loops", Languages.PYTHON),
+                    new Categories("STRINGS", Languages.PYTHON),
             };
     public String category;
     public String language;
